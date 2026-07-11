@@ -1,0 +1,217 @@
+{
+  "specVersion": "1.0.0",
+  "id": "ki:pkg:knowledge-islands/ai-operating-system@2.1.0",
+  "uuid": "b7e4d9a1-2c3f-4e5a-9b8c-1d2e3f4a5b6c",
+  "name": "Knowledge Islands AI Operating System",
+  "version": "2.1.0",
+  "lifecycle": "active",
+  "classification": "public",
+  "conformanceLevel": "extended",
+  "created": "2026-01-15T10:00:00Z",
+  "updated": "2026-07-11T14:30:00Z",
+  "description": "A governed body of cognitive work describing the Knowledge Islands AI Operating System: an architectural kernel with domain-specific modules that runs across federated large language models, keeps organisational knowledge in the modules rather than in any single model, and improves continually through a hierarchical learning loop.",
+  "tags": [
+    "operating-system",
+    "kernel",
+    "federated-execution",
+    "continual-improvement",
+    "model-independence"
+  ],
+  "owners": [
+    {
+      "name": "Knowledge Islands Core",
+      "type": "organisation",
+      "role": "owner",
+      "contact": "core@knowledgeislands.example"
+    },
+    {
+      "name": "A. Rivera",
+      "type": "human",
+      "role": "lead-architect"
+    }
+  ],
+  "digests": {
+    "executive": {
+      "summary": "The AI Operating System treats models as interchangeable engines and holds an organisation's knowledge, judgement, and workflows in a governed kernel plus domain modules. Work is expressed as Knowledge Packages, executed against whichever federated model best fits, and improved through a hierarchical learning loop so that lessons captured in one module raise the performance of the whole system."
+    },
+    "technical": {
+      "path": "digests/technical.md"
+    }
+  },
+  "assumptions": [
+    "Model providers expose comparable chat and tool-use interfaces reachable over an API execution route.",
+    "The kernel and modules are versioned and distributed independently of any single model."
+  ],
+  "constraints": [
+    "The system MUST remain model-independent: no module may hard-depend on a single provider.",
+    "Organisational knowledge is retained in modules and packages, never solely in a model's weights."
+  ],
+  "terminology": [
+    {
+      "term": "Kernel",
+      "definition": "The provider-neutral core that schedules work, enforces governance, and mediates between modules and federated models."
+    },
+    {
+      "term": "Kernel module",
+      "definition": "A domain-specific unit of knowledge and capability that extends the kernel for a particular class of work."
+    },
+    {
+      "term": "Federated execution",
+      "definition": "Routing a unit of work to whichever available model (GPT, Claude, Gemini, or other) best fits the task and route."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-001",
+      "title": "Models are engines, not stores of organisational knowledge",
+      "status": "accepted",
+      "date": "2026-01-20T00:00:00Z",
+      "rationale": "Keeping knowledge in modules and packages preserves it across model changes and lets the organisation switch or federate providers without loss."
+    },
+    {
+      "id": "DEC-002",
+      "title": "Adopt a hierarchical continual-improvement loop",
+      "status": "accepted",
+      "date": "2026-02-10T00:00:00Z",
+      "rationale": "Lessons learned at the task level roll up to the module level and then to the kernel, so improvement compounds across the system.",
+      "supersedes": "DEC-000"
+    }
+  ],
+  "openQuestions": [
+    "What is the fallback policy when a preferred model route is unavailable mid-task?"
+  ],
+  "tasks": [
+    {
+      "id": "T-1",
+      "title": "Specify the kernel scheduling interface",
+      "status": "done",
+      "description": "Define how the kernel selects a model route for a given package and module.",
+      "assignee": {
+        "name": "A. Rivera",
+        "type": "human",
+        "role": "lead-architect"
+      },
+      "deliverables": [
+        "D-1"
+      ]
+    },
+    {
+      "id": "T-2",
+      "title": "Draft the hierarchical learning module",
+      "status": "in_progress",
+      "description": "Capture how task-level lessons propagate to module and kernel scope.",
+      "dependsOn": [
+        "T-1"
+      ],
+      "deliverables": [
+        "D-2"
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "D-1",
+      "title": "Kernel scheduling interface specification",
+      "description": "Normative description of route selection across federated models.",
+      "path": "deliverables/kernel-scheduling.md",
+      "status": "delivered"
+    },
+    {
+      "id": "D-2",
+      "title": "Hierarchical learning design note",
+      "path": "deliverables/hierarchical-learning.md",
+      "status": "draft"
+    }
+  ],
+  "references": [
+    {
+      "title": "Knowledge Packages proposal (KIP-000001)",
+      "path": "../../proposals/KIP-000001-knowledge-packages/proposal.md",
+      "note": "Foundational concept this package builds on."
+    },
+    {
+      "title": "Knowledge Package specification (KIS-0001)",
+      "uri": "https://knowledgeislands.org/specifications/KIS-0001-knowledge-package/"
+    }
+  ],
+  "provenance": {
+    "createdBy": {
+      "name": "Knowledge Islands Core",
+      "type": "organisation"
+    },
+    "sources": [
+      {
+        "title": "Kernel architecture workshop notes",
+        "path": "sources/kernel-workshop.md"
+      }
+    ],
+    "method": "Synthesised from architecture workshops and reviewed by the lead architect."
+  },
+  "governance": {
+    "steward": {
+      "name": "K. Osei",
+      "type": "human",
+      "role": "steward"
+    },
+    "reviewers": [
+      {
+        "name": "Architecture Review Board",
+        "type": "organisation"
+      }
+    ],
+    "promotionPolicy": "Content may be promoted to canonical knowledge only after Architecture Review Board sign-off.",
+    "retention": "Retain indefinitely; review classification annually."
+  },
+  "handover": {
+    "instructions": "Resume with the hierarchical learning module; the kernel interface is settled.",
+    "context": "The scheduling interface (T-1) is complete and its deliverable is delivered.",
+    "resumePoints": [
+      "Finish T-2 (hierarchical learning design note).",
+      "Resolve the open question on model-route fallback policy."
+    ]
+  },
+  "history": [
+    {
+      "timestamp": "2026-01-15T10:00:00Z",
+      "actor": {
+        "name": "Knowledge Islands Core",
+        "type": "organisation"
+      },
+      "action": "created"
+    },
+    {
+      "timestamp": "2026-05-02T11:00:00Z",
+      "actor": {
+        "name": "K. Osei",
+        "type": "human",
+        "role": "steward"
+      },
+      "action": "promoted",
+      "note": "Kernel scheduling interface promoted to canonical knowledge after review."
+    }
+  ],
+  "related": [
+    {
+      "id": "ki:pkg:knowledge-islands/ai-operating-system@2.0.0",
+      "relationship": "supersedes"
+    },
+    {
+      "id": "ki:pkg:knowledge-islands/kernel-scheduling-canon@1.0.0",
+      "relationship": "promotedTo",
+      "note": "Kernel scheduling interface promoted to a canonical package."
+    }
+  ],
+  "artefacts": {
+    "readme": "README.md",
+    "manifest": "manifest.json",
+    "architecture": "artefacts/architecture.md"
+  },
+  "extensions": {
+    "org.knowledgeislands.rollout": {
+      "pilotModules": [
+        "shared-organisational-knowledge",
+        "continual-improvement"
+      ]
+    }
+  }
+}
