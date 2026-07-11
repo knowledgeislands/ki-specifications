@@ -1,0 +1,9 @@
+{
+  "ref": "main",
+  "files": {
+    ".ki-meta/skills/ki-authoring/audit.ts": "a843265e3cac158d2355af142c0672b8acb48d5b4179248f5a432cb54c29e3a1",
+    ".ki-meta/skills/ki-repo/audit.ts": "93dc50f453d02738c9da63ed412e273000078863859be7b54aa6e683c4b4d35c",
+    ".ki-meta/skills/ki-repo/conform.ts": "46967ef9e31ff1c7580edc9b6b75e7c09d0c4c2a5f736d7742acaa4e946a6ab1",
+    ".ki-meta/bin/aggregate.ts": "eb2ae2efddae9371452226482d9259a661a99ae0593ebd544e51d8d24aa475e8"
+  }
+}

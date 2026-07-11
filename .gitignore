@@ -2,3 +2,11 @@ node_modules/
 .DS_Store
 *.log
 .claude/settings.local.json
+
+# Generated project-local links (ki-bootstrap) — never committed
+.claude/skills/
+.claude/agents/
+
+# Derived audit/conform artifacts (ki-repo) — regenerated each run
+.ki-meta/audits/
+.ki-meta/conform/
