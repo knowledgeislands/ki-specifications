@@ -1,0 +1,123 @@
+{
+  "specVersion": "1.0.0",
+  "id": "ki:pkg:replace-namespace/replace-slug@0.1.0",
+  "uuid": "00000000-0000-4000-8000-000000000000",
+  "name": "REPLACE with a human-readable package name",
+  "version": "0.1.0",
+  "lifecycle": "draft",
+  "classification": "internal",
+  "conformanceLevel": "extended",
+  "created": "2026-01-01T00:00:00Z",
+  "updated": "2026-01-01T00:00:00Z",
+  "description": "REPLACE with a longer prose description of this package.",
+  "owners": [
+    {
+      "name": "REPLACE owner name",
+      "type": "human",
+      "role": "owner"
+    }
+  ],
+  "digests": {
+    "executive": {
+      "path": "digest-executive.md"
+    },
+    "technical": {
+      "path": "digest-technical.md"
+    }
+  },
+  "assumptions": [
+    "REPLACE with an assumption this package relies on."
+  ],
+  "constraints": [
+    "REPLACE with a constraint this package must satisfy."
+  ],
+  "terminology": [
+    {
+      "term": "REPLACE term",
+      "definition": "REPLACE definition."
+    }
+  ],
+  "openQuestions": [
+    "REPLACE with an unresolved question."
+  ],
+  "decisions": [
+    {
+      "id": "DEC-001",
+      "title": "REPLACE decision title",
+      "status": "proposed"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-1",
+      "title": "REPLACE task title",
+      "status": "todo",
+      "deliverables": [
+        "D-1"
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "D-1",
+      "title": "REPLACE deliverable title",
+      "status": "draft"
+    }
+  ],
+  "references": [
+    {
+      "title": "REPLACE reference title",
+      "uri": "https://example.org/REPLACE"
+    }
+  ],
+  "provenance": {
+    "createdBy": {
+      "name": "REPLACE creator name",
+      "type": "human"
+    },
+    "sources": [
+      {
+        "title": "REPLACE source title",
+        "note": "REPLACE what this source contributed."
+      }
+    ]
+  },
+  "governance": {
+    "steward": {
+      "name": "REPLACE steward name",
+      "type": "human",
+      "role": "steward"
+    },
+    "reviewers": [
+      {
+        "name": "REPLACE reviewer name",
+        "type": "human"
+      }
+    ],
+    "promotionPolicy": "REPLACE with the policy governing promotion of this package's content.",
+    "retention": "REPLACE with the retention policy for this package."
+  },
+  "handover": {
+    "path": "handover.md"
+  },
+  "history": [
+    {
+      "timestamp": "2026-01-01T00:00:00Z",
+      "actor": {
+        "name": "REPLACE creator name",
+        "type": "human"
+      },
+      "action": "created"
+    }
+  ],
+  "related": [
+    {
+      "id": "ki:pkg:replace-namespace/replace-related-slug@1.0.0",
+      "relationship": "relatesTo"
+    }
+  ],
+  "artefacts": {
+    "decisions": "decisions.md",
+    "handover": "handover.md"
+  }
+}

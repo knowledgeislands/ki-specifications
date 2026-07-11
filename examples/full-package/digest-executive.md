@@ -1,0 +1,7 @@
+# Executive digest
+
+The Knowledge Islands AI Operating System treats large language models as interchangeable execution engines and keeps an organisation's knowledge, judgement, and workflow in a governed kernel plus a set of domain-specific kernel modules.
+Work is expressed as Knowledge Packages: portable, governed units of cognitive work that carry their own context, decisions, and history so that neither the organisation nor the work in flight depends on any single model's memory.
+Packages are executed against whichever federated model, GPT, Claude, Gemini, or a local model, best fits the task, over whichever route (subscription-native, API, or local) is available and appropriate, and the system improves continually through a hierarchical learning loop: lessons captured on one task roll up to the owning module and then to the kernel, so an improvement made anywhere raises the performance of the whole system.
+Illustrative kernel modules referenced in this package, such as Humans Not Robots, Equal Remedy, and Kit-Legal, are domain teams building on the shared kernel; they are examples of the pattern, not a dependency of it.
+The kernel scheduling interface and the hierarchical learning design have both been reviewed and promoted to canonical knowledge; a federated-execution pilot across two modules is in progress, and this package has just been handed over to the pilot team to complete it and to write the model-route fallback policy.

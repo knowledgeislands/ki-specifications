@@ -1,0 +1,60 @@
+{
+  "specVersion": "1.0.0",
+  "id": "ki:pkg:replace-namespace/replace-slug@0.1.0",
+  "uuid": "00000000-0000-4000-8000-000000000000",
+  "name": "REPLACE with a human-readable package name",
+  "version": "0.1.0",
+  "lifecycle": "draft",
+  "classification": "internal",
+  "conformanceLevel": "standard",
+  "created": "2026-01-01T00:00:00Z",
+  "description": "REPLACE with a longer prose description of this package.",
+  "owners": [
+    {
+      "name": "REPLACE owner name",
+      "type": "human",
+      "role": "owner"
+    }
+  ],
+  "digests": {
+    "executive": {
+      "path": "digest-executive.md"
+    },
+    "technical": {
+      "path": "digest-technical.md"
+    }
+  },
+  "assumptions": [
+    "REPLACE with an assumption this package relies on."
+  ],
+  "openQuestions": [
+    "REPLACE with an unresolved question."
+  ],
+  "decisions": [
+    {
+      "id": "DEC-001",
+      "title": "REPLACE decision title",
+      "status": "proposed"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-1",
+      "title": "REPLACE task title",
+      "status": "todo"
+    }
+  ],
+  "provenance": {
+    "createdBy": {
+      "name": "REPLACE creator name",
+      "type": "human"
+    }
+  },
+  "handover": {
+    "path": "handover.md"
+  },
+  "artefacts": {
+    "decisions": "decisions.md",
+    "handover": "handover.md"
+  }
+}

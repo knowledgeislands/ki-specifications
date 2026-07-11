@@ -1,0 +1,23 @@
+{
+  "specVersion": "1.0.0",
+  "id": "ki:pkg:knowledge-islands/numbering-scheme-scan@1.0.0",
+  "uuid": "f2a6e9c0-4d7b-4a1e-9c3f-8b2d5a6e7c1f",
+  "name": "Specification numbering scheme scan",
+  "version": "1.0.0",
+  "lifecycle": "completed",
+  "classification": "public",
+  "conformanceLevel": "minimal",
+  "created": "2026-06-02T09:00:00Z",
+  "owners": [
+    {
+      "name": "Knowledge Islands Core",
+      "type": "organisation",
+      "role": "owner"
+    }
+  ],
+  "digests": {
+    "executive": {
+      "path": "digest-executive.md"
+    }
+  }
+}
