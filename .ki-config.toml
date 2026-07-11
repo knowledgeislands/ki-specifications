@@ -1,0 +1,9 @@
+# Knowledge Islands repo config — read by the ki-repo skill.
+
+[ki-repo]
+
+visibility = "public"
+license = "MIT"
+
+# ki-authoring standard (Markdown/TOML house style) is baseline for this repo.
+[ki-authoring]
