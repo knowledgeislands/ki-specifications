@@ -10,8 +10,6 @@ Actively broken, or blocking the `Next` horizon: takes priority over everything 
 
 Scoped and ready to start — the immediate queue, picked up before anything in **Soon** or **Future**.
 
-- [Ecosystem Governance: Join the four-repository ecosystem contract](docs/roadmap/ecosystem-governance/ROADMAP.md#join-the-four-repository-ecosystem-contract)
-
 ## Soon
 
 Understood and roughly scoped but not yet started — worth doing once the **Next** queue clears, ahead of anything still speculative.
