@@ -7,3 +7,6 @@ license = "MIT"
 
 # ki-authoring standard (Markdown/TOML house style) is baseline for this repo.
 [ki-authoring]
+
+# This non-KB repository uses a thematic project roadmap for multi-step work.
+[ki-project-roadmap]
