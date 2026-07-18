@@ -12,13 +12,13 @@ A KIP is a directory under [proposals/](proposals/) named `KIP-NNNNNN-<slug>`, c
 
 Follow the structure established by [proposals/KIP-000001-knowledge-packages/](proposals/KIP-000001-knowledge-packages/):
 
-| File | Purpose |
-| --- | --- |
-| `README.md` | Summary, status, links to the other files |
-| `proposal.md` | The proposal itself: motivation, scope, the change being proposed |
-| `rationale.md` | Why this approach, what problem it solves, design reasoning |
-| `alternatives.md` | Alternatives considered and why they were not chosen |
-| `status.md` | Status history: dates, decisions, links to discussion |
+| File              | Purpose                                                           |
+| ----------------- | ----------------------------------------------------------------- |
+| `README.md`       | Summary, status, links to the other files                         |
+| `proposal.md`     | The proposal itself: motivation, scope, the change being proposed |
+| `rationale.md`    | Why this approach, what problem it solves, design reasoning       |
+| `alternatives.md` | Alternatives considered and why they were not chosen              |
+| `status.md`       | Status history: dates, decisions, links to discussion             |
 
 ### Numbering request process
 

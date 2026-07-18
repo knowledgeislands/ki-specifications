@@ -12,8 +12,7 @@ Lessons propagate through three levels: task, module, kernel.
 
 ## Promotion is governed, not automatic
 
-Promotion at each level is a deliberate, governed action, subject to the promoting party's `governance.promotionPolicy`, and is recorded as a `history` event with `action: "promoted"`.
-Promotion is not a lifecycle state: a package can be `active`, `paused`, or `completed` and still have content promoted out of it.
+Promotion at each level is a deliberate, governed action, subject to the promoting party's `governance.promotionPolicy`, and is recorded as a `history` event with `action: "promoted"`. Promotion is not a lifecycle state: a package can be `active`, `paused`, or `completed` and still have content promoted out of it.
 
 ## Open question
 

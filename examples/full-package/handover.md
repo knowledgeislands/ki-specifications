@@ -4,9 +4,7 @@ Prose expansion of the `handover` object in `manifest.json`: what the pilot team
 
 ## Context
 
-The kernel scheduling interface (T-1, deliverable D-1) and the hierarchical learning design (T-2, deliverable D-2) are both complete and have been promoted to canonical knowledge by the Architecture Review Board (see `history`).
-The federated-execution pilot (T-3) is in progress: the Humans Not Robots and Kit-Legal modules are being run against GPT, Claude, and a local model on matched tasks, comparing output quality and cost per route.
-Raw pilot results are held internally by the Architecture Review Board; only the summarised report becomes part of this package, as deliverable D-3.
+The kernel scheduling interface (T-1, deliverable D-1) and the hierarchical learning design (T-2, deliverable D-2) are both complete and have been promoted to canonical knowledge by the Architecture Review Board (see `history`). The federated-execution pilot (T-3) is in progress: the Humans Not Robots and Kit-Legal modules are being run against GPT, Claude, and a local model on matched tasks, comparing output quality and cost per route. Raw pilot results are held internally by the Architecture Review Board; only the summarised report becomes part of this package, as deliverable D-3.
 
 ## Resume points
 

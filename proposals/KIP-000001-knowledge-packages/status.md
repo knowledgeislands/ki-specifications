@@ -7,11 +7,11 @@
 
 ## Status history
 
-| Date | Status | Note |
-| --- | --- | --- |
-| 2026-07-11 | Draft | Proposal drafted to establish the Knowledge Package primitive. |
-| 2026-07-11 | Review | Proposal circulated for review. |
-| 2026-07-11 | Accepted | Accepted; commissions KIS-0001. |
+| Date       | Status   | Note                                                           |
+| ---------- | -------- | -------------------------------------------------------------- |
+| 2026-07-11 | Draft    | Proposal drafted to establish the Knowledge Package primitive. |
+| 2026-07-11 | Review   | Proposal circulated for review.                                |
+| 2026-07-11 | Accepted | Accepted; commissions KIS-0001.                                |
 
 All three transitions carry the same date because this proposal was adopted as part of the initial bootstrap of the specification repository. The acceptance was **editorial** — it records the founding decision to establish the Knowledge Package rather than the outcome of an open review round. Subsequent proposals will pass through `Draft → Review → Accepted` over real elapsed time.
 

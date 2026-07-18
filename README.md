@@ -6,6 +6,12 @@ It holds the proposals, accepted specifications, JSON Schemas, governance rules,
 
 Knowledge Islands is an open-source operating system for governed human and AI knowledge work.
 
+## Place in the Knowledge Islands ecosystem
+
+KI Specifications is the canonical source of normative portable contracts, including KIPs, KIS documents, schemas, templates, conformance rules, and reference examples. It formalises concepts established in [Arcadia Principal](https://github.com/knowledgeislands/ki-arcadia-principal) and implementation evidence from the [KI Agentic Harness](https://github.com/knowledgeislands/ki-agentic-harness); an Active KIS governs implementations that claim conformance within its scope.
+
+The [KI Website](https://github.com/knowledgeislands/ki-website) may vendor source-labelled specification material for autonomous public publication, while this repository remains canonical for the normative contracts. The mirrored [ecosystem decision](docs/decisions/GDR-KI-SPECIFICATIONS-002-knowledge-islands-ecosystem-fundamentals.md) defines the four authorities and publication flows.
+
 ## The KIP/KIS model
 
 A **KIP** (Knowledge Islands Proposal) is a reviewable proposal for a new foundational concept, specification, change or extension.
@@ -22,22 +28,22 @@ Together the two series separate the deliberative process (KIP: should we do thi
 
 ## Repository map
 
-| Directory | Purpose |
-| --- | --- |
-| `proposals/` | KIP proposals: the deliberative record of what was proposed, why, and how it was decided |
-| `specifications/` | KIS documents: the accepted, normative specifications of the ecosystem |
-| `schemas/` | JSON Schemas that machines validate Knowledge Packages and other artefacts against |
-| `templates/` | Starter file sets for creating new Knowledge Packages at each conformance level |
-| `examples/` | Worked, valid reference packages illustrating the schema and conventions |
-| `docs/` | Process, versioning, adoption and architectural context documentation |
-| `tooling/` | Guidance on validating packages today, and on tooling anticipated in future |
+| Directory         | Purpose                                                                                  |
+| ----------------- | ---------------------------------------------------------------------------------------- |
+| `proposals/`      | KIP proposals: the deliberative record of what was proposed, why, and how it was decided |
+| `specifications/` | KIS documents: the accepted, normative specifications of the ecosystem                   |
+| `schemas/`        | JSON Schemas that machines validate Knowledge Packages and other artefacts against       |
+| `templates/`      | Starter file sets for creating new Knowledge Packages at each conformance level          |
+| `examples/`       | Worked, valid reference packages illustrating the schema and conventions                 |
+| `docs/`           | Process, versioning, adoption and architectural context documentation                    |
+| `tooling/`        | Guidance on validating packages today, and on tooling anticipated in future              |
 
 ## Current documents
 
-| Number | Title | Status |
-| --- | --- | --- |
+| Number                                                          | Title              | Status   |
+| --------------------------------------------------------------- | ------------------ | -------- |
 | [KIP-000001](proposals/KIP-000001-knowledge-packages/README.md) | Knowledge Packages | Accepted |
-| [KIS-0001](specifications/KIS-0001-knowledge-package/README.md) | Knowledge Package | Draft |
+| [KIS-0001](specifications/KIS-0001-knowledge-package/README.md) | Knowledge Package  | Draft    |
 
 ## How to propose a change
 

@@ -52,11 +52,11 @@ To serve as the shared cognitive work unit, a package needs to carry — at leas
 - **Provenance** — who and what created the content, from which sources, by what method, so the work can be trusted and traced.
 - **Governance and classification** — the steward, promotion policy, retention, and a classification (`public`, `internal`, `confidential`, `privileged`) that travels with the package and gates how it may be handled.
 - **Agent handover instructions** — explicit guidance and resume points for an agent asked to take the work forward.
-- **Lifecycle state** — where the package sits in its own lifecycle (an in-progress package can be `draft`, `active`, `superseded` or `archived`; note this is the *package's* lifecycle, not the maturity of the knowledge it may later become).
+- **Lifecycle state** — where the package sits in its own lifecycle (an in-progress package can be `draft`, `active`, `superseded` or `archived`; note this is the _package's_ lifecycle, not the maturity of the knowledge it may later become).
 - **History** — a record of the events that shaped the package, for audit and understanding.
 - **Related artefacts** — links to other packages and knowledge it supersedes, is superseded by, depends on, is part of, or has been promoted to.
 
-Not all of this is mandatory. The proposal is that the *required core* be kept minimal — enough to identify, classify, own and summarise a package — and everything else be optional, so a package can be as light as a single digest or as rich as a full programme of work. The normative division between required and optional is left to the specification.
+Not all of this is mandatory. The proposal is that the _required core_ be kept minimal — enough to identify, classify, own and summarise a package — and everything else be optional, so a package can be as light as a single digest or as rich as a full programme of work. The normative division between required and optional is left to the specification.
 
 ### Human and agent interoperability and resumption
 
@@ -69,16 +69,16 @@ Knowledge Islands is an architectural kernel with domain-specific modules layere
 - **The kernel** defines and understands the package primitive; every module and tool speaks it.
 - **The planner and orchestration layer** produce and consume packages: a planner can emit a package describing work to be done, agents can update it as they progress, and the package is how the state of orchestrated work is handed on and resumed.
 - **Kernel modules** attach their domain knowledge to packages and draw on packages relevant to their domain, without the package format needing to know anything domain-specific.
-- **Knowledge promotion** is where packages meet the organisation's durable, canonical knowledge. A package is working material — the live state of a piece of thinking. Some of what a package contains will, once settled and reviewed, deserve to become canonical organisational knowledge held in a module. That transition is *promotion*, and it is deliberately a governed step with a human review point, not an automatic consequence of a package existing. Package content and promoted canonical knowledge are distinct: the package is the workbench, the promoted knowledge is what has earned a place in the organisation's retained record. The `promotedTo` relation records where package content has been elevated.
+- **Knowledge promotion** is where packages meet the organisation's durable, canonical knowledge. A package is working material — the live state of a piece of thinking. Some of what a package contains will, once settled and reviewed, deserve to become canonical organisational knowledge held in a module. That transition is _promotion_, and it is deliberately a governed step with a human review point, not an automatic consequence of a package existing. Package content and promoted canonical knowledge are distinct: the package is the workbench, the promoted knowledge is what has earned a place in the organisation's retained record. The `promotedTo` relation records where package content has been elevated.
 
 This keeps a clean separation: models are replaceable engines; packages hold the state; modules hold the domain knowledge; promotion is the governed gate between working state and retained knowledge.
 
 ## Risks and mitigations
 
-- **Over-formalisation.** A unit that demands too much structure will not be used; people will route around it. *Mitigation:* keep the required core minimal, make almost everything optional, and let packages be as light as a single digest.
-- **Stale packages.** Packages capture a moment; left untended they drift out of date and mislead. *Mitigation:* first-class lifecycle state and history, an `updated` timestamp, and `supersedes`/`supersededBy` relations so a package can be explicitly retired or replaced rather than lingering ambiguously.
-- **Classification mishandling.** A portable unit that moves freely can carry confidential or privileged material across boundaries it should not. *Mitigation:* classification is a required, first-class property that travels with the package and gates handling; governance carries the steward and retention; promotion is a human-reviewed gate.
-- **Adoption friction.** A new primitive competes with the path of least resistance — just talking to an assistant. *Mitigation:* make packages cheap to produce and consume, let planners and agents emit and update them automatically, and design the digests so the human cost of engaging with a package is low.
+- **Over-formalisation.** A unit that demands too much structure will not be used; people will route around it. _Mitigation:_ keep the required core minimal, make almost everything optional, and let packages be as light as a single digest.
+- **Stale packages.** Packages capture a moment; left untended they drift out of date and mislead. _Mitigation:_ first-class lifecycle state and history, an `updated` timestamp, and `supersedes`/`supersededBy` relations so a package can be explicitly retired or replaced rather than lingering ambiguously.
+- **Classification mishandling.** A portable unit that moves freely can carry confidential or privileged material across boundaries it should not. _Mitigation:_ classification is a required, first-class property that travels with the package and gates handling; governance carries the steward and retention; promotion is a human-reviewed gate.
+- **Adoption friction.** A new primitive competes with the path of least resistance — just talking to an assistant. _Mitigation:_ make packages cheap to produce and consume, let planners and agents emit and update them automatically, and design the digests so the human cost of engaging with a package is low.
 
 ## What this proposal asks for
 

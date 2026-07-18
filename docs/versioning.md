@@ -32,10 +32,10 @@ The same `uuid` is stable across every version of a given package; the `id`'s `@
 
 ## Compatibility promises
 
-| Axis | What changing it promises |
-| --- | --- |
-| KIS document version (patch) | No change in meaning; safe to re-read, nothing to re-validate |
-| KIS document version (minor) | Existing conformant packages remain conformant; new optional capability is available |
-| KIS document version (major) | Previously conformant packages or implementations may need changes; always via a new KIP |
-| Schema `$id` (major.minor) | Identifies exactly which normative contract a manifest was validated against |
+| Axis                                 | What changing it promises                                                                                           |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| KIS document version (patch)         | No change in meaning; safe to re-read, nothing to re-validate                                                       |
+| KIS document version (minor)         | Existing conformant packages remain conformant; new optional capability is available                                |
+| KIS document version (major)         | Previously conformant packages or implementations may need changes; always via a new KIP                            |
+| Schema `$id` (major.minor)           | Identifies exactly which normative contract a manifest was validated against                                        |
 | Package version (`id`'s `@<semver>`) | Identifies a specific state of a specific package's content; consumers use `uuid` to track identity across versions |

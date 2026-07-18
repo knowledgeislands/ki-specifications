@@ -15,8 +15,7 @@ The kernel scheduling interface decides, for a given Knowledge Package and the k
 
 ## Execution routes
 
-Three routes are recognised: subscription-native (a human's own model subscription drives the work interactively), API (programmatic dispatch to a provider's API), and local (a model running on infrastructure the organisation controls).
-A package MUST be able to move between routes across its life without losing governed context, because that context lives in the package, not in any route's session state.
+Three routes are recognised: subscription-native (a human's own model subscription drives the work interactively), API (programmatic dispatch to a provider's API), and local (a model running on infrastructure the organisation controls). A package MUST be able to move between routes across its life without losing governed context, because that context lives in the package, not in any route's session state.
 
 ## Output of a scheduling decision
 

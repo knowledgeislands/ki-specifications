@@ -1,12 +1,12 @@
 # KIP-000001 — Introduce Knowledge Packages as a Core Knowledge Islands Primitive
 
-| Field | Value |
-| --- | --- |
-| Number | KIP-000001 |
-| Title | Introduce Knowledge Packages as a Core Knowledge Islands Primitive |
-| Status | Accepted |
-| Created | 2026-07-11 |
-| Accepted | 2026-07-11 |
+| Field          | Value                                                                            |
+| -------------- | -------------------------------------------------------------------------------- |
+| Number         | KIP-000001                                                                       |
+| Title          | Introduce Knowledge Packages as a Core Knowledge Islands Primitive               |
+| Status         | Accepted                                                                         |
+| Created        | 2026-07-11                                                                       |
+| Accepted       | 2026-07-11                                                                       |
 | Implemented by | [KIS-0001 — Knowledge Package](../../specifications/KIS-0001-knowledge-package/) |
 
 This proposal argues for the Knowledge Package: a portable, governed, model-independent unit of shared cognitive work that lets humans and AI agents hand work to one another and resume it without losing context, and without surrendering that context to a single vendor's opaque memory.

@@ -1,10 +1,8 @@
 # KIS-0001 — Conformance
 
-Status: Draft
-Version: 1.0.0
+Status: Draft Version: 1.0.0
 
-A Knowledge Package declares its intended depth of conformance through the `conformanceLevel` field, whose value is `minimal`, `standard`, or `extended`.
-A package that omits the field is validated at the **Minimal** level.
+A Knowledge Package declares its intended depth of conformance through the `conformanceLevel` field, whose value is `minimal`, `standard`, or `extended`. A package that omits the field is validated at the **Minimal** level.
 
 Conformance is the conjunction of two checks:
 
@@ -45,6 +43,4 @@ Everything in Standard, plus:
 
 ## Declaring and checking a level
 
-A validator MUST determine the effective level from `conformanceLevel` (defaulting to Minimal), run the schema check, then run the checklist for that level.
-A validator MUST report the level checked and each failed item.
-A package MUST NOT declare a level whose checklist it does not satisfy.
+A validator MUST determine the effective level from `conformanceLevel` (defaulting to Minimal), run the schema check, then run the checklist for that level. A validator MUST report the level checked and each failed item. A package MUST NOT declare a level whose checklist it does not satisfy.

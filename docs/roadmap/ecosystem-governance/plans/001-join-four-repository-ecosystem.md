@@ -17,10 +17,10 @@ The repository already defines the KIP/KIS lifecycle and identifies itself as no
 
 ## Steps
 
-1. [ ] Adopt the mirrored GDR001/GDR002 foundations and add Decision Records governance to `.ki-config.toml`.
-2. [ ] Add the four-repository role, working, commit, and choreography conventions to repository orientation.
-3. [ ] Re-bootstrap the repository so its declared Decision Records and roadmap checkers are self-contained.
-4. [ ] Run the repository audit and verify the roadmap and decision indexes.
+1. [x] Adopt the mirrored GDR001/GDR002 foundations and add Decision Records governance to `.ki-config.toml`.
+2. [x] Add the four-repository role, working, commit, and choreography conventions to repository orientation.
+3. [x] Re-bootstrap the repository so its declared Decision Records and roadmap checkers are self-contained.
+4. [x] Run the repository audit and verify the roadmap and decision indexes.
 5. [ ] Close the plan through the plan lifecycle after the unit is committed and verified.
 
 ## Files touched

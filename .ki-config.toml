@@ -5,8 +5,17 @@
 visibility = "public"
 license = "MIT"
 
+[ki-repo.checks]
+
+# KI Specifications does not yet have a dedicated repository-structure skill.
+structure = false
+
 # ki-authoring standard (Markdown/TOML house style) is baseline for this repo.
 [ki-authoring]
+
+# Decision Records describe significant, durable specification-governance
+# decisions. Presence is the compliance marker; records live in docs/decisions/.
+[ki-decision-records]
 
 # This non-KB repository uses a thematic project roadmap for multi-step work.
 [ki-project-roadmap]
