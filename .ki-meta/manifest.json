@@ -16,11 +16,16 @@
     ".ki-meta/checkers/ki-project-roadmap/references/rubric.md": "36f03cc7fc539f9c59ce0900aec4f847f2d8df19560c8247bb8b6e9584c57080",
     ".ki-meta/checkers/ki-project-roadmap/scripts/vendored/ki-skills/checker-reporter.ts": "41d95a0c1759278f87812a91d283b85cc036349be1010eb0cc53580e3ba22344",
     ".ki-meta/checkers/ki-project-roadmap/help.md": "90d971defbbb7177bb8da0fc4658344d61fe6c7f689c01403c6ef441abda2617",
-    ".ki-meta/checkers/ki-repo/scripts/audit.ts": "78f412da69b8bb9a76e9c93c968c9ec0e981e50d60990348aa28fb1b94ca9a73",
+    ".ki-meta/checkers/ki-repo/scripts/audit.ts": "6b5c1981943f8687268d082bd0f63725e68f8ce6df5dbbc71d5179f29da2c23c",
     ".ki-meta/checkers/ki-repo/scripts/conform.ts": "9d86828cb458b6f4a3dc7c1dac97d28af9cd48714986cc1841f52adc03d34fc6",
-    ".ki-meta/checkers/ki-repo/references/rubric.md": "928ef82f285d4276937feee7da33c78d4fc7702e655dd7bd2d27de15ae7acad6",
+    ".ki-meta/checkers/ki-repo/references/rubric.md": "f026aab64392d007270d66d7da39e08c50da8be0b52bb4a28500056471cddd78",
     ".ki-meta/checkers/ki-repo/scripts/vendored/ki-skills/checker-reporter.ts": "41d95a0c1759278f87812a91d283b85cc036349be1010eb0cc53580e3ba22344",
     ".ki-meta/checkers/ki-repo/help.md": "c5167327b31559fd7c70c5cd9bfe44e68343ea135a4d145197a339a1a83dec83",
+    ".ki-meta/checkers/ki-specifications/scripts/audit.ts": "e1c99d24f7351d043a352a6faa5fd33c3c80358c3f6b7dd64c1d7c683fead573",
+    ".ki-meta/checkers/ki-specifications/scripts/conform.ts": "3d63a6ea329a820d53ab143cf8803557017543012252b93ab3e0c7f6c74d98fe",
+    ".ki-meta/checkers/ki-specifications/references/rubric.md": "7ec50ffc63e9ee12b0dea3bbac6687a3c8d77f735e2c9130043b55f5d05e23fc",
+    ".ki-meta/checkers/ki-specifications/scripts/vendored/ki-skills/checker-reporter.ts": "41d95a0c1759278f87812a91d283b85cc036349be1010eb0cc53580e3ba22344",
+    ".ki-meta/checkers/ki-specifications/help.md": "a6d2cf37824d7d3cba2e286030c3bf62bed5d39dcfff6a28b1dba208be5b1215",
     ".ki-meta/bin/aggregate.ts": "b7cfeba11bfed928c0313eb86112378dea7161c11171c472a03a8912ab4aaaaa"
   }
 }
