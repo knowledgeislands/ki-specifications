@@ -15,5 +15,5 @@ license = "MIT"
 # decisions. Presence is the compliance marker; records live in docs/decisions/.
 [ki-decision-records]
 
-# This non-KB repository uses a thematic project roadmap for multi-step work.
+# This non-KB repository uses a thematic repo roadmap for multi-step work.
 [ki-repo-roadmap]
