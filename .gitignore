@@ -10,3 +10,6 @@ node_modules/
 # Derived audit/conform artifacts (ki-repo) — regenerated each run
 .ki-meta/audits/
 .ki-meta/conform/
+
+# Generated project-local runtime payloads (ki-bootstrap) — never committed
+.agents/skills/
