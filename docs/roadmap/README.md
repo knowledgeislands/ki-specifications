@@ -1,9 +1,8 @@
-# Project roadmap index
+# Repository roadmap index
 
 Canonical themes and active execution plans.
 
 ## Themes
-
 
 ## Active plans
 
