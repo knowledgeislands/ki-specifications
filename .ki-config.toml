@@ -16,4 +16,4 @@ license = "MIT"
 [ki-decision-records]
 
 # This non-KB repository uses a thematic project roadmap for multi-step work.
-[ki-project-roadmap]
+[ki-repo-roadmap]

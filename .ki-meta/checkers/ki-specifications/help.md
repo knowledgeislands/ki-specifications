@@ -12,4 +12,4 @@ Audits, conforms, and scaffolds the deliberately minimal repository structure fo
 - `HELP`
 - `REFRESH`
 
-**See also:** It adds only the specifications-specific structural delta; use `ki-repo` for universal repository files and GitHub settings, `ki-decision-records` for decisions, and `ki-project-roadmap` for planning.
+**See also:** It adds only the specifications-specific structural delta; use `ki-repo` for universal repository files and GitHub settings, `ki-decision-records` for decisions, and `ki-repo-roadmap` for planning.
