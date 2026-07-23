@@ -1,7 +1,7 @@
 ---
 id: 'KEP-001'
 title: Specify Knowledge Export Package v0 and the acquisition boundary
-status: acceptance
+status: done
 roadmap: knowledge-acquisition/specify-knowledge-export-package-v0-and-the-acquisition-boundary
 blocks: —
 blocked-by: —
@@ -71,3 +71,7 @@ The repository-wide `ki-authoring` audit reports pre-existing `.markdownlint-cli
 ### Mini recap
 
 KEP is deliberately evidence rather than knowledge: a connector can be deterministic and inspectable without deciding what the source material means. That makes the first CLI import useful without collapsing acquisition into extraction or governance.
+
+## Done
+
+Manual acceptance confirmed KIP-000002 and Draft KIS-0002 as the KEP v0 contract. CLI-002 may implement against this Draft specification.
