@@ -1,7 +1,7 @@
 ---
 id: 'KEP-001'
 title: Specify Knowledge Export Package v0 and the acquisition boundary
-status: open
+status: in-progress
 roadmap: knowledge-acquisition/specify-knowledge-export-package-v0-and-the-acquisition-boundary
 blocks: —
 blocked-by: —
