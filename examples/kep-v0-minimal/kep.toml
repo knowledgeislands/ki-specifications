@@ -1,0 +1,21 @@
+format = "kep"
+format_version = "0.1.0"
+package_id = "kep:sha256:893c02f2a1ab395aabd566b9eafa49e6807a42fa1ef86c860b6b8921df4e90fc"
+payload_sha256 = "893c02f2a1ab395aabd566b9eafa49e6807a42fa1ef86c860b6b8921df4e90fc"
+omissions = []
+normalisations = []
+checksum_manifest = "checksums/sha256sums.txt"
+
+[connector]
+id = "example.local-capture"
+version = "0.1.0"
+mode = "user-assisted"
+
+[source]
+system = "example"
+capture_boundary = "One exported conversation: example-001"
+
+[inventory]
+records = 1
+assets = 0
+relationships = 0

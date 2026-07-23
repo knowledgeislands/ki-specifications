@@ -15,17 +15,17 @@ The first consumer is the planned `ki acquire chatgpt import` command in `knowle
 
 ## Current state
 
-The repository has existing knowledge-package proposals and specifications, but no adopted KEP v0 contract for source-system acquisition. The harness supplied an implementation-ready brief; it is input, not a normative specification.
+KIP-000002 and Draft KIS-0002 now define KEP v0, including the canonical directory, TOML manifest, checksum identity, validator behaviour, and a user-assisted ChatGPT profile. The harness brief was used as input; KI Specifications now owns the normative contract.
 
 ## Steps
 
-1. Map the proposed KEP lifecycle onto the existing KIP/KIS vocabulary and decide the canonical specification identifier, publication location, and conformance relationship.
-2. Specify the KEP v0 directory payload, manifest fields, content-derived identity, provenance, record inventory, asset inventory, native relationships, omissions, and checksum contract.
-3. Define deterministic generation and validation requirements, including immutable payload boundaries and the exclusion of checkpoints, browser state, credentials, caches, and logs.
-4. Define the KAF connector boundary and the user-assisted ChatGPT import profile without specifying browser automation, APIs, authenticated scraping, extraction, or ingress.
-5. Publish conformance fixtures and a validator-oriented error model sufficient for a separate `tools-ki` implementation to prove a KEP is complete or explain its omissions.
-6. Link the KEP to the downstream KBEP and KBIP boundaries, preserving upstream lineage and naming deferred schema decisions explicitly.
-7. Run the repository's documentation, specification, roadmap, and link checks; prepare this plan for manual acceptance.
+1. [x] Map the proposed KEP lifecycle onto the existing KIP/KIS vocabulary and decide the canonical specification identifier, publication location, and conformance relationship.
+2. [x] Specify the KEP v0 directory payload, manifest fields, content-derived identity, provenance, record inventory, asset inventory, native relationships, omissions, and checksum contract.
+3. [x] Define deterministic generation and validation requirements, including immutable payload boundaries and the exclusion of checkpoints, browser state, credentials, caches, and logs.
+4. [x] Define the KAF connector boundary and the user-assisted ChatGPT import profile without specifying browser automation, APIs, authenticated scraping, extraction, or ingress.
+5. [x] Publish conformance fixtures and a validator-oriented error model sufficient for a separate `tools-ki` implementation to prove a KEP is complete or explain its omissions.
+6. [x] Link the KEP to the downstream KBEP and KBIP boundaries, preserving upstream lineage and naming deferred schema decisions explicitly.
+7. [x] Run the repository's documentation, specification, roadmap, and link checks; prepare this plan for manual acceptance.
 
 ## Files touched
 

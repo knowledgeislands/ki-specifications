@@ -17,3 +17,4 @@ A KIP moves through `Draft → Review → Accepted | Rejected | Withdrawn`. An `
 | Number | Title | Status | Created | Resolution |
 | --- | --- | --- | --- | --- |
 | [KIP-000001](KIP-000001-knowledge-packages/) | Introduce Knowledge Packages as a Core Knowledge Islands Primitive | Accepted | 2026-07-11 | Accepted 2026-07-11; implemented by [KIS-0001](../specifications/KIS-0001-knowledge-package/) |
+| [KIP-000002](KIP-000002-knowledge-export-package/) | Introduce the Knowledge Export Package | Implemented | 2026-07-23 | Implemented by [KIS-0002](../specifications/KIS-0002-knowledge-export-package/) |
