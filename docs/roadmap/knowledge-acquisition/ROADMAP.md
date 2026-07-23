@@ -1,6 +1,8 @@
-# Repository roadmap
+---
+code: KEP
+---
 
-This portfolio view is generated from the canonical theme roadmaps under `docs/roadmap/`. Edit those files, then run `ki-repo-roadmap` CONFORM.
+# Knowledge acquisition roadmap
 
 ## Blocking
 
@@ -10,7 +12,11 @@ Actively broken, or blocking the `Next` horizon: takes priority over everything 
 
 Scoped and ready to start — the immediate queue, picked up before anything in **Soon** or **Future**.
 
-- [Knowledge Acquisition: Specify Knowledge Export Package v0 and the acquisition boundary](docs/roadmap/knowledge-acquisition/ROADMAP.md#specify-knowledge-export-package-v0-and-the-acquisition-boundary)
+### Specify Knowledge Export Package v0 and the acquisition boundary
+
+Adopt the portable KEP contract that sits between faithful source acquisition and downstream knowledge extraction. It must give the first `ki acquire` implementation a deterministic, provenance-preserving output without defining a connector implementation or Knowledge Base ingress.
+
+**Plan:** [KEP-001](plans/KEP-001-specify-kep-v0-and-acquisition-boundary.md)
 
 ## Soon
 
