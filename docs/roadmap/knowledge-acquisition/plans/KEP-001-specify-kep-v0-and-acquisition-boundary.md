@@ -1,7 +1,7 @@
 ---
 id: 'KEP-001'
 title: Specify Knowledge Export Package v0 and the acquisition boundary
-status: in-progress
+status: acceptance
 roadmap: knowledge-acquisition/specify-knowledge-export-package-v0-and-the-acquisition-boundary
 blocks: —
 blocked-by: —
@@ -44,3 +44,30 @@ KIP-000002 and Draft KIS-0002 now define KEP v0, including the canonical directo
 ## Dependencies / blocks
 
 Origin: `ki-agentic-harness` GOV-001, recorded done. This plan is a genuine prerequisite for the acquisition output contract in `tools-ki`; the receiving repository owns its own plan and schedule.
+
+## Acceptance
+
+### Delivered
+
+KIP-000002 and Draft KIS-0002 establish a portable KEP v0 contract for immutable source evidence, including the first user-assisted ChatGPT profile and a checksum-valid fixture.
+
+### Summary of changes
+
+- Added the KIP mandate and KIS registry entry.
+- Published the KEP directory, manifest, identity, conformance, and validation contract.
+- Added an informative minimal fixture with verified checksum and package identity.
+
+### Verification
+
+- `shasum -a 256 -c checksums/sha256sums.txt` — passed for every fixture payload file.
+- Focused Prettier and markdownlint checks for all changed Markdown — passed.
+- `ki-repo-roadmap` audit — passed with no FAIL or WARN findings.
+- Implementation evidence: `9e04ce9`.
+
+### Outstanding concerns
+
+The repository-wide `ki-authoring` audit reports pre-existing `.markdownlint-cli2.jsonc` template drift; the new KEP Markdown passes focused linting. Archive encoding, signatures, browser/API acquisition, and downstream KBEP/KBIP schemas remain explicitly deferred.
+
+### Mini recap
+
+KEP is deliberately evidence rather than knowledge: a connector can be deterministic and inspectable without deciding what the source material means. That makes the first CLI import useful without collapsing acquisition into extraction or governance.
