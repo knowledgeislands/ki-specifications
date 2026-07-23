@@ -1,7 +1,7 @@
 format = "kep"
 format_version = "0.1.0"
-package_id = "kep:sha256:893c02f2a1ab395aabd566b9eafa49e6807a42fa1ef86c860b6b8921df4e90fc"
-payload_sha256 = "893c02f2a1ab395aabd566b9eafa49e6807a42fa1ef86c860b6b8921df4e90fc"
+package_id = "kep:sha256:ec0912e63d0a0a93ebabaff7785e20724a7f4a81b1851cb48f0a1de54dd22900"
+payload_sha256 = "ec0912e63d0a0a93ebabaff7785e20724a7f4a81b1851cb48f0a1de54dd22900"
 omissions = []
 normalisations = []
 checksum_manifest = "checksums/sha256sums.txt"
@@ -18,4 +18,4 @@ capture_boundary = "One exported conversation: example-001"
 [inventory]
 records = 1
 assets = 0
-relationships = 0
+relationships = 1
