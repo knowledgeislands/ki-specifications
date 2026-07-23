@@ -10,8 +10,6 @@ Actively broken, or blocking the `Next` horizon: takes priority over everything 
 
 Scoped and ready to start — the immediate queue, picked up before anything in **Soon** or **Future**.
 
-- [Knowledge Acquisition: Specify Knowledge Export Package v0 and the acquisition boundary](docs/roadmap/knowledge-acquisition/ROADMAP.md#specify-knowledge-export-package-v0-and-the-acquisition-boundary)
-
 ## Soon
 
 Understood and roughly scoped but not yet started — worth doing once the **Next** queue clears, ahead of anything still speculative.
