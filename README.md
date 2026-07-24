@@ -8,9 +8,9 @@ Knowledge Islands is an open-source operating system for governed human and AI k
 
 ## Place in the Knowledge Islands ecosystem
 
-KI Specifications is the canonical source of normative portable contracts, including KIPs, KIS documents, schemas, templates, conformance rules, and reference examples. It formalises concepts established in [Arcadia Principal](https://github.com/knowledgeislands/ki-arcadia-principal) and implementation evidence from the [KI Agentic Harness](https://github.com/knowledgeislands/ki-agentic-harness); an Active KIS governs implementations that claim conformance within its scope.
+KI Specifications is the canonical source of normative portable contracts, including KIPs, KIS documents, schemas, templates, conformance rules, and reference examples. It formalises concepts established in [Arcadia Principal](https://github.com/knowledgeislands/ki-arcadia-principal) and implementation evidence from the [KI Agentic Harness](https://github.com/knowledgeislands/ki-agentic-harness) and [tools-ki](https://github.com/knowledgeislands/tools-ki); an Active KIS governs implementations that claim conformance within its scope.
 
-The [KI Website](https://github.com/knowledgeislands/ki-website) may vendor source-labelled specification material for autonomous public publication, while this repository remains canonical for the normative contracts. The mirrored [ecosystem decision](docs/decisions/GDR-KI-ARCADIA-002-knowledge-islands-ecosystem-fundamentals.md) defines the four authorities and publication flows.
+The [KI Website](https://github.com/knowledgeislands/ki-website) may vendor source-labelled specification material for autonomous public publication, while this repository remains canonical for the normative contracts. The mirrored [ecosystem decision](docs/decisions/GDR-KI-ARCADIA-002-knowledge-islands-ecosystem-fundamentals.md) defines the five authorities and publication flows.
 
 ## The KIP/KIS model
 
