@@ -43,7 +43,9 @@ Together the two series separate the deliberative process (KIP: should we do thi
 | Number                                                          | Title              | Status   |
 | --------------------------------------------------------------- | ------------------ | -------- |
 | [KIP-000001](proposals/KIP-000001-knowledge-packages/README.md) | Knowledge Packages | Accepted |
+| [KIP-000002](proposals/KIP-000002-knowledge-export-package/README.md) | Knowledge Export Package | Implemented |
 | [KIS-0001](specifications/KIS-0001-knowledge-package/README.md) | Knowledge Package  | Draft    |
+| [KIS-0002](specifications/KIS-0002-knowledge-export-package/README.md) | Knowledge Export Package | Draft |
 
 ## How to propose a change
 
