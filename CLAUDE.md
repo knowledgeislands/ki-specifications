@@ -21,5 +21,5 @@ The normative standards and governance layer for the Knowledge Islands ecosystem
 ## Validation
 
 - Manifests against the schema: `bun x ajv-cli validate --spec=draft2020 -c ajv-formats -s schemas/knowledge-package.schema.json -d <manifest>` (fallback: a small ajv script — see [tooling/README.md](tooling/README.md)).
-- Repo self-audit (vendored, zero-install): `./.ki-meta/bin/ki-audit`.
+- Repo self-audit: `ki repo audit --repo .`.
 - Every JSON file must parse; every relative Markdown link must resolve; all example and template manifests must validate.
