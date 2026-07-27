@@ -1,6 +1,8 @@
-# Repository roadmap
+---
+code: RGV
+---
 
-This portfolio view is generated from the canonical theme roadmaps under `docs/roadmap/`. Edit those files, then run `ki-roadmap` CONFORM.
+# Repository governance roadmap
 
 ## Blocking
 
@@ -14,9 +16,11 @@ Scoped and ready to start — the immediate queue, picked up before anything in 
 
 Understood and roughly scoped but not yet started — worth doing once the **Next** queue clears, ahead of anything still speculative.
 
-- [Knowledge Ingress: Assess KBEP knowledge-base extraction protocol](docs/roadmap/knowledge-ingress/ROADMAP.md#assess-kbep-knowledge-base-extraction-protocol)
-- [Knowledge Ingress: Assess KBIP knowledge-base-ingress protocol](docs/roadmap/knowledge-ingress/ROADMAP.md#assess-kbip-knowledge-base-ingress-protocol)
-- [Repository Governance: Review KI Specifications as a complete repository](docs/roadmap/repository-governance/ROADMAP.md#review-ki-specifications-as-a-complete-repository)
+### Review KI Specifications as a complete repository
+
+Review the repository end to end before expanding its normative surface: re-evaluate the KIP/KIS authority model, proposal and specification lifecycle, repository structure, source and supporting documentation, current tool configuration, and accumulated governance drift.
+
+Keep this review separate from the narrow KBEP and KBIP assessments. It should establish which parts of the repository remain correct, which need a clean-end-state cutover, and what evidence is required before deeper specification work proceeds.
 
 ## Waiting for
 
