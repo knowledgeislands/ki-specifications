@@ -18,3 +18,11 @@ license = "MIT"
 
 # This non-KB repository uses a thematic repo roadmap for multi-step work.
 [ki-roadmap]
+
+[ki-tokenomics]
+
+[ki-housekeeping-claude]
+
+[ki-tokenomics-claude]
+
+[ki-tokenomics-codex]
