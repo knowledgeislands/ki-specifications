@@ -4,6 +4,8 @@ supported_runtimes = ["claude-code", "codex"]
 visibility = "public"
 license = "MIT"
 
+[ki-git]
+
 [ki-authoring]
 
 [ki-specifications]
