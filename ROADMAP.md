@@ -10,13 +10,14 @@ Actively broken, or blocking the `Next` horizon: takes priority over everything 
 
 Scoped and ready to start — the immediate queue, picked up before anything in **Soon** or **Future**.
 
+- [Repository Governance: Review KI Specifications as a complete repository](docs/roadmap/repository-governance/ROADMAP.md#review-ki-specifications-as-a-complete-repository)
+
 ## Soon
 
 Understood and roughly scoped but not yet started — worth doing once the **Next** queue clears, ahead of anything still speculative.
 
 - [Knowledge Ingress: Assess KBEP knowledge-base extraction protocol](docs/roadmap/knowledge-ingress/ROADMAP.md#assess-kbep-knowledge-base-extraction-protocol)
 - [Knowledge Ingress: Assess KBIP knowledge-base-ingress protocol](docs/roadmap/knowledge-ingress/ROADMAP.md#assess-kbip-knowledge-base-ingress-protocol)
-- [Repository Governance: Review KI Specifications as a complete repository](docs/roadmap/repository-governance/ROADMAP.md#review-ki-specifications-as-a-complete-repository)
 
 ## Waiting for
 
