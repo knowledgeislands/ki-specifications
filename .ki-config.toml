@@ -1,23 +1,23 @@
-[ki-repo]
+["knowledgeislands/ki-agentic-harness:ki-repo"]
 supported_runtimes = ["claude-code", "codex"]
 
 visibility = "public"
 license = "MIT"
 
-[ki-git]
+["knowledgeislands/ki-agentic-harness:ki-git"]
 
-[ki-authoring]
+["knowledgeislands/ki-agentic-harness:ki-authoring"]
 
-[ki-specifications]
+["knowledgeislands/ki-agentic-harness:ki-specifications"]
 
-[ki-decision-records]
+["knowledgeislands/ki-agentic-harness:ki-decision-records"]
 
-[ki-roadmap]
+["knowledgeislands/ki-agentic-harness:ki-roadmap"]
 
-[ki-tokenomics]
+["knowledgeislands/ki-agentic-harness:ki-tokenomics"]
 
-[ki-housekeeping-claude]
+["knowledgeislands/ki-agentic-harness:ki-housekeeping-claude"]
 
-[ki-tokenomics-claude]
+["knowledgeislands/ki-agentic-harness:ki-tokenomics-claude"]
 
-[ki-tokenomics-codex]
+["knowledgeislands/ki-agentic-harness:ki-tokenomics-codex"]
