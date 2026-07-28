@@ -1,5 +1,5 @@
 ---
-id: 'KIS-KIN-002'
+id: 'KI-SPEC-KIN-002'
 title: Assess KBIP knowledge-base-ingress protocol
 status: open
 roadmap: knowledge-ingress/assess-kbip-knowledge-base-ingress-protocol

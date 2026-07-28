@@ -18,7 +18,7 @@ Review the repository end to end before expanding its normative surface: re-eval
 
 Keep this review separate from the narrow KBEP and KBIP assessments. It should establish which parts of the repository remain correct, which need a clean-end-state cutover, and what evidence is required before deeper specification work proceeds.
 
-**Plan:** [KIS-RGV-001](plans/KIS-RGV-001-review-specifications-repository.md)
+**Plan:** [KI-SPEC-RGV-001](plans/KI-SPEC-RGV-001-review-specifications-repository.md)
 
 ## Soon
 

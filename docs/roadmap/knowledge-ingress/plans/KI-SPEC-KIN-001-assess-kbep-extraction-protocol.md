@@ -1,5 +1,5 @@
 ---
-id: 'KIS-KIN-001'
+id: 'KI-SPEC-KIN-001'
 title: Assess KBEP knowledge-base extraction protocol
 status: open
 roadmap: knowledge-ingress/assess-kbep-knowledge-base-extraction-protocol
