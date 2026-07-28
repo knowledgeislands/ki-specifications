@@ -13,6 +13,7 @@ license = "MIT"
 ["knowledgeislands/ki-agentic-harness:ki-decision-records"]
 
 ["knowledgeislands/ki-agentic-harness:ki-roadmap"]
+repo_code = "KIS"
 
 ["knowledgeislands/ki-agentic-harness:ki-tokenomics"]
 

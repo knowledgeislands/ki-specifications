@@ -1,5 +1,5 @@
 ---
-id: 'RGV-001'
+id: 'KIS-RGV-001'
 title: Review KI Specifications as a complete repository
 status: open
 roadmap: repository-governance/review-ki-specifications-as-a-complete-repository

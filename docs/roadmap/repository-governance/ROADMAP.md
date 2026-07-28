@@ -18,7 +18,7 @@ Review the repository end to end before expanding its normative surface: re-eval
 
 Keep this review separate from the narrow KBEP and KBIP assessments. It should establish which parts of the repository remain correct, which need a clean-end-state cutover, and what evidence is required before deeper specification work proceeds.
 
-**Plan:** [RGV-001](plans/RGV-001-review-specifications-repository.md)
+**Plan:** [KIS-RGV-001](plans/KIS-RGV-001-review-specifications-repository.md)
 
 ## Soon
 
@@ -26,7 +26,11 @@ Understood and roughly scoped but not yet started — worth doing once the **Nex
 
 ## Waiting for
 
-Worth doing, but presently blocked on an external dependency or decision. Revisit when its named condition changes rather than treating it as dormant local work.
+Worth doing, but presently blocked on an external dependency or decision. Revisit when its named condition changes; do not use this horizon for intentionally paused work.
+
+## Parked
+
+Intentionally paused work with no current attention. Revisit only when its priority or named return trigger changes.
 
 ## Future
 

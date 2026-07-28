@@ -22,7 +22,7 @@ Adopt the parked KBEP handoff as a local assessment, not as an accepted protocol
 
 This item is independently schedulable and does not block the current specification queue. It preserves the extraction, provenance, relationship, quality-review, and output-structure concerns transferred by the KI Agentic Harness without accepting their concrete pipeline or format.
 
-**Plan:** [KIN-001](plans/KIN-001-assess-kbep-extraction-protocol.md)
+**Plan:** [KIS-KIN-001](plans/KIS-KIN-001-assess-kbep-extraction-protocol.md)
 
 ### Assess KBIP knowledge-base-ingress protocol
 
@@ -30,11 +30,15 @@ Adopt the parked KBIP handoff as a local assessment, not as an accepted protocol
 
 This item is independently schedulable and does not block the current specification queue. It preserves the transferred concerns for intake, canonicalisation, relationship enrichment, governance assignment, publication, and continuous evolution without accepting their concrete lifecycle or output structure.
 
-**Plan:** [KIN-002](plans/KIN-002-assess-kbip-ingress-protocol.md)
+**Plan:** [KIS-KIN-002](plans/KIS-KIN-002-assess-kbip-ingress-protocol.md)
 
 ## Waiting for
 
-Worth doing, but presently blocked on an external dependency or decision. Revisit when its named condition changes rather than treating it as dormant local work.
+Worth doing, but presently blocked on an external dependency or decision. Revisit when its named condition changes; do not use this horizon for intentionally paused work.
+
+## Parked
+
+Intentionally paused work with no current attention. Revisit only when its priority or named return trigger changes.
 
 ## Future
 
