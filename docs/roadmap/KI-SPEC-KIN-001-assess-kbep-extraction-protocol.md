@@ -1,11 +1,12 @@
 ---
 id: 'KI-SPEC-KIN-001'
 title: Assess KBEP knowledge-base extraction protocol
+theme: knowledge-ingress
+horizon: soon
 status: open
-roadmap: knowledge-ingress/assess-kbep-knowledge-base-extraction-protocol
-blocks: —
-blocked-by: —
-baseline-ref: —
+blocks: []
+blocked-by: []
+baseline-ref: null
 transferred-from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md
 ---
 
@@ -41,3 +42,7 @@ The handoff exists only in the harness working area. KI Specifications has no ad
 ## Dependencies / blocks
 
 This transferred record is deliberately open in `Soon`: no readiness approval has been given, and the work does not block a local `Next` item. The originating handoff neither blocks nor is blocked by this recipient-owned assessment; it supplies background while KI Specifications owns the adoption decision. KBIP may depend conceptually on the resulting extraction boundary, but its assessment can still determine its own scope and must not assume KBEP adoption.
+
+## Boundary
+
+Keep the work limited to the stated surface.

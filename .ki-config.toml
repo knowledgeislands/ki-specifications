@@ -15,6 +15,10 @@ license = "MIT"
 ["knowledgeislands/ki-agentic-harness:ki-roadmap"]
 repo_code = "KI-SPEC"
 
+["knowledgeislands/ki-agentic-harness:ki-roadmap".themes]
+KIN = "knowledge-ingress"
+RGV = "repository-governance"
+
 ["knowledgeislands/ki-agentic-harness:ki-tokenomics"]
 
 ["knowledgeislands/ki-agentic-harness:ki-housekeeping-claude"]

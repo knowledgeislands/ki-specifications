@@ -1,11 +1,12 @@
 ---
 id: 'KI-SPEC-RGV-001'
 title: Review KI Specifications as a complete repository
+theme: repository-governance
+horizon: next
 status: open
-roadmap: repository-governance/review-ki-specifications-as-a-complete-repository
-blocks: —
-blocked-by: —
-baseline-ref: —
+blocks: []
+blocked-by: []
+baseline-ref: null
 ---
 
 ## Context
@@ -61,3 +62,7 @@ The review may cite implementation evidence from other repositories, but it does
 - Round 1 — mechanical: inventory tracked legacy/runtime footprint, configuration drift, links, schemas, templates, examples, and current audit findings; read-only; gate: reproducible command output.
 - Round 2 — judgment: reconcile the one intended KIP/KIS and repository model from Round 1 evidence; gate: maintainer review before normative or governance edits.
 - Round 3 — implementation: apply the accepted clean end state in exclusive file groups; gate each group independently before commit.
+
+## Boundary
+
+Keep the work limited to the stated surface.
