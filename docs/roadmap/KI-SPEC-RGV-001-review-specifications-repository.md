@@ -15,6 +15,10 @@ KI Specifications is the normative home for portable Knowledge Islands contracts
 
 This is a clean-end-state review, not a compatibility migration. It must identify the actual authority boundaries and retain only the repository structure, lifecycle, documentation, and tooling that the current model needs.
 
+## Boundary
+
+Keep the work limited to the stated surface.
+
 ## Current state
 
 The repository carries two draft KIS document sets, two registered KIPs, schemas, templates, examples, process documentation, and one local governance decision plus one mirrored ecosystem decision.
@@ -63,6 +67,4 @@ The review may cite implementation evidence from other repositories, but it does
 - Round 2 — judgment: reconcile the one intended KIP/KIS and repository model from Round 1 evidence; gate: maintainer review before normative or governance edits.
 - Round 3 — implementation: apply the accepted clean end state in exclusive file groups; gate each group independently before commit.
 
-## Boundary
-
-Keep the work limited to the stated surface.
+## Discussion
