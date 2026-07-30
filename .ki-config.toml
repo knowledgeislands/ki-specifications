@@ -1,4 +1,7 @@
 ["knowledgeislands/ki-agentic-harness:ki-repo"]
+title = "ki-specifications"
+description = "Normative standards and governance for the Knowledge Islands ecosystem."
+repo_code = "KI-SPEC"
 supported_runtimes = ["claude-code", "codex"]
 
 visibility = "public"
@@ -13,8 +16,6 @@ license = "MIT"
 ["knowledgeislands/ki-agentic-harness:ki-decision-records"]
 
 ["knowledgeislands/ki-agentic-harness:ki-roadmap"]
-repo_code = "KI-SPEC"
-
 ["knowledgeislands/ki-agentic-harness:ki-roadmap".themes]
 KIN = "knowledge-ingress"
 RGV = "repository-governance"
