@@ -10,6 +10,10 @@ baseline-ref: null
 transferred-from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBIP-knowledge-base-ingress-protocol.md
 ---
 
+## Goal
+
+Achieve the stated outcome: Assess KBIP knowledge-base-ingress protocol.
+
 ## Context
 
 The KI Agentic Harness transferred a parked draft of the Knowledge Islands Knowledge Base Ingress Protocol (KBIP). Its useful concern is the boundary between extracted material and governed, evolving canonical knowledge, while its concrete lifecycle, governance model, and output structure remain unadopted.

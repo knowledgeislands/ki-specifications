@@ -10,6 +10,10 @@ baseline-ref: null
 transferred-from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md
 ---
 
+## Goal
+
+Achieve the stated outcome: Assess KBEP knowledge-base extraction protocol.
+
 ## Context
 
 The KI Agentic Harness transferred a parked draft of the Knowledge Base Extraction Protocol (KBEP). Its useful concern is a portable way to extract reusable, provenance-bearing knowledge from source material; it explicitly does not establish a receiving repository's protocol, implementation, or priority.

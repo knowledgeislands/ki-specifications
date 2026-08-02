@@ -9,6 +9,10 @@ blocked-by: []
 baseline-ref: null
 ---
 
+## Goal
+
+Achieve the stated outcome: Review KI Specifications as a complete repository.
+
 ## Context
 
 KI Specifications is the normative home for portable Knowledge Islands contracts, but its repository was bootstrapped before the current `ki` CLI and before its KIP/KIS model had been tested against sustained use. A close review is needed before expanding that normative surface.
@@ -29,13 +33,13 @@ The authority surface is spread across `README.md`, `GOVERNANCE.md`, `CONTRIBUTI
 
 ## Steps
 
-1. Inventory the complete repository authority surface and record which files are normative, informative, generated, illustrative, historical, or operational. Compare the stated ecosystem responsibility with the harness, `tools-ki`, Website, and Arcadia boundaries without importing their implementation detail.
-2. Reconcile the KIP/KIS governance model across `README.md`, `GOVERNANCE.md`, `CONTRIBUTING.md`, numbering, lifecycle, versioning, registries, status files, and Decision Records. Resolve contradictory status, version, authority, amendment, and publication claims through one clean current model.
-3. Review each existing KIP and KIS document set for internal completeness, correct lifecycle state, provenance to its originating decision, and an explicit normative-versus-informative boundary. Do not expand KBEP or KBIP here; keep their assessment plans independent.
-4. Review schemas, templates, examples, and tooling guidance against the specifications they claim to represent. Remove or correct unsupported conformance claims, stale anticipated behaviour, invalid fixtures, and duplicated authority; retain concrete validation evidence.
-5. Remove the retired `.ki-meta/` executor and vendored-checker footprint, align repository and authoring configuration with the current direct-CLI model, and correct the repository-owned audit findings. Treat the GitHub description as repository metadata, not specification prose.
-6. Decide whether any stable repository-shape rule belongs in the shared `ki-specifications` skill. Keep repository-specific detail local; route only a genuinely reusable contract change to the harness through a focused recipient item.
-7. Align entry-point and contributor documentation with the reviewed end state, run the complete verification set, and record any deliberately deferred normative question as a separate roadmap item rather than leaving an ambiguous TODO.
+- [ ] Inventory the complete repository authority surface and record which files are normative, informative, generated, illustrative, historical, or operational. Compare the stated ecosystem responsibility with the harness, `tools-ki`, Website, and Arcadia boundaries without importing their implementation detail.
+- [ ] Reconcile the KIP/KIS governance model across `README.md`, `GOVERNANCE.md`, `CONTRIBUTING.md`, numbering, lifecycle, versioning, registries, status files, and Decision Records. Resolve contradictory status, version, authority, amendment, and publication claims through one clean current model.
+- [ ] Review each existing KIP and KIS document set for internal completeness, correct lifecycle state, provenance to its originating decision, and an explicit normative-versus-informative boundary. Do not expand KBEP or KBIP here; keep their assessment plans independent.
+- [ ] Review schemas, templates, examples, and tooling guidance against the specifications they claim to represent. Remove or correct unsupported conformance claims, stale anticipated behaviour, invalid fixtures, and duplicated authority; retain concrete validation evidence.
+- [ ] Remove the retired `.ki-meta/` executor and vendored-checker footprint, align repository and authoring configuration with the current direct-CLI model, and correct the repository-owned audit findings. Treat the GitHub description as repository metadata, not specification prose.
+- [ ] Decide whether any stable repository-shape rule belongs in the shared `ki-specifications` skill. Keep repository-specific detail local; route only a genuinely reusable contract change to the harness through a focused recipient item.
+- [ ] Align entry-point and contributor documentation with the reviewed end state, run the complete verification set, and record any deliberately deferred normative question as a separate roadmap item rather than leaving an ambiguous TODO.
 
 ## Files touched
 
