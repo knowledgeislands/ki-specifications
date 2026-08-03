@@ -1,9 +1,9 @@
 ["knowledgeislands/ki-agentic-harness:ki-repo"]
+repository = "https://github.com/knowledgeislands/ki-specifications"
 title = "ki-specifications"
 description = "Normative standards and governance for the Knowledge Islands ecosystem."
 repo_code = "KI-SPEC"
 supported_runtimes = ["claude-code", "chatgpt-codex"]
-
 visibility = "public"
 license = "MIT"
 
