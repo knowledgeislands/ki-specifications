@@ -4,10 +4,8 @@ node_modules/
 .claude/settings.local.json
 
 # Generated project-local links (ki-bootstrap) — never committed
-.claude/skills/
+.claude/skills/*
 .claude/agents/
-
-# Generated project-local runtime payloads (ki-bootstrap) — never committed
 .agents/skills/*
 !.agents/skills/ki-self/
 !.agents/skills/ki-self/**
