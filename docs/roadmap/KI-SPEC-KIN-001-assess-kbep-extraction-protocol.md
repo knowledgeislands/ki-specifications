@@ -1,6 +1,6 @@
 ---
 id: KI-SPEC-KIN-001
-title: Assess KBEP knowledge-base extraction protocol
+title: Assess KBEP extraction protocol
 theme: knowledge-ingress
 horizon: soon
 status: open

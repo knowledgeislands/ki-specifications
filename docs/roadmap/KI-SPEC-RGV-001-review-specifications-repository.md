@@ -1,6 +1,6 @@
 ---
 id: KI-SPEC-RGV-001
-title: Review KI Specifications as a complete repository
+title: Review KI Specifications
 theme: repository-governance
 horizon: next
 status: open

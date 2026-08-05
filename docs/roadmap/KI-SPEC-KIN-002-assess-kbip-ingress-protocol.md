@@ -1,6 +1,6 @@
 ---
 id: KI-SPEC-KIN-002
-title: Assess KBIP knowledge-base-ingress protocol
+title: Assess KBIP ingress protocol
 theme: knowledge-ingress
 horizon: soon
 status: open
