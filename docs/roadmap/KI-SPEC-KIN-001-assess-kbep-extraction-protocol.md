@@ -1,5 +1,5 @@
 ---
-id: 'KI-SPEC-KIN-001'
+id: KI-SPEC-KIN-001
 title: Assess KBEP knowledge-base extraction protocol
 theme: knowledge-ingress
 horizon: soon

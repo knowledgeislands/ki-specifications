@@ -1,5 +1,5 @@
 ---
-id: 'KI-SPEC-RGV-001'
+id: KI-SPEC-RGV-001
 title: Review KI Specifications as a complete repository
 theme: repository-governance
 horizon: next
