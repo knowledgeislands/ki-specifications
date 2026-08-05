@@ -3,7 +3,7 @@ id: KI-SPEC-KIN-002
 title: Assess KBIP ingress protocol
 theme: knowledge-ingress
 horizon: soon
-status: open
+status: draft
 blocks: []
 blocked-by: []
 baseline-ref: null
@@ -41,7 +41,7 @@ The handoff exists only in the harness working area. KI Specifications has no ad
 
 - `proposals/` — only if the assessment recommends and receives approval for a new or amended KIP.
 - `specifications/` — only after an accepted KIP establishes a normative scope.
-- `docs/roadmap/knowledge-ingress/` — plan lifecycle and local roadmap state.
+- `docs/roadmap/` — plan lifecycle and local roadmap state.
 
 ### Verify
 
@@ -52,6 +52,6 @@ The handoff exists only in the harness working area. KI Specifications has no ad
 
 ### Dependencies / blocks
 
-This transferred record is deliberately open in `Soon`: no readiness approval has been given, and the work does not block a local `Next` item. The originating handoff neither blocks nor is blocked by this recipient-owned assessment; it supplies background while KI Specifications owns the adoption decision. Its assessment should use the KBEP disposition as input where available, but it has no plan-level blocker and can independently establish that no portable ingress specification is warranted.
+This transferred record is deliberately draft in `Soon`: no readiness approval has been given, and the work does not block a local `Next` item. The originating handoff neither blocks nor is blocked by this recipient-owned assessment; it supplies background while KI Specifications owns the adoption decision. Its assessment should use the KBEP disposition as input where available, but it has no plan-level blocker and can independently establish that no portable ingress specification is warranted.
 
 ## Discussion

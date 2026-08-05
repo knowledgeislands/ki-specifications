@@ -3,7 +3,7 @@ id: KI-SPEC-RGV-001
 title: Review KI Specifications
 theme: repository-governance
 horizon: next
-status: open
+status: draft
 blocks: []
 blocked-by: []
 baseline-ref: null
