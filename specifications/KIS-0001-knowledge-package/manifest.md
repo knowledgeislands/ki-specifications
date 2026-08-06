@@ -8,37 +8,37 @@ This document is a field-by-field reference for the Knowledge Package manifest. 
 
 ## Root fields
 
-| Field              | Type                   | Required | Notes                                                                       |
-| ------------------ | ---------------------- | -------- | --------------------------------------------------------------------------- |
-| `specVersion`      | semver string          | Yes      | Version of KIS-0001 the package conforms to.                                |
-| `id`               | string                 | Yes      | `ki:pkg:<namespace>/<slug>@<semver>`; the `@<semver>` MUST equal `version`. |
-| `uuid`             | UUID v4                | Yes      | Stable across all versions of the package.                                  |
-| `name`             | string                 | Yes      | Human-readable name.                                                        |
-| `version`          | semver string          | Yes      | Package version.                                                            |
-| `lifecycle`        | enum                   | Yes      | See [lifecycle.md](lifecycle.md).                                           |
-| `classification`   | enum                   | Yes      | See [security-and-classification.md](security-and-classification.md).       |
-| `created`          | date-time              | Yes      | ISO 8601, UTC.                                                              |
-| `owners`           | array of Party         | Yes      | At least one.                                                               |
-| `digests`          | object                 | Yes      | MUST contain `executive`; MAY contain `technical`.                          |
-| `description`      | string                 | No       | Longer prose description.                                                   |
-| `updated`          | date-time              | No       | ISO 8601, UTC.                                                              |
-| `conformanceLevel` | enum                   | No       | `minimal`, `standard`, or `extended`.                                       |
-| `tags`             | array of string        | No       | Free-form labels.                                                           |
-| `decisions`        | array of Decision      | No       | Recorded choices.                                                           |
-| `assumptions`      | array of string        | No       | Stated assumptions.                                                         |
-| `constraints`      | array of string        | No       | Stated constraints.                                                         |
-| `terminology`      | array of Term          | No       | Local definitions.                                                          |
-| `openQuestions`    | array of string        | No       | Unresolved questions.                                                       |
-| `tasks`            | array of Task          | No       | Work items.                                                                 |
-| `deliverables`     | array of Deliverable   | No       | Expected outputs.                                                           |
-| `references`       | array of Reference     | No       | External or internal references.                                            |
-| `provenance`       | Provenance             | No       | See [provenance.md](provenance.md).                                         |
-| `governance`       | Governance             | No       | See [governance.md](governance.md).                                         |
-| `handover`         | Handover               | No       | Resumption material.                                                        |
-| `history`          | array of HistoryEvent  | No       | Append-only event log.                                                      |
-| `related`          | array of Related       | No       | Relationships to other packages or resources.                               |
-| `artefacts`        | object (string → path) | No       | Map of artefact-kind to relative path.                                      |
-| `extensions`       | object                 | No       | Namespaced extension data; see [extension-model.md](extension-model.md).    |
+| Field | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `specVersion` | semver string | Yes | Version of KIS-0001 the package conforms to. |
+| `id` | string | Yes | `ki:pkg:<namespace>/<slug>@<semver>`; the `@<semver>` MUST equal `version`. |
+| `uuid` | UUID v4 | Yes | Stable across all versions of the package. |
+| `name` | string | Yes | Human-readable name. |
+| `version` | semver string | Yes | Package version. |
+| `lifecycle` | enum | Yes | See [lifecycle.md](lifecycle.md). |
+| `classification` | enum | Yes | See [security-and-classification.md](security-and-classification.md). |
+| `created` | date-time | Yes | ISO 8601, UTC. |
+| `owners` | array of Party | Yes | At least one. |
+| `digests` | object | Yes | MUST contain `executive`; MAY contain `technical`. |
+| `description` | string | No | Longer prose description. |
+| `updated` | date-time | No | ISO 8601, UTC. |
+| `conformanceLevel` | enum | No | `minimal`, `standard`, or `extended`. |
+| `tags` | array of string | No | Free-form labels. |
+| `decisions` | array of Decision | No | Recorded choices. |
+| `assumptions` | array of string | No | Stated assumptions. |
+| `constraints` | array of string | No | Stated constraints. |
+| `terminology` | array of Term | No | Local definitions. |
+| `openQuestions` | array of string | No | Unresolved questions. |
+| `tasks` | array of Task | No | Work items. |
+| `deliverables` | array of Deliverable | No | Expected outputs. |
+| `references` | array of Reference | No | External or internal references. |
+| `provenance` | Provenance | No | See [provenance.md](provenance.md). |
+| `governance` | Governance | No | See [governance.md](governance.md). |
+| `handover` | Handover | No | Resumption material. |
+| `history` | array of HistoryEvent | No | Append-only event log. |
+| `related` | array of Related | No | Relationships to other packages or resources. |
+| `artefacts` | object (string → path) | No | Map of artefact-kind to relative path. |
+| `extensions` | object | No | Namespaced extension data; see [extension-model.md](extension-model.md). |
 
 The root object sets `additionalProperties: false`: a member not listed above (and outside `extensions`) is invalid.
 

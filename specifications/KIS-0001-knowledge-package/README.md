@@ -10,18 +10,18 @@ This document set is normative except where a section or paragraph is explicitly
 
 ## Document set
 
-| Document                                                         | Purpose                                                                                   |
-| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| [specification.md](specification.md)                             | Core normative specification: identity, versioning, artefacts, relationships, validation. |
-| [terminology.md](terminology.md)                                 | Normative definitions of the terms used throughout the set.                               |
-| [manifest.md](manifest.md)                                       | Field-by-field reference for the manifest, mirroring the schema.                          |
-| [lifecycle.md](lifecycle.md)                                     | Lifecycle states, transitions, and their rules.                                           |
-| [conformance.md](conformance.md)                                 | The three conformance levels and how a package declares one.                              |
-| [provenance.md](provenance.md)                                   | Provenance and history requirements; auditability.                                        |
-| [governance.md](governance.md)                                   | Ownership, stewardship, review, and retention.                                            |
-| [promotion.md](promotion.md)                                     | Promotion of package content to canonical knowledge.                                      |
-| [security-and-classification.md](security-and-classification.md) | Classification levels, handling, and inheritance.                                         |
-| [extension-model.md](extension-model.md)                         | The `extensions` object and forward-compatibility rules.                                  |
+| Document | Purpose |
+| --- | --- |
+| [specification.md](specification.md) | Core normative specification: identity, versioning, artefacts, relationships, validation. |
+| [terminology.md](terminology.md) | Normative definitions of the terms used throughout the set. |
+| [manifest.md](manifest.md) | Field-by-field reference for the manifest, mirroring the schema. |
+| [lifecycle.md](lifecycle.md) | Lifecycle states, transitions, and their rules. |
+| [conformance.md](conformance.md) | The three conformance levels and how a package declares one. |
+| [provenance.md](provenance.md) | Provenance and history requirements; auditability. |
+| [governance.md](governance.md) | Ownership, stewardship, review, and retention. |
+| [promotion.md](promotion.md) | Promotion of package content to canonical knowledge. |
+| [security-and-classification.md](security-and-classification.md) | Classification levels, handling, and inheritance. |
+| [extension-model.md](extension-model.md) | The `extensions` object and forward-compatibility rules. |
 
 ## Conformance summary
 
