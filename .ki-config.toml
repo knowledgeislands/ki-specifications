@@ -1,4 +1,7 @@
-["knowledgeislands/ki-agentic-harness:ki-repo"]
+[repo]
+harnesses = ["knowledgeislands/ki-agentic-harness"]
+
+[skills.ki-repo]
 repository = "https://github.com/knowledgeislands/ki-specifications"
 title = "ki-specifications"
 description = "Normative standards and governance for the Knowledge Islands ecosystem."
@@ -7,23 +10,23 @@ supported_runtimes = ["claude-code", "chatgpt-codex"]
 visibility = "public"
 license = "MIT"
 
-["knowledgeislands/ki-agentic-harness:ki-git"]
+[skills.ki-git]
 
-["knowledgeislands/ki-agentic-harness:ki-authoring"]
+[skills.ki-authoring]
 
-["knowledgeislands/ki-agentic-harness:ki-specifications"]
+[skills.ki-specifications]
 
-["knowledgeislands/ki-agentic-harness:ki-decision-records"]
+[skills.ki-decision-records]
 
-["knowledgeislands/ki-agentic-harness:ki-roadmap"]
-["knowledgeislands/ki-agentic-harness:ki-roadmap".themes]
+[skills.ki-roadmap]
+[skills.ki-roadmap.themes]
 KIN = "knowledge-ingress"
 RGV = "repository-governance"
 
-["knowledgeislands/ki-agentic-harness:ki-tokenomics"]
+[skills.ki-tokenomics]
 
-["knowledgeislands/ki-agentic-harness:ki-housekeeping-claude"]
+[skills.ki-housekeeping-claude]
 
-["knowledgeislands/ki-agentic-harness:ki-tokenomics-claude"]
+[skills.ki-tokenomics-claude]
 
-["knowledgeislands/ki-agentic-harness:ki-tokenomics-codex"]
+[skills.ki-tokenomics-codex]
