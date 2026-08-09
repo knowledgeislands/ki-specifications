@@ -14,14 +14,17 @@ license = "MIT"
 
 [skills.ki-authoring]
 
-[skills.ki-specifications]
+[skills.ki-repo-project]
+
+[skills.ki-repo-specifications]
 
 [skills.ki-decision-records]
 
-[skills.ki-roadmap]
-[skills.ki-roadmap.themes]
-KIN = "knowledge-ingress"
-RGV = "repository-governance"
+[skills.ki-change-management]
+adapter = "roadmap"
+
+[skills.ki-change-management-roadmap]
+themes = ["knowledge-ingress", "repository-governance"]
 
 [skills.ki-tokenomics]
 

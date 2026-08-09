@@ -1,5 +1,5 @@
 ---
-id: KI-SPEC-KIN-002
+id: KI-SPEC-002
 title: Assess KBIP ingress protocol
 theme: knowledge-ingress
 horizon: soon

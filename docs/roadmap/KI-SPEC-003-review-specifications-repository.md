@@ -1,5 +1,5 @@
 ---
-id: KI-SPEC-RGV-001
+id: KI-SPEC-003
 title: Review KI Specifications
 theme: repository-governance
 horizon: next
