@@ -26,6 +26,10 @@ adapter = "roadmap"
 [skills.ki-change-management-roadmap]
 themes = ["knowledge-ingress", "repository-governance"]
 
+[skills.ki-change-management-roadmap.areas]
+KIN = "knowledge-ingress"
+RGV = "repository-governance"
+
 [skills.ki-tokenomics]
 
 [skills.ki-housekeeping-claude]

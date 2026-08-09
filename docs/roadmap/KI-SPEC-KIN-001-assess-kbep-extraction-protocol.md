@@ -1,5 +1,6 @@
 ---
-id: KI-SPEC-001
+id: KI-SPEC-KIN-001
+area: KIN
 title: Assess KBEP extraction protocol
 theme: knowledge-ingress
 horizon: soon

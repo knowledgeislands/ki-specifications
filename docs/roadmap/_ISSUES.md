@@ -1,7 +1,10 @@
 ---
-last_id: 3
+areas: { KIN: 2, RGV: 1 }
 ---
 
 # Roadmap issue ledger
 
-This ledger reserves every project-scoped roadmap issue number through `003`. Allocate the next work item as one greater than `last_id`; never lower this value or reuse an issued number after a record is pruned.
+This ledger reserves fixed issuing-area namespaces. Allocate the next work item in its area as one greater than that area's high-water mark; never lower a value or reuse an issued number after a record is pruned. Areas are not mutable themes or groups.
+
+- `KIN` reserves through `002`.
+- `RGV` reserves through `001`.
