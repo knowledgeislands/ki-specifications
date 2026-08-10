@@ -6,9 +6,9 @@ theme: knowledge-ingress
 horizon: soon
 status: draft
 blocks: []
-blocked-by: []
-baseline-ref: null
-transferred-from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBIP-knowledge-base-ingress-protocol.md
+blocked_by: []
+baseline_ref: null
+transferred_from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBIP-knowledge-base-ingress-protocol.md
 ---
 
 ## Goal
