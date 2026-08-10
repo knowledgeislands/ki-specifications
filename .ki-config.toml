@@ -18,6 +18,18 @@ license = "MIT"
 
 [skills.ki-repo-specifications]
 
+[skills.ki-trades]
+
+[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]
+export = ["work", "knowledge"]
+import = ["work", "knowledge"]
+
+[skills.ki-trades.routes."knowledgeislands/ki-arcadia-principal"]
+import = ["knowledge"]
+
+[skills.ki-trades.routes."knowledgeislands/ki-website"]
+export = ["knowledge"]
+
 [skills.ki-decision-records]
 
 [skills.ki-change-management]
