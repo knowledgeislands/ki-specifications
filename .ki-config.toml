@@ -32,13 +32,13 @@ export = ["knowledge"]
 
 [skills.ki-decision-records]
 
-[skills.ki-change-management]
+[skills.ki-work]
 adapter = "roadmap"
 
-[skills.ki-change-management-roadmap]
+[skills.ki-work-roadmap]
 themes = ["knowledge-ingress", "repository-governance"]
 
-[skills.ki-change-management-roadmap.areas]
+[skills.ki-work-roadmap.areas]
 KIN = "knowledge-ingress"
 RGV = "repository-governance"
 
