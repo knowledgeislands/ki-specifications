@@ -65,6 +65,24 @@ This review is independent of the open KBEP and KBIP assessments. Those plans pr
 
 The review may cite implementation evidence from other repositories, but it does not directly edit them. A reusable shared-standard change requires a separately accepted recipient item in the harness.
 
+## Documentation impact
+
+### Decision Records
+
+None.
+
+### Specifications
+
+Update affected specification records when review findings establish a behaviour change.
+
+### Guides
+
+Update contributor guidance only where the review changes the practical workflow.
+
+### Roadmap
+
+Capture any non-trivial follow-up as separately prioritised roadmap work.
+
 ## Delegation
 
 - Round 1 — research: inventory authority, lifecycle claims, corpus status, and cross-repository boundaries; read-only; gate: evidence matrix with exact source locations.
