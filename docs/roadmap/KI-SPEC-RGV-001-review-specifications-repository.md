@@ -26,6 +26,8 @@ Keep the work limited to the stated surface.
 
 ## Current state
 
+The current `ki-repo` audit also reports FILES-6 because the root `.gitignore` predates the marker-bounded composer and terminal unmanaged section. This outcome was previously carried by `TRD-bd26687c`, originating from ADR-KI-HARNESS-013, and belongs inside this existing clean-end-state repository review rather than a duplicate RGV item.
+
 The repository carries two draft KIS document sets, two registered KIPs, schemas, templates, examples, process documentation, and one local governance decision plus one mirrored ecosystem decision.
 
 The current full `ki repo audit` reports README formatting drift, a stale authoring configuration, and a missing GitHub description. Forty-two tracked files remain under the retired `.ki-meta/` executor and vendored-checker footprint even though repository operations now run through the installed `ki` CLI.
@@ -34,6 +36,7 @@ The authority surface is spread across `README.md`, `GOVERNANCE.md`, `CONTRIBUTI
 
 ## Steps
 
+- [ ] Reconcile the root `.gitignore` through the marker-bounded `ki-repo` composer, preserving genuine repository-specific rules and removing retired `.ki/audits/` or `.ki/conform/` rules only after fail-closed inspection.
 - [ ] Inventory the complete repository authority surface and record which files are normative, informative, generated, illustrative, historical, or operational. Compare the stated ecosystem responsibility with the harness, `tools-ki`, Website, and Arcadia boundaries without importing their implementation detail.
 - [ ] Reconcile the KIP/KIS governance model across `README.md`, `GOVERNANCE.md`, `CONTRIBUTING.md`, numbering, lifecycle, versioning, registries, status files, and Decision Records. Resolve contradictory status, version, authority, amendment, and publication claims through one clean current model.
 - [ ] Review each existing KIP and KIS document set for internal completeness, correct lifecycle state, provenance to its originating decision, and an explicit normative-versus-informative boundary. Do not expand KBEP or KBIP here; keep their assessment plans independent.
@@ -44,6 +47,7 @@ The authority surface is spread across `README.md`, `GOVERNANCE.md`, `CONTRIBUTI
 
 ## Files touched
 
+- `.gitignore`
 - Repository authority and contribution documents at the root and under `docs/`
 - `proposals/`, `specifications/`, `schemas/`, `templates/`, `examples/`, and `tooling/`
 - `.ki.toml`, authoring configuration, and the retired `.ki-meta/` tree
@@ -58,6 +62,7 @@ The authority surface is spread across `README.md`, `GOVERNANCE.md`, `CONTRIBUTI
 5. `bun x markdownlint-cli2`
 6. Validate every tracked example manifest against `schemas/knowledge-package.schema.json` with the documented AJV command.
 7. Confirm no tracked `.ki-meta/` executor, vendored checker, retired capability name, or duplicate KIP/KIS registry claim remains.
+8. `ki repo audit --skill ki-repo --repo .` passes the compositional ignore contract.
 
 ## Dependencies / blocks
 
@@ -91,3 +96,7 @@ Capture any non-trivial follow-up as separately prioritised roadmap work.
 - Round 3 — implementation: apply the accepted clean end state in exclusive file groups; gate each group independently before commit.
 
 ## Discussion
+
+### Compositional ignore handoff
+
+The receiver-local outcome and source provenance now live in this canonical record, so the Harness projection of `TRD-bd26687c` can be retired after this update is committed. The handoff does not broaden the review or grant Harness authority over its priority, implementation, review, or acceptance.
