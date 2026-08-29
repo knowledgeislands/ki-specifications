@@ -46,7 +46,7 @@ The authority surface is spread across `README.md`, `GOVERNANCE.md`, `CONTRIBUTI
 
 - Repository authority and contribution documents at the root and under `docs/`
 - `proposals/`, `specifications/`, `schemas/`, `templates/`, `examples/`, and `tooling/`
-- `.ki-config.toml`, authoring configuration, and the retired `.ki-meta/` tree
+- `.ki.toml`, authoring configuration, and the retired `.ki-meta/` tree
 - Repository roadmap files and any focused outbound recipient brief justified by the review
 
 ## Verify
