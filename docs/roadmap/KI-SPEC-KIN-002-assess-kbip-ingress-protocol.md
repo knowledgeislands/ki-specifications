@@ -8,6 +8,8 @@ status: draft
 blocks: []
 blocked_by: []
 baseline_ref: null
+created_at: 2026-07-27T14:37:34Z
+updated_at: 2026-08-10T00:14:14Z
 transferred_from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBIP-knowledge-base-ingress-protocol.md
 ---
 

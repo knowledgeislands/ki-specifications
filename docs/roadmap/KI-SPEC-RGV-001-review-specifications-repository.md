@@ -8,6 +8,8 @@ status: draft
 blocks: []
 blocked_by: []
 baseline_ref: null
+created_at: 2026-07-27T15:28:48Z
+updated_at: 2026-08-29T05:03:00Z
 ---
 
 ## Goal
