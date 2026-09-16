@@ -3,13 +3,13 @@ id: KI-SPEC-RGV-002
 area: RGV
 title: Reconcile Shared Fundamentals Decision
 theme: repository-governance
-horizon: triage
-status: draft
+horizon: now
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: fc8a871fdb4fe42e7d690d3feaa26c868cdc6915
 created_at: 2026-09-16T09:08:39Z
-updated_at: 2026-09-16T09:08:39Z
+updated_at: 2026-09-16T21:23:28Z
 ---
 
 # Reconcile Shared Fundamentals Decision
@@ -25,6 +25,81 @@ Reconcile KI Specifications' copy of `GDR-KI-FUNDAMENTALS-001` with the approved
 ## Boundary
 
 Update only the KI Specifications copy after independent review. Do not add repository-local metadata, change the portable projection contract from this repository, or claim estate-wide reconciliation. Verification must compare the approved canonical projection and preserve receiver acceptance authority.
+
+## Current state
+
+KI Specifications retained the original 2026-08-06 projection and contains no repository-local frontmatter. The approved Harness projection updates the living decision date and replaces raw-copy wording with a deterministic shared-identity contract.
+
+## Steps
+
+- [x] Compare the KI Specifications Decision Record with the approved Harness projection.
+- [x] Apply every decision-owned field and the complete body without adding repository-local metadata.
+- [x] Verify Decision Record, authoring, and roadmap conformance.
+
+## Files touched
+
+- `docs/decisions/GDR-KI-FUNDAMENTALS-001-knowledge-islands-ecosystem-fundamentals.md`
+- this roadmap record
+
+## Verify
+
+- The complete Decision Record is byte-identical to the Harness canonical projection.
+- `ki repo audit --skill ki-decision-records --repo .`
+- `ki repo audit --skill ki-authoring --repo .`
+- `ki repo audit --skill ki-work-roadmap --repo .`
+- `git diff --check`
+
+## Dependencies / blocks
+
+No build-order dependency remains. The approved Harness projection is present and the user explicitly authorised receiver reconciliation on 2026-09-16.
+
+## Documentation impact
+
+### Decision Records
+
+Reconcile the shared fundamentals decision in place with no receiver-local projection fields.
+
+### Specifications
+
+No KIP or KIS changes; the record allocates repository authority rather than changing a portable normative contract.
+
+### Guides
+
+No guide changes; this reconciliation changes durable decision wording only.
+
+### Roadmap
+
+Advance this receiver record to Awaiting review and expose its accepted revision later to `KI-HARNESS-GOV-069`.
+
+## Review
+
+### Delivered
+
+From immutable baseline `fc8a871fdb4fe42e7d690d3feaa26c868cdc6915`, reconciled the KI Specifications shared fundamentals decision to the approved canonical projection without changing any KIP or KIS.
+
+### Summary of changes
+
+Updated the living decision date and shared-identity wording. The full receiver record now matches the Harness canonical projection byte for byte.
+
+### Verification
+
+- Canonical projection comparison - PASS.
+- `ki repo audit --skill ki-decision-records --repo .` - PASS.
+- `ki repo audit --skill ki-authoring --repo .` - PASS.
+- `ki repo audit --skill ki-work-roadmap --repo .` - PASS.
+- `git diff --check` - PASS.
+
+### Outstanding concerns
+
+None inside the approved receiver boundary. Estate-wide completion remains owned by `KI-HARNESS-GOV-069` after human acceptance.
+
+### Post-change review
+
+The receiver copy now exactly matches the approved shared identity. The change is narrow, reversible through Git, and ready for acceptance.
+
+### Mini recap
+
+KI Specifications' decision projection is aligned, verified, and awaiting review; no normative specification changed.
 
 ## Discussion
 
