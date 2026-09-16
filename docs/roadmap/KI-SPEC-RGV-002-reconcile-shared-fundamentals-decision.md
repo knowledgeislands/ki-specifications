@@ -4,12 +4,12 @@ area: RGV
 title: Reconcile Shared Fundamentals Decision
 theme: repository-governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: fc8a871fdb4fe42e7d690d3feaa26c868cdc6915
 created_at: 2026-09-16T09:08:39Z
-updated_at: 2026-09-16T21:23:28Z
+updated_at: 2026-09-16T21:36:41Z
 ---
 
 # Reconcile Shared Fundamentals Decision
@@ -100,6 +100,10 @@ The receiver copy now exactly matches the approved shared identity. The change i
 ### Mini recap
 
 KI Specifications' decision projection is aligned, verified, and awaiting review; no normative specification changed.
+
+## Done
+
+Accepted 2026-09-16 by Kris Brown on the review packet above.
 
 ## Discussion
 
