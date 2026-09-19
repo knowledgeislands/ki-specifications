@@ -1,6 +1,8 @@
 # Knowledge Islands repository configuration.
 # Its presence declares conformance with the Knowledge Islands repository standard.
 
+# =============================================================================
+
 # -----------------------------------------------------------------------------
 # Foundation
 # -----------------------------------------------------------------------------
@@ -28,7 +30,7 @@ license = "MIT"
 [skills.ki-repo-specifications]
 
 # -----------------------------------------------------------------------------
-# Governance runtime
+# Governance and runtime
 # -----------------------------------------------------------------------------
 
 [skills.ki-decision-records]
@@ -44,10 +46,8 @@ adapter = "roadmap"
 
 [skills.ki-work-roadmap]
 themes = ["knowledge-ingress", "repository-governance"]
-
-[skills.ki-work-roadmap.areas]
-KIN = "knowledge-ingress"
-RGV = "repository-governance"
+areas.KIN = "knowledge-ingress"
+areas.RGV = "repository-governance"
 
 [skills.ki-tokenomics]
 
@@ -62,23 +62,10 @@ RGV = "repository-governance"
 # -----------------------------------------------------------------------------
 
 [skills.ki-trades]
-
-[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]
-export = ["work", "knowledge"]
-import = ["work", "knowledge"]
-
-[skills.ki-trades.routes."knowledgeislands/ki-arcadia-principal"]
-import = ["knowledge"]
-
-[skills.ki-trades.routes."knowledgeislands/ki-website"]
-export = ["knowledge"]
+routes."knowledgeislands/ki-agentic-harness" = { export = ["work", "knowledge"], import = ["work", "knowledge"] }
+routes."knowledgeislands/ki-arcadia-principal" = { import = ["knowledge"] }
+routes."knowledgeislands/ki-website" = { export = ["knowledge"] }
 
 [skills.ki-agora]
-
-[skills.ki-agora.memberships.ki-all]
-home = "https://github.com/knowledgeislands/ki-agentic-harness"
-role = "maintainer"
-
-[skills.ki-agora.memberships.ki-fnd]
-home = "https://github.com/knowledgeislands/ki-agentic-harness"
-role = "maintainer"
+memberships.ki-all = { home = "https://github.com/knowledgeislands/ki-agentic-harness", role = "maintainer" }
+memberships.ki-fnd = { home = "https://github.com/knowledgeislands/ki-agentic-harness", role = "maintainer" }
