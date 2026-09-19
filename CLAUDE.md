@@ -1,5 +1,7 @@
 # ki-specifications
 
+@AGENTS.md
+
 The normative standards and governance layer for the Knowledge Islands ecosystem: KIPs (proposals), KIS documents (accepted specifications), schemas, templates, conformance rules and reference examples. Start with [README.md](README.md) for the repository map and [docs/specification-process.md](docs/specification-process.md) for how a KIP becomes a KIS.
 
 ## Orientation
