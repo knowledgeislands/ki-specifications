@@ -168,13 +168,9 @@
   ],
   "references": [
     {
-      "title": "Knowledge Packages proposal (KIP-000001)",
-      "path": "../../proposals/KIP-000001-knowledge-packages/proposal.md",
-      "note": "Foundational concept this package builds on."
-    },
-    {
-      "title": "Knowledge Package specification (KIS-0001)",
-      "path": "../../specifications/KIS-0001-knowledge-package/specification.md"
+      "title": "Knowledge Package manifest schema",
+      "path": "../../schemas/knowledge-package.schema.json",
+      "note": "Schema this manifest validates against."
     },
     {
       "title": "Architecture context",

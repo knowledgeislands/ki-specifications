@@ -29,7 +29,7 @@ Review -> Withdrawn
 Once a KIP is `Accepted`, it is drafted into a KIS:
 
 1. A maintainer assigns the next sequential `KIS-NNNN` number, per [numbering.md](numbering.md), and a directory `KIS-NNNN-<slug>` is created under [../specifications/](../specifications/).
-2. The KIS is drafted using the accepted KIP's proposal and rationale as its basis, following the file set established by [../specifications/KIS-0001-knowledge-package/](../specifications/KIS-0001-knowledge-package/).
+2. The KIS is drafted using the accepted KIP's proposal and rationale as its basis, using the file set described in [../specifications/README.md](../specifications/README.md).
 3. The KIS is published at status `Draft`, version `1.0.0` (or the first minor version appropriate to its scope), per [versioning.md](versioning.md).
 4. Implementers build against the Draft KIS. Once there is real implementation experience — working packages, schemas, or tooling built against it, with no unresolved structural problems found — a maintainer promotes the KIS to `Active`, and marks the originating KIP `Implemented`.
 5. An `Active` KIS may later be marked `Deprecated`, signalling it should not be used for new work though existing conformant packages remain valid, typically because a successor KIS is intended or already drafted.
@@ -41,7 +41,7 @@ Draft -> Active -> Deprecated -> Superseded
 
 ## KIS versioning over time
 
-A KIS document version follows semantic versioning, recorded in its status block (see [../specifications/KIS-0001-knowledge-package/README.md](../specifications/KIS-0001-knowledge-package/README.md) for the current example):
+A KIS document version follows semantic versioning, recorded in the status block of its `README.md`:
 
 - **Patch** — editorial changes: clarifications, corrections, typo fixes, that do not change what a conformant implementation does.
 - **Minor** — compatible additions: new optional fields, new informative guidance, new conformance-level detail, that do not invalidate existing conformant packages.

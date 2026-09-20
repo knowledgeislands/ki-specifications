@@ -30,7 +30,7 @@ This is what makes the package the durable shared state of the system: a package
 
 ## Hierarchical continual improvement
 
-Improvement in this architecture is intended to happen hierarchically: individual packages accumulate decisions, tasks and provenance; useful, validated content from packages is promoted into canonical organisational knowledge (see [../specifications/KIS-0001-knowledge-package/promotion.md](../specifications/KIS-0001-knowledge-package/promotion.md)); and canonical knowledge in turn shapes kernel modules and, over time, the kernel itself, through the normal KIP process described in [specification-process.md](specification-process.md).
+Improvement in this architecture is intended to happen hierarchically: individual packages accumulate decisions, tasks and provenance; useful, validated content from packages is promoted into canonical organisational knowledge; and canonical knowledge in turn shapes kernel modules and, over time, the kernel itself, through the normal KIP process described in [specification-process.md](specification-process.md).
 
 ## Licensing note
 

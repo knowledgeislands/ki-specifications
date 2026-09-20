@@ -1,6 +1,6 @@
 # Minimal template
 
-Targets **Minimal** [conformance](../../specifications/KIS-0001-knowledge-package/conformance.md): the required core fields and an executive digest, nothing more.
+Targets the **Minimal** conformance level: the required core fields and an executive digest, nothing more.
 
 ## Usage
 

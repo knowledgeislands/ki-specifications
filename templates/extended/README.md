@@ -1,6 +1,6 @@
 # Extended template
 
-Targets **Extended** [conformance](../../specifications/KIS-0001-knowledge-package/conformance.md): Standard plus `constraints`, `terminology`, `deliverables`, `references`, `governance`, `history`, and `related`.
+Targets the **Extended** conformance level: Standard plus `constraints`, `terminology`, `deliverables`, `references`, `governance`, `history`, and `related`.
 
 ## Usage
 

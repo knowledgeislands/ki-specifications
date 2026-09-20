@@ -1,6 +1,6 @@
 # Templates
 
-Three starting points for a new Knowledge Package, one per [conformance level](../specifications/KIS-0001-knowledge-package/conformance.md): [`minimal/`](minimal/), [`standard/`](standard/), and [`extended/`](extended/).
+Three starting points for a new Knowledge Package, one per conformance level: [`minimal/`](minimal/), [`standard/`](standard/), and [`extended/`](extended/). Each level is described in its own template README; no KIS document currently defines them normatively.
 
 Each higher template includes everything in the level below it, so `standard/` is a superset of `minimal/`, and `extended/` is a superset of `standard/`.
 
@@ -26,6 +26,6 @@ Each higher template includes everything in the level below it, so `standard/` i
    bun x ajv-cli validate --spec=draft2020 -c ajv-formats -s schemas/knowledge-package.schema.json -d path/to/your-package/manifest.json
    ```
 
-5. Once the manifest is schema-valid, check it against the checklist for your intended [conformance level](../specifications/KIS-0001-knowledge-package/conformance.md) and set `conformanceLevel` accordingly.
+5. Once the manifest is schema-valid, check it against the field set for your intended conformance level and set `conformanceLevel` accordingly.
 
 See [`../examples/`](../examples/) for two fully worked packages, one at Minimal and one at Extended conformance.

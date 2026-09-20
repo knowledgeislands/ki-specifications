@@ -1,6 +1,6 @@
 # Examples
 
-Two fully worked Knowledge Packages, each schema-valid and each satisfying the checklist for the [conformance level](../specifications/KIS-0001-knowledge-package/conformance.md) it declares.
+Two fully worked Knowledge Packages, each schema-valid and each satisfying the field set for the conformance level it declares.
 
 | Package | Conformance level | Subject |
 | --- | --- | --- |

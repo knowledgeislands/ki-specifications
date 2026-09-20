@@ -6,7 +6,7 @@ Three distinct things carry a version number in this ecosystem, and they change 
 
 ## (a) KIS document versions
 
-Each KIS document carries its own semantic version, recorded in its status block (see [../specifications/KIS-0001-knowledge-package/README.md](../specifications/KIS-0001-knowledge-package/README.md)).
+Each KIS document carries its own semantic version, recorded in the status block of its `README.md`.
 
 This version describes the specification text and the normative contract it defines:
 
@@ -24,7 +24,7 @@ The `$id` is an identifier, not a promise that the URL is resolvable; it exists 
 
 ## (c) Package versions
 
-Each Knowledge Package carries its own semantic version inside its `id`, in the form `ki:pkg:<namespace>/<slug>@<semver>` (see the manifest specification in [../specifications/KIS-0001-knowledge-package/manifest.md](../specifications/KIS-0001-knowledge-package/manifest.md)).
+Each Knowledge Package carries its own semantic version inside its `id`, in the form `ki:pkg:<namespace>/<slug>@<semver>` (see the manifest schema in [../schemas/knowledge-package.schema.json](../schemas/knowledge-package.schema.json)).
 
 This version describes the package's own content, independent of the KIS or schema version it conforms to (tracked separately by the manifest's `specVersion` field).
 

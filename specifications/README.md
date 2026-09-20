@@ -6,9 +6,8 @@ A **KIS** (Knowledge Islands Specification) is the normative document produced o
 
 ## Index
 
-| Number                                         | Title                    | Status | Version | Date       |
-| ---------------------------------------------- | ------------------------ | ------ | ------- | ---------- |
-| [KIS-0001](KIS-0001-knowledge-package/)        | Knowledge Package        | Draft  | 1.0.0   | 2026-07-11 |
-| [KIS-0002](KIS-0002-knowledge-export-package/) | Knowledge Export Package | Draft  | 0.1.0   | 2026-07-23 |
+No specifications are currently registered. The next number to assign is `KIS-0001`.
+
+Once the first KIS is registered, this section carries a table of `Number`, `Title`, `Status`, `Version` and `Date`, one row per specification.
 
 For how a KIS is drafted, numbered, and promoted from `Draft` to `Active`, and how its versions relate to schema and package versions, see [../docs/specification-process.md](../docs/specification-process.md) and [../docs/versioning.md](../docs/versioning.md).

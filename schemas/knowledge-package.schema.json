@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://knowledgeislands.org/schemas/knowledge-package/1.0.0/knowledge-package.schema.json",
   "title": "Knowledge Package Manifest",
-  "description": "Normative machine-readable schema for a Knowledge Islands Knowledge Package manifest, implementing KIS-0001 v1.0.0. The $id is a stable identifier, not a promise of a resolvable URL.",
+  "description": "Machine-readable schema for a Knowledge Islands Knowledge Package manifest. No KIS document is currently registered for it, so the schema is informative pending an accepted proposal. The $id is a stable identifier, not a promise of a resolvable URL.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -19,7 +19,7 @@
   ],
   "properties": {
     "specVersion": {
-      "description": "Version of KIS-0001 this package conforms to.",
+      "description": "Version of the Knowledge Package manifest schema this package conforms to.",
       "$ref": "#/$defs/semver"
     },
     "id": {

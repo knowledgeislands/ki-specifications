@@ -40,12 +40,7 @@ Together the two series separate the deliberative process (KIP: should we do thi
 
 ## Current documents
 
-| Number                                                                 | Title                    | Status      |
-| ---------------------------------------------------------------------- | ------------------------ | ----------- |
-| [KIP-000001](proposals/KIP-000001-knowledge-packages/README.md)        | Knowledge Packages       | Accepted    |
-| [KIP-000002](proposals/KIP-000002-knowledge-export-package/README.md)  | Knowledge Export Package | Implemented |
-| [KIS-0001](specifications/KIS-0001-knowledge-package/README.md)        | Knowledge Package        | Draft       |
-| [KIS-0002](specifications/KIS-0002-knowledge-export-package/README.md) | Knowledge Export Package | Draft       |
+No KIPs or KIS documents are currently registered. The series start afresh at `KIP-000001` and `KIS-0001`; see [proposals/README.md](proposals/README.md) and [specifications/README.md](specifications/README.md) for the registries.
 
 ## How to propose a change
 
@@ -59,7 +54,7 @@ This repository is licensed under the [MIT licence](LICENSE), which applies equa
 
 ## Future specification areas
 
-The following are anticipated areas for future KIPs and KIS documents, beyond the Knowledge Package covered by KIS-0001:
+The following are anticipated areas for future KIPs and KIS documents, alongside the Knowledge Package itself:
 
 - KI kernel
 - Kernel modules

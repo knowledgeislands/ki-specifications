@@ -10,7 +10,7 @@ Small, purely editorial fixes (typos, broken links, formatting) may be raised as
 
 A KIP is a directory under [proposals/](proposals/) named `KIP-NNNNNN-<slug>`, containing a fixed file set.
 
-Follow the structure established by [proposals/KIP-000001-knowledge-packages/](proposals/KIP-000001-knowledge-packages/):
+Use the following file set:
 
 | File              | Purpose                                                           |
 | ----------------- | ----------------------------------------------------------------- |

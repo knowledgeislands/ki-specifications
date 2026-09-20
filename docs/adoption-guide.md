@@ -6,7 +6,7 @@ This guide describes how an organisation or tool adopts Knowledge Packages, with
 
 ## Pick a conformance level
 
-Decide which conformance level fits the work at hand: `minimal`, `standard`, or `extended` (see [../specifications/KIS-0001-knowledge-package/conformance.md](../specifications/KIS-0001-knowledge-package/conformance.md) for the exact requirements of each).
+Decide which conformance level fits the work at hand: `minimal`, `standard`, or `extended` (see [../templates/README.md](../templates/README.md) for what each level expects).
 
 A short-lived, low-stakes task may only need `minimal`; ongoing, governed work usually warrants `standard` or `extended`.
 
@@ -34,12 +34,10 @@ Likewise, nothing assumes the Model Context Protocol (MCP) as the only transport
 
 When a package changes hands between a human and an agent, or between two agents, populate the manifest's `handover` object with enough instructions, context, and `resumePoints` that the new owner can pick the work up without needing the previous owner's private context.
 
-See [../specifications/KIS-0001-knowledge-package/manifest.md](../specifications/KIS-0001-knowledge-package/manifest.md) for the `handover` shape.
+See [../schemas/knowledge-package.schema.json](../schemas/knowledge-package.schema.json) for the `handover` shape.
 
 ## Promotion into canonical knowledge
 
 Promotion is the governed act of moving content from a package into an organisation's canonical knowledge; it is deliberately not a lifecycle state a package moves through on its own.
 
 Treat promotion as a decision, not an automatic side effect of a package reaching `completed`: record who approved it, what was promoted, and where it landed, using the package's `governance` and `related` (relationship `promotedTo`) fields, and follow whatever governance process the adopting organisation runs for canonical knowledge.
-
-See [../specifications/KIS-0001-knowledge-package/promotion.md](../specifications/KIS-0001-knowledge-package/promotion.md) for the normative detail.

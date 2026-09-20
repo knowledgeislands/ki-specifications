@@ -1,6 +1,6 @@
 # Standard template
 
-Targets **Standard** [conformance](../../specifications/KIS-0001-knowledge-package/conformance.md): Minimal plus `decisions`, `assumptions`, `openQuestions`, `tasks`, `provenance`, `handover`, and a technical digest.
+Targets the **Standard** conformance level: Minimal plus `decisions`, `assumptions`, `openQuestions`, `tasks`, `provenance`, `handover`, and a technical digest.
 
 ## Usage
 

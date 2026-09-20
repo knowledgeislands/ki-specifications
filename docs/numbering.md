@@ -21,7 +21,7 @@ KIS documents are numbered `KIS-NNNN`, a four-digit, zero-padded, sequential num
 
 Each KIP and KIS is a directory named `<number>-<slug>`, where `<slug>` is a short, kebab-case, human-readable description of the subject:
 
-- `proposals/KIP-000001-knowledge-packages/`
-- `specifications/KIS-0001-knowledge-package/`
+- `proposals/KIP-000001-example-concept/`
+- `specifications/KIS-0001-example-concept/`
 
 The slug is chosen at registration and, once published, is not renamed even if the document's title later changes, since existing links and references depend on it.

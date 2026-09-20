@@ -125,13 +125,13 @@
   ],
   "references": [
     {
-      "title": "Knowledge Packages proposal (KIP-000001)",
-      "path": "../../proposals/KIP-000001-knowledge-packages/proposal.md",
-      "note": "Foundational concept this package builds on."
+      "title": "Knowledge Package manifest schema",
+      "path": "../knowledge-package.schema.json",
+      "note": "Schema this manifest validates against."
     },
     {
-      "title": "Knowledge Package specification (KIS-0001)",
-      "uri": "https://knowledgeislands.org/specifications/KIS-0001-knowledge-package/"
+      "title": "Knowledge Islands architecture context",
+      "uri": "https://knowledgeislands.org/docs/architecture-context"
     }
   ],
   "provenance": {
