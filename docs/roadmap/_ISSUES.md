@@ -1,5 +1,5 @@
 ---
-areas: { KIN: 2, RGV: 2 }
+areas: { KIN: 2, RGV: 3 }
 ---
 
 # Roadmap issue ledger
@@ -7,4 +7,4 @@ areas: { KIN: 2, RGV: 2 }
 This ledger reserves fixed issuing-area namespaces. Allocate the next work item in its area as one greater than that area's high-water mark; never lower a value or reuse an issued number after a record is pruned. Areas are not mutable themes or groups.
 
 - `KIN` reserves through `002`.
-- `RGV` reserves through `002`.
+- `RGV` reserves through `003`.
