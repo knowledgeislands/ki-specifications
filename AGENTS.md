@@ -14,8 +14,8 @@ This is the runtime-neutral working convention for KI Specifications. The README
 - Record the originating repository and item, then state whether the handoff `blocks` or is `blocked by` the local item. Keep the relationship reciprocal where both items exist.
 - Prefer independently executable, non-blocking work. Mark an item as blocking only when it is a genuine prerequisite; otherwise let the receiving repository schedule it in its own horizon.
 
-## Specification authority
+## Specification posture
 
-- KIPs are proposals; KIS documents are the normative specifications produced from accepted proposals.
-- An Active KIS governs implementations that claim conformance within its scope.
-- Keep explanatory publication in the website and implementation-specific tooling in the harness; this repository owns portable normative contracts.
+- This repository is dormant while Knowledge Islands remains at v0.x; it owns no active ecosystem-wide specifications before the overall v1 boundary is reviewed.
+- Keep repository-level specifications in their owning repositories.
+- Treat the KIP/KIS material here as the future process, not authority to begin an ecosystem-wide specification programme.

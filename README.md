@@ -1,16 +1,16 @@
 # ki-specifications
 
-This repository is the normative standards and governance layer for the Knowledge Islands ecosystem.
+This is the pre-v1 holding repository for a future Knowledge Islands-wide specification programme. Repository-level specifications remain local to their owning repositories.
 
-It holds the proposals, accepted specifications, JSON Schemas, governance rules, templates and reference examples that define how Knowledge Packages, and the wider Knowledge Islands architecture, are built and evolved.
+## Current posture
+
+Knowledge Islands is at v0.x, so this repository owns no active ecosystem-wide specifications. Do not add KIPs, KIS documents, or wider normative contracts until the overall Knowledge Islands v1 boundary is ready for explicit review. The remaining material describes the intended future process and is not an active specification programme.
 
 Knowledge Islands is an open-source operating system for governed human and AI knowledge work.
 
 ## Place in the Knowledge Islands ecosystem
 
-KI Specifications is the canonical source of normative portable contracts, including KIPs, KIS documents, schemas, templates, conformance rules, and reference examples. It formalises concepts established in [Arcadia Principal](https://github.com/knowledgeislands/ki-arcadia-principal), engineering practice from [Techne Principal](https://github.com/knowledgeislands/ki-techne-principal), and implementation evidence from the [KI Agentic Harness](https://github.com/knowledgeislands/ki-agentic-harness) and [tools-ki](https://github.com/knowledgeislands/tools-ki); an Active KIS governs implementations that claim conformance within its scope.
-
-The [KI Website](https://github.com/knowledgeislands/ki-website) may vendor source-labelled specification material for autonomous public publication, while this repository remains canonical for the normative contracts. The mirrored [ecosystem decision](docs/decisions/GDR-KI-FUNDAMENTALS-001-knowledge-islands-ecosystem-fundamentals.md) defines the six authorities and publication flows.
+After the overall v1 boundary is established, KI Specifications is intended to become the canonical source for normative portable contracts, including KIPs, KIS documents, schemas, templates, conformance rules, and reference examples. Until then, concepts remain with [Arcadia Principal](https://github.com/knowledgeislands/ki-arcadia-principal), engineering practice with [Techne Principal](https://github.com/knowledgeislands/ki-techne-principal), and implementation contracts with the repository that owns each implementation.
 
 ## The KIP/KIS model
 

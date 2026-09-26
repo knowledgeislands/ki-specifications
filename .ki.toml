@@ -13,7 +13,7 @@ harnesses = ["knowledgeislands/ki-agentic-harness"]
 [skills.ki-repo]
 repository = "https://github.com/knowledgeislands/ki-specifications"
 title = "ki-specifications"
-description = "Normative standards and governance for the Knowledge Islands ecosystem."
+description = "Pre-v1 holding repository for future Knowledge Islands-wide specifications; repository-level specifications remain local."
 repo_code = "KI-SPEC"
 supported_runtimes = ["claude-code", "claude-desktop", "chatgpt-codex"]
 visibility = "public"
