@@ -62,9 +62,22 @@ areas.RGV = "repository-governance"
 # -----------------------------------------------------------------------------
 
 [skills.ki-trades]
-routes."knowledgeislands/ki-agentic-harness" = { export = ["work", "knowledge"], import = ["work", "knowledge"] }
-routes."knowledgeislands/ki-arcadia-principal" = { import = ["knowledge"] }
-routes."knowledgeislands/ki-website" = { export = ["knowledge"] }
+
+[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]
+export = ["work", "knowledge"]
+import = ["work", "knowledge"]
+
+[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness".standing.export]
+knowledge = ["shared-capability-maintenance"]
+
+[skills.ki-trades.routes."knowledgeislands/ki-arcadia-principal"]
+import = ["knowledge"]
+
+[skills.ki-trades.routes."knowledgeislands/ki-website"]
+export = ["knowledge"]
+
+[skills.ki-trades.routes."knowledgeislands/ki-website".standing.export]
+knowledge = ["public-source-change"]
 
 [skills.ki-agora]
 memberships.ki-all = { home = "https://github.com/knowledgeislands/ki-arcadia-principal", role = "product" }
