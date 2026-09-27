@@ -9,7 +9,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T15:28:48Z
-updated_at: 2026-08-29T05:03:00Z
+updated_at: 2026-09-27T23:07:32Z
 ---
 
 ## Goal
@@ -98,6 +98,10 @@ Capture any non-trivial follow-up as separately prioritised roadmap work.
 - Round 3 — implementation: apply the accepted clean end state in exclusive file groups; gate each group independently before commit.
 
 ## Discussion
+
+### Pickup checkpoint — 2026-09-28
+
+At inspected local `main` `3e059cc00d5c03b5b8c9ed8c19070139485ad9fc`, parts of the old Current state are historical: `7e950a5cab3392b723e8e22dc3f2e4f385b2408b` conformed root `.gitignore` to marker-bounded rules; `b6aeaec` retired the vendored `.ki-meta/` checker footprint (no tracked `.ki-meta/` files remain); `1a140df06b626abc77424c2ca855a48867edcaf1` removed the premature KIP/KIS document sets, leaving only the two registry READMEs; and `4f7a13cd6e176d116812c546d2e251d9ea01ba1c` made `README.md`, `AGENTS.md`, and `.ki.toml` state the pre-v1 dormant posture. A fresh `ki repo audit --repo .` reported PASS across 19 selected skills, including `ki-repo`, `ki-work-roadmap`, and `ki-decision-records`. These mechanical results do not complete the requested authority inventory, reconcile every KIP/KIS governance claim, validate remaining schemas/templates/examples, or supply the judgment and owner review this record asks for. The original forty-two-file footprint and two draft KIS claims should not be treated as current; the Step checkboxes and `next`/`draft` lifecycle remain unchanged. Before implementation, reconcile the destination branch, linked tasks, and retained worktrees, then re-scope the clean-end-state review against the dormant posture and current files. This checkpoint is pickup guidance, not an execution block or authority grant; absent evidence does not release any owner or lift a hold. Closure requires independent review of exact delivery, verification, explicit owner acceptance, and retention until explicit pruning selection.
 
 ### Compositional ignore handoff
 
