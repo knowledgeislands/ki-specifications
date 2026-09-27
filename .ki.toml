@@ -11,6 +11,8 @@
 harnesses = ["knowledgeislands/ki-agentic-harness"]
 
 [skills.ki-repo]
+repo_type = "project"
+primary_shape = "ki-repo-specifications"
 repository = "https://github.com/knowledgeislands/ki-specifications"
 title = "ki-specifications"
 description = "Pre-v1 holding repository for future Knowledge Islands-wide specifications; repository-level specifications remain local."
