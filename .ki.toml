@@ -75,18 +75,14 @@ auto_memory = "transition"
 [skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]
 export = ["work", "knowledge"]
 import = ["work", "knowledge"]
-
-[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness".standing.export]
-knowledge = ["shared-capability-maintenance"]
+standing.export.knowledge = ["shared-capability-maintenance"]
 
 [skills.ki-trades.routes."knowledgeislands/ki-arcadia-principal"]
 import = ["knowledge"]
 
 [skills.ki-trades.routes."knowledgeislands/ki-website"]
 export = ["knowledge"]
-
-[skills.ki-trades.routes."knowledgeislands/ki-website".standing.export]
-knowledge = ["public-source-change"]
+standing.export.knowledge = ["public-source-change"]
 
 [skills.ki-agora]
 memberships.kis = { home = "https://github.com/knowledgeislands/ki-arcadia-principal", role = "product" }
