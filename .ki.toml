@@ -87,4 +87,4 @@ export = ["knowledge"]
 standing.export.knowledge = ["public-source-change"]
 
 [skills.ki-agora]
-memberships.kis = { home = "https://github.com/knowledgeislands/ki-arcadia-principal", role = "member" }
+memberships.kis = { home = "https://github.com/knowledgeislands/ki-arcadia-principal" }
