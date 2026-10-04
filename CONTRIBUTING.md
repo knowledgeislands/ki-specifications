@@ -10,6 +10,8 @@ Small, purely editorial fixes (typos, broken links, formatting) may be raised as
 
 A KIP is a directory under [proposals/](proposals/) named `KIP-NNNNNN-<slug>`, containing a fixed file set.
 
+For a step-by-step walk-through, including what to do while the repository is pre-v1, see the contributor guides: [Deciding whether a change needs a KIP](docs/guides/contributor/deciding-whether-a-change-needs-a-kip.md) and [Raising a KIP](docs/guides/contributor/raising-a-kip.md). This section remains the authority for the file set and numbering request steps.
+
 Use the following file set:
 
 | File              | Purpose                                                           |

@@ -4,13 +4,13 @@ title: Establish audience-centric guides
 area: RGV
 theme: repository-governance
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
 transferred_from: ki-website
-baseline_ref: null
+baseline_ref: 580d475ab7028d68054f327bb9feda96c539f69a
 created_at: 2026-09-21T17:20:00Z
-updated_at: 2026-10-04T11:38:00Z
+updated_at: 2026-10-04T12:05:00Z
 ---
 
 ## Goal
@@ -54,14 +54,14 @@ At `5c0a85e`: no `docs/guides/`, no `[skills.ki-guides]` in `.ki.toml` (`ki repo
 
 ## Steps
 
-- [ ] Declare `[skills.ki-guides]` in `.ki.toml` through `ki repo skill add ki-guides --repo .`.
-- [ ] Create `docs/guides/README.md`: scope statement, dormant-posture note, and routing to the two audience indexes only.
-- [ ] Create `docs/guides/contributor/README.md` and `docs/guides/implementer/README.md`, each indexing its guides.
-- [ ] Write `docs/guides/contributor/deciding-whether-a-change-needs-a-kip.md`: today's dormant answer; then errata versus new KIS version versus superseding KIS versus new KIP, naming `GOVERNANCE.md` as authority.
-- [ ] Write `docs/guides/contributor/raising-a-kip.md`: preconditions, directory and file set, placeholder number and maintainer assignment, review and revision, outcome, at-a-glance lifecycle, verification and recovery; following the CONTRIBUTING file set and numbering steps without replacing them.
-- [ ] Write `docs/guides/implementer/implementing-an-accepted-kis.md`: confirm KIS status and version, read normative sections only, validate a Knowledge Package manifest against `schemas/knowledge-package.schema.json` with the documented AJV command (the schema, not a KIS, is what the command checks), report implementation experience or suspected errata, and what Draft versus Active means for the implementer.
-- [ ] Replace README `## How to propose a change` with a pointer to the guide collection, and add a pointer from CONTRIBUTING `## Raising a KIP` to the guide walk-through, leaving its file set and numbering steps in place.
-- [ ] Run the verification set and repair what it reports.
+- [x] Declare `[skills.ki-guides]` in `.ki.toml` through `ki repo skill add ki-guides --repo .`.
+- [x] Create `docs/guides/README.md`: scope statement, dormant-posture note, and routing to the two audience indexes only.
+- [x] Create `docs/guides/contributor/README.md` and `docs/guides/implementer/README.md`, each indexing its guides.
+- [x] Write `docs/guides/contributor/deciding-whether-a-change-needs-a-kip.md`: today's dormant answer; then errata versus new KIS version versus superseding KIS versus new KIP, naming `GOVERNANCE.md` as authority.
+- [x] Write `docs/guides/contributor/raising-a-kip.md`: preconditions, directory and file set, placeholder number and maintainer assignment, review and revision, outcome, at-a-glance lifecycle, verification and recovery; following the CONTRIBUTING file set and numbering steps without replacing them.
+- [x] Write `docs/guides/implementer/implementing-an-accepted-kis.md`: confirm KIS status and version, read normative sections only, validate a Knowledge Package manifest against `schemas/knowledge-package.schema.json` with the documented AJV command (the schema, not a KIS, is what the command checks), report implementation experience or suspected errata, and what Draft versus Active means for the implementer.
+- [x] Replace README `## How to propose a change` with a pointer to the guide collection, and add a pointer from CONTRIBUTING `## Raising a KIP` to the guide walk-through, leaving its file set and numbering steps in place.
+- [x] Run the verification set and repair what it reports.
 
 ## Files touched
 
@@ -104,6 +104,41 @@ None beyond this record.
 ## Delegation
 
 Single lane; no delegation needed.
+
+## Review
+
+### Delivered
+
+The approved boundary: a `docs/guides/` collection grouped by two audiences (contributor, implementer), `[skills.ki-guides]` declared, README and CONTRIBUTING routing to the collection. Excluded as planned: `docs/adoption-guide.md` and `tooling/README.md` relocation, any KIP/KIS/schema change. Baseline `580d475ab7028d68054f327bb9feda96c539f69a`; delivered in the commit that sets this record to `awaiting-review`.
+
+### Change Summary
+
+- `.ki.toml` - `[skills.ki-guides]` added (via `ki repo skill add ki-guides`, relocated to the Governance and runtime block).
+- `docs/guides/README.md` - collection entry point: scope, pre-v1 posture, audience routing.
+- `docs/guides/contributor/README.md`, `deciding-whether-a-change-needs-a-kip.md`, `raising-a-kip.md` - today's dormant route first, then the four change routes and the KIP walk-through; authorities named in prose, not linked.
+- `docs/guides/implementer/README.md`, `implementing-an-accepted-kis.md` - status and version meaning, normative-only reading, schema validation (explicitly not KIS validation), and feedback routes; bounded to published artefacts.
+- `README.md` - `## How to propose a change` now routes to the guides; `CONTRIBUTING.md` - pointer to the guides while remaining the file-set and numbering authority.
+
+### Verification
+
+1. `ki repo audit --skill ki-guides --repo .` - PASS.
+2. `ki repo audit --skill ki-authoring --repo .` - PASS.
+3. `ki repo audit --repo .` - PASS, 19 skills.
+4. `rumdl check docs/guides README.md CONTRIBUTING.md` - no issues in 8 files.
+5. Relative-link scan: every `docs/guides` target resolves inside `docs/guides/`; every README and CONTRIBUTING relative link resolves.
+6. Every guide file contains `pre-v1`; the capitalised-keyword grep over `docs/guides` returns nothing.
+
+### Outstanding concerns
+
+- Source process documents disagree on when a KIP becomes `Implemented`: `docs/specification-process.md` and `CONTRIBUTING.md` say on KIS publication at `Draft`, `GOVERNANCE.md` says on KIS promotion to `Active`. The guide follows the former and defers to the named authorities; reconciliation belongs to KI-SPEC-RGV-001, alongside the three-versus-five file-set discrepancy in `proposals/README.md`.
+
+### Post-change review
+
+The goal is met for both named audiences without touching the normative corpus. Scope held to the planned files. Regression risk is low: additive documentation plus two pointer edits, all audits green. Ready for independent acceptance review.
+
+### Mini recap
+
+Established an audience-grouped guide collection that a pinned KI Website citation can derive from. Learning route: the process-document contradictions above feed KI-SPEC-RGV-001; no promotion is proposed.
 
 ## Discussion
 
