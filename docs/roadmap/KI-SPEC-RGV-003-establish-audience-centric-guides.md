@@ -4,13 +4,13 @@ title: Establish audience-centric guides
 area: RGV
 theme: repository-governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 transferred_from: ki-website
 baseline_ref: 580d475ab7028d68054f327bb9feda96c539f69a
 created_at: 2026-09-21T17:20:00Z
-updated_at: 2026-10-04T12:05:00Z
+updated_at: 2026-10-04T12:40:00Z
 ---
 
 ## Goal
@@ -145,3 +145,7 @@ Established an audience-grouped guide collection that a pinned KI Website citati
 ### Readiness - 2026-10-04
 
 Shaped under the owner's delegated roadmap authority of 2026-10-04 and checked by an independent reviewer, whose amendments (CONTRIBUTING remains the authoritative file-set home; the implementer guide validates against the schema, not a KIS; mechanical self-containment and posture checks) are applied above. Marked `ready` on that basis.
+
+## Done
+
+Accepted 2026-10-04 against the six-part Review packet at delivery commit `234c846`. An independent reviewer re-ran every Verify gate (full, `ki-guides`, and `ki-authoring` audits PASS; `rumdl` clean; self-containment, sentinel, and keyword scans clean), confirmed factual consistency with the process documents, and returned ACCEPT; closure is recorded under the owner's delegated roadmap authority of that date. Non-blocking editorial notes for a later pass: the implementer guide's "change notes" names an artefact no KIS file set defines, and the deciding guide's promise that a maintainer "will record" an issue for the v1 review describes no defined mechanism; both fit the KI-SPEC-RGV-001 reconciliation.
