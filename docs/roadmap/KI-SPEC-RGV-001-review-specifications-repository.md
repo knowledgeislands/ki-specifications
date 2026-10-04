@@ -9,7 +9,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T15:28:48Z
-updated_at: 2026-10-04T12:15:00Z
+updated_at: 2026-10-04T18:01:50Z
 ---
 
 ## Goal
@@ -109,3 +109,9 @@ The receiver-local outcome and source provenance now live in this canonical reco
 ### Blocker - owner decision needed (2026-10-04)
 
 The remaining Steps are judgement work whose Round 2 gate already requires maintainer review before any normative or governance edit. The deciding question is not mechanical: under the dormant posture, should the retained future-process material (`GOVERNANCE.md` pipeline, `docs/specification-process.md`, `docs/numbering.md`, `docs/versioning.md`) and the Knowledge Package `schemas/`, `templates/`, and `examples/` be kept and reconciled as the intended v1 process, trimmed to a minimal holding statement, or moved out as illustrative material? Each answer produces a different clean end state. The record stays `draft` until Kris chooses; once chosen, it can be re-shaped to Ready with the Current state disagreements above as its first reconciliation list.
+
+### Question for Kris (2026-10-04)
+
+In the dormant pre-v1 posture, should the process documents (`GOVERNANCE.md`, `docs/specification-process.md`, `docs/numbering.md`, `docs/versioning.md`) be reconciled into the intended v1 process, trimmed to a minimal holding statement, or moved out as illustrative material?
+
+Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-04): The three options give different clean end states for a public, normative repository; that is positioning of the specifications surface, which the item itself routes to the owner.
