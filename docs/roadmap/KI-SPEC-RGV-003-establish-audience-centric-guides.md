@@ -140,12 +140,12 @@ The goal is met for both named audiences without touching the normative corpus. 
 
 Established an audience-grouped guide collection that a pinned KI Website citation can derive from. Learning route: the process-document contradictions above feed KI-SPEC-RGV-001; no promotion is proposed.
 
+## Done
+
+Accepted 2026-10-04 against the six-part Review packet at delivery commit `234c846`. An independent reviewer re-ran every Verify gate (full, `ki-guides`, and `ki-authoring` audits PASS; `rumdl` clean; self-containment, sentinel, and keyword scans clean), confirmed factual consistency with the process documents, and returned ACCEPT; closure is recorded under the owner's delegated roadmap authority of that date. Non-blocking editorial notes for a later pass: the implementer guide's "change notes" names an artefact no KIS file set defines, and the deciding guide's promise that a maintainer "will record" an issue for the v1 review describes no defined mechanism; both fit the KI-SPEC-RGV-001 reconciliation.
+
 ## Discussion
 
 ### Readiness - 2026-10-04
 
 Shaped under the owner's delegated roadmap authority of 2026-10-04 and checked by an independent reviewer, whose amendments (CONTRIBUTING remains the authoritative file-set home; the implementer guide validates against the schema, not a KIS; mechanical self-containment and posture checks) are applied above. Marked `ready` on that basis.
-
-## Done
-
-Accepted 2026-10-04 against the six-part Review packet at delivery commit `234c846`. An independent reviewer re-ran every Verify gate (full, `ki-guides`, and `ki-authoring` audits PASS; `rumdl` clean; self-containment, sentinel, and keyword scans clean), confirmed factual consistency with the process documents, and returned ACCEPT; closure is recorded under the owner's delegated roadmap authority of that date. Non-blocking editorial notes for a later pass: the implementer guide's "change notes" names an artefact no KIS file set defines, and the deciding guide's promise that a maintainer "will record" an issue for the v1 review describes no defined mechanism; both fit the KI-SPEC-RGV-001 reconciliation.
