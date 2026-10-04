@@ -4,13 +4,13 @@ title: Establish audience-centric guides
 area: RGV
 theme: repository-governance
 horizon: now
-status: draft
+status: ready
 blocks: []
 blocked_by: []
 transferred_from: ki-website
 baseline_ref: null
 created_at: 2026-09-21T17:20:00Z
-updated_at: 2026-09-24T09:14:00Z
+updated_at: 2026-10-04T11:38:00Z
 ---
 
 ## Goal
@@ -37,59 +37,76 @@ This item does not touch `docs/specs/`. The normative corpus is what this reposi
 
 KI Website derives and cites; it does not own this collection and must not be given approval rights over it.
 
-## Shaping
+### Planning decisions
 
-- Decide whether the procedural audiences are distinct enough to warrant separate directories, or whether one contributor audience covers proposing and implementing alike.
-- Move the README's How to propose a change into the guide that owns it.
-- Settle the line between a guide and a governance rule. Where the process is normative, the specification is authoritative and the guide walks a reader through it rather than restating it.
-- Decide whether the KIP/KIS lifecycle needs a guide of its own, since a reader meeting it for the first time has to infer it from the corpus.
-- Declare `[skills.ki-guides]` in `.ki.toml` and run the guides audit to gate the result.
+Planning decisions taken against the repository at `5c0a85e`:
+
+- **Audiences.** Two stable procedural readers, held to different reach under the `ki-guides` self-containment rule. A `contributor` changes the corpus (decides whether a change needs a proposal, raises and stewards a KIP); that reader works in this tree and may be told about governance artefacts by name. An `implementer` builds against what the corpus produces (a KIS, schema, template, or example); that reader has the published artefacts, not `docs/roadmap/` or `docs/decisions/`, so implementer guides stay bounded by those artefacts. Maintainer stewardship is covered by the contributor guides rather than a third directory, because a single maintainer currently performs it and the steps are the same KIP lifecycle seen from the other side.
+- **Dormant posture.** The repository is dormant pre-v1 and accepts no new KIPs or KIS documents. Every guide states that posture first and tells the reader what to do today (route repository-level contracts to their owning repository; raise an issue to discuss an ecosystem-wide concern) before describing the future process it walks through. No guide invents a KIS, schema rule, or conformance claim.
+- **Guide versus governance rule.** `GOVERNANCE.md`, `docs/specification-process.md`, `docs/numbering.md`, and `docs/versioning.md` remain the authoritative process sources. Guides walk the reader through the sequence and name those documents in prose (never link them, per the self-containment rule); they do not restate role authority, numbering invariants, or versioning semantics beyond what the reader needs to act.
+- **Lifecycle guide.** No separate lifecycle guide. The raising-a-KIP guide carries a short at-a-glance lifecycle sufficient to act; the full informative lifecycle stays in `docs/specification-process.md`.
+- **Existing guide-like documents.** `docs/adoption-guide.md` and `tooling/README.md` are left in place. Relocating them is part of the clean-end-state review in KI-SPEC-RGV-001 and is out of scope here.
+- **Moving the README section.** README `## How to propose a change` becomes a short pointer to `docs/guides/`. CONTRIBUTING stays the authoritative home of the KIP file set and numbering request steps, because `GOVERNANCE.md` and `docs/specification-process.md` route to it; its `## Raising a KIP` section gains a pointer to the guide walk-through. The guide restates only what a reader needs to act (self-containment) and follows CONTRIBUTING's five-file set; the minimum-file discrepancy with `proposals/README.md` is left to KI-SPEC-RGV-001.
 
 ## Current state
 
-No `docs/guides/` directory and no `[skills.ki-guides]` in `.ki.toml`. The only procedural instruction is the README's How to propose a change section. `docs/specs/` holds the normative corpus and is out of scope here.
+At `5c0a85e`: no `docs/guides/`, no `[skills.ki-guides]` in `.ki.toml` (`ki repo audit --skill ki-guides` therefore refuses the selector). Procedural instruction sits in README `## How to propose a change` (two sentences of pointers) and CONTRIBUTING `## Raising a KIP`. The normative corpus is `proposals/` and `specifications/`, both empty registries; there is no `docs/specs/`. Full `ki repo audit --repo .` passes.
 
 ## Steps
 
-- [ ] Name the procedural audiences this repository has.
-- [ ] Create `docs/guides/README.md` as the collection index, routing by audience and nothing else.
-- [ ] Create one directory per named audience, each with its own index.
-- [ ] Move the README's How to propose a change material into the guide that owns it.
-- [ ] Write the missing guides: raising a KIP, implementing an accepted KIS, and deciding when a change needs a proposal.
-- [ ] Record where a guide defers to a normative rule rather than restating it.
-- [ ] Declare `[skills.ki-guides]` in `.ki.toml`.
-- [ ] Run the guides audit and repair what it reports.
+- [ ] Declare `[skills.ki-guides]` in `.ki.toml` through `ki repo skill add ki-guides --repo .`.
+- [ ] Create `docs/guides/README.md`: scope statement, dormant-posture note, and routing to the two audience indexes only.
+- [ ] Create `docs/guides/contributor/README.md` and `docs/guides/implementer/README.md`, each indexing its guides.
+- [ ] Write `docs/guides/contributor/deciding-whether-a-change-needs-a-kip.md`: today's dormant answer; then errata versus new KIS version versus superseding KIS versus new KIP, naming `GOVERNANCE.md` as authority.
+- [ ] Write `docs/guides/contributor/raising-a-kip.md`: preconditions, directory and file set, placeholder number and maintainer assignment, review and revision, outcome, at-a-glance lifecycle, verification and recovery; following the CONTRIBUTING file set and numbering steps without replacing them.
+- [ ] Write `docs/guides/implementer/implementing-an-accepted-kis.md`: confirm KIS status and version, read normative sections only, validate a Knowledge Package manifest against `schemas/knowledge-package.schema.json` with the documented AJV command (the schema, not a KIS, is what the command checks), report implementation experience or suspected errata, and what Draft versus Active means for the implementer.
+- [ ] Replace README `## How to propose a change` with a pointer to the guide collection, and add a pointer from CONTRIBUTING `## Raising a KIP` to the guide walk-through, leaving its file set and numbering steps in place.
+- [ ] Run the verification set and repair what it reports.
 
 ## Files touched
 
-`docs/guides/` (new), `.ki.toml`, `README.md`.
+- `.ki.toml`
+- `docs/guides/README.md`, `docs/guides/contributor/` (README and two guides), `docs/guides/implementer/` (README and one guide) — all new
+- `README.md`, `CONTRIBUTING.md`
+- This roadmap record
 
 ## Verify
 
-`ki repo audit --skill ki-guides --repo .` passes, and `ki repo audit --skill ki-authoring --repo .` passes over the collection.
+1. `ki repo audit --skill ki-guides --repo .` passes.
+2. `ki repo audit --skill ki-authoring --repo .` passes.
+3. `ki repo audit --repo .` passes in full.
+4. `rumdl check docs/guides README.md CONTRIBUTING.md` reports no issues.
+5. Self-containment: every relative `](...)` target in `docs/guides/**/*.md` resolves with `test -e` and lies inside `docs/guides/`; every relative link in `README.md` and `CONTRIBUTING.md` resolves.
+6. Every guide file under `docs/guides/` contains the sentinel phrase `pre-v1`, and `grep -rEn '\b(MUST|SHOULD|MAY|SHALL)\b' docs/guides` returns nothing.
 
 ## Dependencies / blocks
 
-Nothing blocks this. `KI-HARNESS-GOV-083` is advisory rather than a universal migration requirement; this item's audience grouping remains justified by the repository-local reader distinctions described above. KI Website intends to derive public guidance from these guides and cite them at a pinned ref, but it derives rather than owns and its schedule does not gate this work.
+Originates from KI Website (`transferred_from: ki-website`); the Website derives and cites this collection but neither blocks nor is blocked by this item. Independent of KI-SPEC-RGV-001, which may later relocate `docs/adoption-guide.md` and `tooling/README.md` into this collection; KI-SPEC-KIN-001 and KI-SPEC-KIN-002 are unaffected.
 
 ## Documentation impact
 
 ### Decision Records
 
-No decision record is needed. Audience-centric grouping is the house arrangement `ki-guides` already encodes, so adopting it here is conformance rather than a new decision. One becomes owed only if this repository concludes it needs an exception.
+None; the audience split is local information architecture under `ki-guides`.
 
 ### Specifications
 
-No behaviour-level contract changes. This item changes only where instructions live and who they are written for.
+None; no KIS or schema changes.
 
 ### Guides
 
-This item is entirely guide impact: it establishes or completes the collection, its audience directories, and their indexes.
+Establishes `docs/guides/` with contributor and implementer collections.
 
 ### Roadmap
 
-No further roadmap change is expected. If writing the guides exposes behaviour that cannot honestly be explained, that is a separate item raised at the time.
+None beyond this record.
+
+## Delegation
+
+Single lane; no delegation needed.
 
 ## Discussion
 
-Shaping settles how far this goes, not whether it happens. The prompting question is whether a reader who has never opened this repository can do what it is for without reading source.
+### Readiness - 2026-10-04
+
+Shaped under the owner's delegated roadmap authority of 2026-10-04 and checked by an independent reviewer, whose amendments (CONTRIBUTING remains the authoritative file-set home; the implementer guide validates against the schema, not a KIS; mechanical self-containment and posture checks) are applied above. Marked `ready` on that basis.
