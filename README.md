@@ -10,7 +10,7 @@ Knowledge Islands is an open-source operating system for governed human and AI k
 
 ## Place in the Knowledge Islands ecosystem
 
-After the overall v1 boundary is established, KI Specifications is intended to become the canonical source for normative portable contracts, including KIPs, KIS documents, schemas, templates, conformance rules, and reference examples. Until then, concepts remain with [Arcadia Principal](https://github.com/knowledgeislands/ki-arcadia-principal), engineering practice with [Techne Principal](https://github.com/knowledgeislands/ki-techne-principal), and implementation contracts with the repository that owns each implementation.
+After the overall v1 boundary is established, KI Specifications is intended to become the canonical source for normative portable contracts, including KIPs, KIS documents, schemas, templates, conformance rules, and reference examples. Until then, concepts and canonical engineering practice remain with [Arcadia Principal](https://github.com/knowledgeislands/ki-arcadia-principal), and implementation contracts with the repository that owns each implementation.
 
 ## The KIP/KIS model
 
