@@ -9,7 +9,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T15:28:48Z
-updated_at: 2026-09-27T23:07:32Z
+updated_at: 2026-10-04T12:15:00Z
 ---
 
 ## Goal
@@ -28,31 +28,30 @@ Keep the work limited to the stated surface.
 
 ## Current state
 
-The current `ki-repo` audit also reports FILES-6 because the root `.gitignore` predates the marker-bounded composer and terminal unmanaged section. This outcome was previously carried by `TRD-bd26687c`, originating from ADR-KI-HARNESS-013, and belongs inside this existing clean-end-state repository review rather than a duplicate RGV item.
+Refreshed at `234c846` (2026-10-04). The repository is in its declared dormant pre-v1 posture: `proposals/` and `specifications/` hold only empty registry READMEs; no tracked `.ki-meta/` file remains; root `.gitignore` is marker-bounded; the GitHub description matches `.ki.toml`; and `ki repo audit --repo .` passes across 19 skills, including `ki-guides`, which KI-SPEC-RGV-003 added with a contributor and implementer guide collection under `docs/guides/`. The ignore, `.ki-meta/`, README-drift, and description outcomes originally listed here are therefore delivered; the remaining work is the judgement review.
 
-The repository carries two draft KIS document sets, two registered KIPs, schemas, templates, examples, process documentation, and one local governance decision plus one mirrored ecosystem decision.
+Known disagreements across the retained process material, found while writing the guides:
 
-The current full `ki repo audit` reports README formatting drift, a stale authoring configuration, and a missing GitHub description. Forty-two tracked files remain under the retired `.ki-meta/` executor and vendored-checker footprint even though repository operations now run through the installed `ki` CLI.
-
-The authority surface is spread across `README.md`, `GOVERNANCE.md`, `CONTRIBUTING.md`, process and versioning guides, KIP/KIS registries, per-document status files, schemas, templates, and examples. Their agreement has not yet been reviewed as one contract.
+- `GOVERNANCE.md` marks a KIP `Implemented` when its KIS is promoted to `Active`; `docs/specification-process.md` and `CONTRIBUTING.md` mark it on KIS publication at `Draft`.
+- `CONTRIBUTING.md` requires a fixed five-file KIP set; `proposals/README.md` requires a minimum of three.
+- `docs/specification-process.md` says the KIS file set is described in `specifications/README.md`, which describes none.
+- `docs/adoption-guide.md` and `tooling/README.md` are guide-shaped documents outside `docs/guides/`.
+- `schemas/`, `templates/`, and `examples/` remain, with no KIS adopting them, and `docs/adoption-guide.md` speaks of them as a specification ("Nothing in this specification assumes ...").
 
 ## Steps
 
-- [ ] Reconcile the root `.gitignore` through the marker-bounded `ki-repo` composer, preserving genuine repository-specific rules and removing retired `.ki/audits/` or `.ki/conform/` rules only after fail-closed inspection.
 - [ ] Inventory the complete repository authority surface and record which files are normative, informative, generated, illustrative, historical, or operational. Compare the stated ecosystem responsibility with the harness, `tools-ki`, Website, and Arcadia boundaries without importing their implementation detail.
 - [ ] Reconcile the KIP/KIS governance model across `README.md`, `GOVERNANCE.md`, `CONTRIBUTING.md`, numbering, lifecycle, versioning, registries, status files, and Decision Records. Resolve contradictory status, version, authority, amendment, and publication claims through one clean current model.
 - [ ] Review each existing KIP and KIS document set for internal completeness, correct lifecycle state, provenance to its originating decision, and an explicit normative-versus-informative boundary. Do not expand KBEP or KBIP here; keep their assessment plans independent.
 - [ ] Review schemas, templates, examples, and tooling guidance against the specifications they claim to represent. Remove or correct unsupported conformance claims, stale anticipated behaviour, invalid fixtures, and duplicated authority; retain concrete validation evidence.
-- [ ] Remove the retired `.ki-meta/` executor and vendored-checker footprint, align repository and authoring configuration with the current direct-CLI model, and correct the repository-owned audit findings. Treat the GitHub description as repository metadata, not specification prose.
 - [ ] Decide whether any stable repository-shape rule belongs in the shared `ki-specifications` skill. Keep repository-specific detail local; route only a genuinely reusable contract change to the harness through a focused recipient item.
 - [ ] Align entry-point and contributor documentation with the reviewed end state, run the complete verification set, and record any deliberately deferred normative question as a separate roadmap item rather than leaving an ambiguous TODO.
 
 ## Files touched
 
-- `.gitignore`
 - Repository authority and contribution documents at the root and under `docs/`
 - `proposals/`, `specifications/`, `schemas/`, `templates/`, `examples/`, and `tooling/`
-- `.ki.toml`, authoring configuration, and the retired `.ki-meta/` tree
+- `.ki.toml` and authoring configuration, only if the review changes them
 - Repository roadmap files and any focused outbound recipient brief justified by the review
 
 ## Verify
@@ -106,3 +105,7 @@ At inspected local `main` `3e059cc00d5c03b5b8c9ed8c19070139485ad9fc`, parts of t
 ### Compositional ignore handoff
 
 The receiver-local outcome and source provenance now live in this canonical record, so the Harness projection of `TRD-bd26687c` can be retired after this update is committed. The handoff does not broaden the review or grant Harness authority over its priority, implementation, review, or acceptance.
+
+### Blocker - owner decision needed (2026-10-04)
+
+The remaining Steps are judgement work whose Round 2 gate already requires maintainer review before any normative or governance edit. The deciding question is not mechanical: under the dormant posture, should the retained future-process material (`GOVERNANCE.md` pipeline, `docs/specification-process.md`, `docs/numbering.md`, `docs/versioning.md`) and the Knowledge Package `schemas/`, `templates/`, and `examples/` be kept and reconciled as the intended v1 process, trimmed to a minimal holding statement, or moved out as illustrative material? Each answer produces a different clean end state. The record stays `draft` until Kris chooses; once chosen, it can be re-shaped to Ready with the Current state disagreements above as its first reconciliation list.
