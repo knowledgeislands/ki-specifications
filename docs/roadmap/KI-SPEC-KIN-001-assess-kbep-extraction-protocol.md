@@ -9,7 +9,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T14:37:34Z
-updated_at: 2026-08-10T00:14:14Z
+updated_at: 2026-10-04T12:20:00Z
 transferred_from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md
 ---
 
@@ -57,3 +57,7 @@ The handoff exists only in the harness working area. KI Specifications has no ad
 This transferred record is deliberately draft in `Soon`: no readiness approval has been given, and the work does not block a local `Next` item. The originating handoff neither blocks nor is blocked by this recipient-owned assessment; it supplies background while KI Specifications owns the adoption decision. KBIP may depend conceptually on the resulting extraction boundary, but its assessment can still determine its own scope and must not assume KBEP adoption.
 
 ## Discussion
+
+### Blocker - owner decision needed (2026-10-04)
+
+Since this record was transferred, KI Specifications adopted its dormant pre-v1 posture: it registers no KIPs or KIS documents and owns no active ecosystem-wide specification before the overall v1 boundary is reviewed. Step 4's proposal-outline route would contradict that posture. A KIP route is therefore unavailable now, and the assessment's real choice is whether to run it at all before v1 or to park it for the v1 boundary review. That is a prioritisation decision for Kris; the record stays `draft` in `Soon` until it is made.

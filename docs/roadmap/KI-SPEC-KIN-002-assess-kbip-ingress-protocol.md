@@ -9,7 +9,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T14:37:34Z
-updated_at: 2026-08-10T00:14:14Z
+updated_at: 2026-10-04T12:20:00Z
 transferred_from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBIP-knowledge-base-ingress-protocol.md
 ---
 
@@ -58,3 +58,7 @@ The handoff exists only in the harness working area. KI Specifications has no ad
 This transferred record is deliberately draft in `Soon`: no readiness approval has been given, and the work does not block a local `Next` item. The originating handoff neither blocks nor is blocked by this recipient-owned assessment; it supplies background while KI Specifications owns the adoption decision. Its assessment should use the KBEP disposition as input where available, but it has no plan-level blocker and can independently establish that no portable ingress specification is warranted.
 
 ## Discussion
+
+### Blocker - owner decision needed (2026-10-04)
+
+Since this record was transferred, KI Specifications adopted its dormant pre-v1 posture: it registers no KIPs or KIS documents and owns no active ecosystem-wide specification before the overall v1 boundary is reviewed. The Current state claim that current specifications establish Knowledge Packages and Knowledge Export Packages is stale: no KIS is registered, and only the illustrative Knowledge Package schema, templates, and examples remain. A KIP route is therefore unavailable now, and the assessment's real choice is whether to run it at all before v1 or to park it for the v1 boundary review. That is a prioritisation decision for Kris; the record stays `draft` in `Soon` until it is made.
