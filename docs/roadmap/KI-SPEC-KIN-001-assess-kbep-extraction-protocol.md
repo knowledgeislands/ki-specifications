@@ -3,67 +3,103 @@ id: KI-SPEC-KIN-001
 area: KIN
 title: Assess KBEP extraction protocol
 theme: knowledge-ingress
-horizon: soon
-status: draft
+horizon: now
+status: ready
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T14:37:34Z
-updated_at: 2026-10-04T18:01:50Z
+updated_at: 2026-10-05T08:52:23Z
 transferred_from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md
 ---
 
 ## Goal
 
-Achieve the stated outcome: Assess KBEP knowledge-base extraction protocol.
+KI Specifications holds one short informative note that gives every concern in the transferred Knowledge Base Extraction Protocol (KBEP) a disposition, draws its portable-contract boundary, and makes one recommendation: decline, retain as guidance, or carry forward as a candidate KIP for the v1 boundary review. The note is input to that review, not a proposal.
 
 ## Context
 
 The KI Agentic Harness transferred a parked draft of the Knowledge Base Extraction Protocol (KBEP). Its useful concern is a portable way to extract reusable, provenance-bearing knowledge from source material; it explicitly does not establish a receiving repository's protocol, implementation, or priority.
 
-KI Specifications carries no registered proposals or specifications, so there is no existing Knowledge Export Package work for KBEP to attach to. This assessment must establish whether KBEP is a distinct normative concern worth a first-numbered proposal, or material better kept as non-normative guidance.
+The source survives only in harness history. `887da0536908` ("chore(handoffs): complete specifications transfer", 2026-07-27) deleted `+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md` (374 lines), so the `transferred_from` path no longer resolves at harness `HEAD`; the readable revision is `887da053^` (`0b4f7732640af6ceda02668d3be901751b02bc26`). The companion `+/_HANDOFFS/knowledge-acquisition-protocols.md` at the same revision records the intended lifecycle (KAF acquisition, immutable Knowledge Export Package, KBEP extraction, KBIP governed ingress). No copy exists in KI Specifications.
+
+KI Specifications carries no registered proposals or specifications, so there is no existing Knowledge Export Package work for KBEP to attach to; the premature `KIS-0002` Knowledge Export Package set was removed in `1a140df`. Under the dormant pre-v1 posture the guides' own route for an ecosystem-wide concern today is to record it as input to the v1 boundary review rather than register a proposal (`docs/guides/contributor/deciding-whether-a-change-needs-a-kip.md`, "What to do today").
 
 ## Boundary
 
-Keep the work limited to the stated surface.
+- No KIP, KIS, proposal outline, schema, template, or registry change; `proposals/` and `specifications/` are untouched.
+- No new directory class; the note is one file in the informative-note location.
+- No normative language: no RFC 2119 keywords and no KIP or KIS number in the note.
+- No wholesale copy of the source; the note summarises and cites it by repository, path, and full revision.
+- No assessment of KBIP (KI-SPEC-KIN-002) or of KAF acquisition, and no edit in the harness or any other repository.
 
-## Shaping
+## Current state
 
-### Current state
+At `49403d3` (2026-10-05), KI Specifications has no KBEP proposal, KIS, schema, note, or conformance claim, and its KIP and KIS registries are empty following the deliberate reset of premature normative content in `1a140df`. `docs/` already holds informative documents, each opening with an informative marker. The KBEP source has twelve top-level sections: Purpose, Scope, Supported Source Types, Objectives, Principles, Knowledge Units, Extraction Pipeline (six stages: Source Capture, Knowledge Extraction, Knowledge Normalisation, Relationship Discovery, Provenance, Quality Review), Confidence, Knowledge Status, Recommended Output Structure, Non-Goals, and Success Criteria. Its own status block says it is a parked handoff whose concrete pipeline, source-type support, and output format must not be implemented without a receiving-repository decision.
 
-The handoff exists only in the harness working area. KI Specifications has no adopted KBEP proposal, KIS, schema, or conformance claim, and its KIP and KIS registries are empty following a deliberate reset of premature normative content.
+## Steps
 
-### Steps
+- [ ] Confirm KI-SPEC-RGV-001's authority inventory has fixed the informative note location (default `docs/`) before writing; if that inventory has not yet run, use `docs/` and say so in Discussion.
+- [ ] Read the source with `git -C ../ki-agentic-harness show 887da053^:+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md`, together with `+/_HANDOFFS/knowledge-acquisition-protocols.md` at the same revision.
+- [ ] Establish whether KBEP's purpose, scope, source types, knowledge units, six-stage pipeline, provenance, confidence, knowledge status, and output structure describe a portable concern at all, as distinct from one knowledge base's operating practice.
+- [ ] Draw the portable-contract boundary and give each of the twelve source sections one disposition: candidate portable contract, retained as guidance, deferred, or out of scope.
+- [ ] Write `docs/kbep-extraction-assessment.md` (or the same filename in the confirmed location): open with "This document is informative throughout.", state the single recommendation (decline, retain as guidance, or candidate KIP for the v1 boundary review) with its reasoning, include the disposition table, and cite the source as `knowledgeislands/ki-agentic-harness` `+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md` at `0b4f7732640af6ceda02668d3be901751b02bc26`.
+- [ ] Run Verify and record the recommendation in one sentence under Discussion for KI-SPEC-KIN-002 to consume.
 
-1. Establish whether the transferred KBEP purpose, scope, source types, stages, provenance, confidence, status, and suggested output structure describe a portable normative concern at all.
-2. Identify the portable contract boundary, including which transferred concepts are normative candidates and which remain implementation or guidance concerns.
-3. Record a recommendation to decline, retain as guidance, or open a numbered KIP with a bounded problem statement and dependencies.
-4. If a proposal route is recommended, draft only the proposal outline and its acceptance criteria; do not publish a KIS, schema, or implementation contract without the applicable proposal decision.
+## Files touched
 
-### Files touched
+- `docs/kbep-extraction-assessment.md` (new; location per KI-SPEC-RGV-001, default `docs/`)
+- `docs/roadmap/KI-SPEC-KIN-001-assess-kbep-extraction-protocol.md`
 
-- `proposals/` — only if the assessment recommends and receives approval for a new or amended KIP.
-- `specifications/` — only if an approved proposal reaches the specification stage.
-- `docs/roadmap/` — plan lifecycle and local roadmap state.
+## Verify
 
-### Verify
+1. `ki repo audit --repo . --progress never` passes (the CI gate, `.github/workflows/ci.yml:59`).
+2. `ki repo audit --repo . --skill ki-work-roadmap` passes.
+3. `rumdl check .`, `rumdl fmt --check .`, and `rumdl check --enable MD057 .` report no issues.
+4. `grep -nwE 'MUST|REQUIRED|SHALL|SHOULD|RECOMMENDED|MAY|OPTIONAL' docs/kbep-extraction-assessment.md` returns nothing.
+5. `grep -nE 'KIP-[0-9]|KIS-[0-9]' docs/kbep-extraction-assessment.md` returns nothing.
+6. `grep -n '0b4f7732640af6ceda02668d3be901751b02bc26' docs/kbep-extraction-assessment.md` finds the provenance citation, and `head -3 docs/kbep-extraction-assessment.md` shows the informative marker.
+7. `git diff --exit-code <baseline_ref> -- proposals specifications schemas templates examples` reports no change.
+8. The note gives a disposition for each of the twelve source sections and exactly one recommendation.
 
-1. The assessment names an explicit disposition for every transferred KBEP concern: adopted, deferred, out of scope, or retained as background.
-2. Any proposed normative work identifies its KIP/KIS lifecycle route and does not claim acceptance before a maintainer decision.
-3. Relevant Markdown and roadmap audits pass after the resulting scoped change.
+## Dependencies / blocks
 
-### Dependencies / blocks
+This item has no prerequisite and blocks nothing. It prefers to run after KI-SPEC-RGV-001 so the note lands where that review's authority inventory confirms informative notes belong; that is a sequencing preference, not build order, so `blocked_by` stays empty and the first Step carries the check. KI-SPEC-KIN-002 prefers to run after this item and consumes its recommendation. The originating harness handoff neither blocks nor is blocked by this recipient-owned assessment.
 
-This transferred record is deliberately draft in `Soon`: no readiness approval has been given, and the work does not block a local `Next` item. The originating handoff neither blocks nor is blocked by this recipient-owned assessment; it supplies background while KI Specifications owns the adoption decision. KBIP may depend conceptually on the resulting extraction boundary, but its assessment can still determine its own scope and must not assume KBEP adoption.
+## Documentation impact
+
+### Decision Records
+
+None. The note is informative and its recommendation is reversible input to the v1 boundary review; any later decision to open a KIP belongs to that review.
+
+### Specifications
+
+None. No KIP, KIS, schema, or registry changes, and the note carries no normative requirement.
+
+### Guides
+
+None. The note follows the existing "What to do today" route in the contributor guides and changes no practical workflow.
+
+### Roadmap
+
+KI-SPEC-KIN-002 takes this item's recommendation as input. A "candidate KIP" recommendation is carried by the note itself as v1 boundary review input; no new roadmap item opens while the repository is dormant.
 
 ## Discussion
 
-### Blocker - owner decision needed (2026-10-04)
+### Decisions under delegated autonomy
 
-Since this record was transferred, KI Specifications adopted its dormant pre-v1 posture: it registers no KIPs or KIS documents and owns no active ecosystem-wide specification before the overall v1 boundary is reviewed. Step 4's proposal-outline route would contradict that posture. A KIP route is therefore unavailable now, and the assessment's real choice is whether to run it at all before v1 or to park it for the v1 boundary review. That is a prioritisation decision for Kris; the record stays `draft` in `Soon` until it is made.
+Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible:
 
-### Question for Kris (2026-10-04)
+- Run the assessment now as one short non-normative note recording the recommendation and the portable-contract boundary, with no KIP, KIS, registry, `proposals/` change, or new directory class. This is consistent with the dormant posture because the guides route an ecosystem-wide concern today to the v1 boundary review rather than to a proposal.
+- Strike the former Step 4 proposal-outline route.
+- Sequence the work after KI-SPEC-RGV-001 so the note lands in the location its authority inventory establishes, rather than adding unclassified material during the review.
+- The note cites its source by revision, because the source survives only in harness history.
 
-Should the KBEP assessment run now as a non-normative background note, or be parked until the v1 boundary review (KI-SPEC-RGV-001) reopens the KIP route (one answer can cover KI-SPEC-KIN-002 too)?
+### Facts corrected during shaping
 
-Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-04): This is prioritisation against the dormant pre-v1 posture: any outcome either contradicts the posture or waits on KI-SPEC-RGV-001.
+- Fable proposed `blocked_by: [KI-SPEC-RGV-001]`. The roadmap audit fails any `ready` item whose `blocked_by` names an item that is not done, and the ordering is a preference rather than build order, so it is expressed as the first Step and a Dependencies sentence with `blocked_by: []`.
+- Source provenance verified: 374 lines, deleted by `887da0536908`, readable at parent `0b4f7732640af6ceda02668d3be901751b02bc26`; the companion `knowledge-acquisition-protocols.md` at that revision adds the lifecycle context the note needs.
+
+### Owner question resolved (2026-10-05)
+
+The 2026-10-04 question asked whether the KBEP assessment should run now as a non-normative background note or be parked until the v1 boundary review. Under Kris's delegated autonomy the Fable reviewer chose to run it now as a non-normative note, sequenced after KI-SPEC-RGV-001, with no KIP route; the same answer covers KI-SPEC-KIN-002. The choice is reversible: the note can be withdrawn or superseded by the v1 boundary review.
