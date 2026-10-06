@@ -15,6 +15,7 @@ repo_type = "project"
 primary_shape = "ki-repo-specifications"
 repository = "https://github.com/knowledgeislands/ki-specifications"
 title = "ki-specifications"
+capital = "https://github.com/knowledgeislands/ki-arcadia-principal"
 description = "Pre-v1 holding repository for future Knowledge Islands-wide specifications; repository-level specifications remain local."
 repo_code = "KI-SPEC"
 supported_runtimes = ["claude-code", "claude-desktop", "chatgpt-codex"]
@@ -75,15 +76,3 @@ auto_memory = "disabled"
 # -----------------------------------------------------------------------------
 
 [skills.ki-trades]
-
-[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]
-export = ["work", "knowledge"]
-import = ["work", "knowledge"]
-standing.export.knowledge = ["shared-capability-maintenance"]
-
-[skills.ki-trades.routes."knowledgeislands/ki-arcadia-principal"]
-import = ["knowledge"]
-
-[skills.ki-trades.routes."knowledgeislands/ki-website"]
-export = ["knowledge"]
-standing.export.knowledge = ["public-source-change"]
