@@ -3,13 +3,13 @@ id: KI-SPEC-RGV-001
 area: RGV
 title: Review KI Specifications
 theme: repository-governance
-horizon: now
-status: ready
+horizon: waiting-for
+status: draft
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T15:28:48Z
-updated_at: 2026-10-05T08:52:23Z
+updated_at: 2026-10-06T21:34:11Z
 ---
 
 ## Goal
@@ -145,3 +145,7 @@ The receiver-local outcome and source provenance now live in this canonical reco
 ### Owner question resolved (2026-10-05)
 
 The 2026-10-04 question asked whether the retained future-process documents and the Knowledge Package `schemas/`, `templates/`, and `examples/` should be kept and reconciled, trimmed to a minimal holding statement, or moved out as illustrative material. Under Kris's delegated autonomy the Fable reviewer chose to keep and reconcile them, with the illustrative material marked in place rather than moved, as recorded under Decisions under delegated autonomy. The choice is reversible: a later owner decision to trim or relocate can follow this review without undoing it.
+
+### Deferred to Waiting for (2026-10-06)
+
+Moved from Now to Waiting for during the cross-repository roadmap clearance recorded in `+/_CHECKPOINTS/state-of-play.md` in `ki-arcadia-principal`. Named condition: Kris's planned review and discussion of every specification across the projects, which follows the thematic review in that checkpoint. This record is not an evidence-gathering assessment: it decides which document wins each disagreement (`Implemented` on KIS `Active`, the five-file KIP set, the KIS file set) and how illustrative material is marked. Those choices were made under delegated autonomy and are exactly what Kris's specification review will confirm or change, so delivering them now could be undone by that review. Return trigger: Kris's specification review settles the retained future process and the repository's posture; then reconfirm Current state and move back to Now. The broken manifest validation command (Current state, "Validation command") is a mechanical fix independent of those decisions and could be split out if Kris wants it earlier. Status returns from `ready` to `draft`, as the roadmap standard requires outside Now and Next; the shaped plan is retained and needs re-confirmation through `ki-plan` on return. No step was started.

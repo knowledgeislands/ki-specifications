@@ -3,13 +3,13 @@ id: KI-SPEC-KIN-001
 area: KIN
 title: Assess KBEP extraction protocol
 theme: knowledge-ingress
-horizon: now
-status: ready
+horizon: waiting-for
+status: draft
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T14:37:34Z
-updated_at: 2026-10-05T08:52:23Z
+updated_at: 2026-10-06T21:34:11Z
 transferred_from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md
 ---
 
@@ -103,3 +103,7 @@ Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible:
 ### Owner question resolved (2026-10-05)
 
 The 2026-10-04 question asked whether the KBEP assessment should run now as a non-normative background note or be parked until the v1 boundary review. Under Kris's delegated autonomy the Fable reviewer chose to run it now as a non-normative note, sequenced after KI-SPEC-RGV-001, with no KIP route; the same answer covers KI-SPEC-KIN-002. The choice is reversible: the note can be withdrawn or superseded by the v1 boundary review.
+
+### Deferred to Waiting for (2026-10-06)
+
+Moved from Now to Waiting for during the cross-repository roadmap clearance recorded in `+/_CHECKPOINTS/state-of-play.md` in `ki-arcadia-principal`. Named condition: in-flight `KI-ARCADIA-MOD-006` (Knowledge acquisition lifecycle, Ready in `ki-arcadia-principal`) and the thematic review in that checkpoint. MOD-006 is defining the operational acquisition lifecycle, provenance package and harvest checkpoint that KBEP's extraction pipeline, provenance and output structure overlap, so this assessment's portable-contract boundary and section dispositions would be drawn against a model that review may change. Its sequencing preference after KI-SPEC-RGV-001, also now Waiting for, is likewise unresolved. Return trigger: MOD-006 is accepted or redirected by the review, and Kris's specification review confirms this note is still wanted; then move back to Now. Status returns from `ready` to `draft`, as the roadmap standard requires outside Now and Next; the shaped plan is retained and needs re-confirmation through `ki-plan` on return. No step was started.
