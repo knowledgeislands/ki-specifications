@@ -58,8 +58,11 @@ organisation_code = "KIS"
 adapter = "roadmap"
 
 [skills.ki-work-roadmap]
-areas = ["KIN", "RGV"]
 components = ["knowledge-ingress", "repository-governance"]
+
+[skills.ki-work-roadmap.areas]
+KIN = "Knowledge ingress"
+RGV = "Repository governance"
 
 [skills.ki-tokenomics]
 
