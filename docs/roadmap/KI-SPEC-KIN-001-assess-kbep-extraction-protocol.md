@@ -5,16 +5,14 @@ title: Assess KBEP extraction protocol
 kind: investigate
 project: specifications
 component: knowledge-ingress
-horizon: hold
-hold:
-  reason: parked
-  condition: Kris restarts the ki-specifications live specification effort
-status: draft
+status: cancelled
+resolution: merged
+resolution_target: KI-SPEC-RGV-001
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T14:37:34Z
-updated_at: 2026-10-07T14:10:13Z
+updated_at: 2026-10-07T20:37:16Z
 transferred_from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md
 ---
 
@@ -38,58 +36,11 @@ KI Specifications carries no registered proposals or specifications, so there is
 - No wholesale copy of the source; the note summarises and cites it by repository, path, and full revision.
 - No assessment of KBIP (KI-SPEC-KIN-002) or of KAF acquisition, and no edit in the harness or any other repository.
 
-## Current state
+## Cancelled
 
-At `49403d3` (2026-10-05), KI Specifications has no KBEP proposal, KIS, schema, note, or conformance claim, and its KIP and KIS registries are empty following the deliberate reset of premature normative content in `1a140df`. `docs/` already holds informative documents, each opening with an informative marker. The KBEP source has twelve top-level sections: Purpose, Scope, Supported Source Types, Objectives, Principles, Knowledge Units, Extraction Pipeline (six stages: Source Capture, Knowledge Extraction, Knowledge Normalisation, Relationship Discovery, Provenance, Quality Review), Confidence, Knowledge Status, Recommended Output Structure, Non-Goals, and Success Criteria. Its own status block says it is a parked handoff whose concrete pipeline, source-type support, and output format must not be implemented without a receiving-repository decision.
+Approved by Kris on 2026-10-07 under decision 17 of the state-of-play design, which approved every cancel and merge in the easiest-first delivery plan.
 
-## Steps
-
-- [ ] Confirm KI-SPEC-RGV-001's authority inventory has fixed the informative note location (default `docs/`) before writing; if that inventory has not yet run, use `docs/` and say so in Discussion.
-- [ ] Read the source with `git -C ../ki-agentic-harness show 887da053^:+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md`, together with `+/_HANDOFFS/knowledge-acquisition-protocols.md` at the same revision.
-- [ ] Establish whether KBEP's purpose, scope, source types, knowledge units, six-stage pipeline, provenance, confidence, knowledge status, and output structure describe a portable concern at all, as distinct from one knowledge base's operating practice.
-- [ ] Draw the portable-contract boundary and give each of the twelve source sections one disposition: candidate portable contract, retained as guidance, deferred, or out of scope.
-- [ ] Write `docs/kbep-extraction-assessment.md` (or the same filename in the confirmed location): open with "This document is informative throughout.", state the single recommendation (decline, retain as guidance, or candidate KIP for the v1 boundary review) with its reasoning, include the disposition table, and cite the source as `knowledgeislands/ki-agentic-harness` `+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md` at `0b4f7732640af6ceda02668d3be901751b02bc26`.
-- [ ] Run Verify and record the recommendation in one sentence under Discussion for KI-SPEC-KIN-002 to consume.
-
-## Files touched
-
-- `docs/kbep-extraction-assessment.md` (new; location per KI-SPEC-RGV-001, default `docs/`)
-- `docs/roadmap/KI-SPEC-KIN-001-assess-kbep-extraction-protocol.md`
-
-## Verify
-
-1. `ki repo audit --repo . --progress never` passes (the CI gate, `.github/workflows/ci.yml:59`).
-2. `ki repo audit --repo . --skill ki-work-roadmap` passes.
-3. `rumdl check .`, `rumdl fmt --check .`, and `rumdl check --enable MD057 .` report no issues.
-4. `grep -nwE 'MUST|REQUIRED|SHALL|SHOULD|RECOMMENDED|MAY|OPTIONAL' docs/kbep-extraction-assessment.md` returns nothing.
-5. `grep -nE 'KIP-[0-9]|KIS-[0-9]' docs/kbep-extraction-assessment.md` returns nothing.
-6. `grep -n '0b4f7732640af6ceda02668d3be901751b02bc26' docs/kbep-extraction-assessment.md` finds the provenance citation, and `head -3 docs/kbep-extraction-assessment.md` shows the informative marker.
-7. `git diff --exit-code <baseline_ref> -- proposals specifications schemas templates examples` reports no change.
-8. The note gives a disposition for each of the twelve source sections and exactly one recommendation.
-
-## Dependencies / blocks
-
-Parked. Return trigger: Kris restarts ki-specifications as a live specification effort. The earlier waiting-for condition and return trigger under Discussion are superseded until then.
-
-This item has no prerequisite and blocks nothing. It prefers to run after KI-SPEC-RGV-001 so the note lands where that review's authority inventory confirms informative notes belong; that is a sequencing preference, not build order, so `blocked_by` stays empty and the first Step carries the check. KI-SPEC-KIN-002 prefers to run after this item and consumes its recommendation. The originating harness handoff neither blocks nor is blocked by this recipient-owned assessment.
-
-## Documentation impact
-
-### Decision Records
-
-None. The note is informative and its recommendation is reversible input to the v1 boundary review; any later decision to open a KIP belongs to that review.
-
-### Specifications
-
-None. No KIP, KIS, schema, or registry changes, and the note carries no normative requirement.
-
-### Guides
-
-None. The note follows the existing "What to do today" route in the contributor guides and changes no practical workflow.
-
-### Roadmap
-
-KI-SPEC-KIN-002 takes this item's recommendation as input. A "candidate KIP" recommendation is carried by the note itself as v1 boundary review input; no new roadmap item opens while the repository is dormant.
+Resolution `merged` into [KI-SPEC-RGV-001](KI-SPEC-RGV-001-review-specifications-repository.md): the KBEP disposition depends on the authority classes that review settles. The scope worth keeping is folded into that record's Boundary and Discussion. It leaves no outstanding change of its own.
 
 ## Discussion
 

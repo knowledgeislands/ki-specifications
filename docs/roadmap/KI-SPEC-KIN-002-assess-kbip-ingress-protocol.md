@@ -5,16 +5,14 @@ title: Assess KBIP ingress protocol
 kind: investigate
 project: specifications
 component: knowledge-ingress
-horizon: hold
-hold:
-  reason: parked
-  condition: Kris restarts the ki-specifications live specification effort
-status: draft
+status: cancelled
+resolution: merged
+resolution_target: KI-SPEC-RGV-001
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T14:37:34Z
-updated_at: 2026-10-07T14:10:13Z
+updated_at: 2026-10-07T20:37:16Z
 transferred_from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBIP-knowledge-base-ingress-protocol.md
 ---
 
@@ -40,59 +38,11 @@ KI Specifications is intended to become the normative home for portable contract
 - No Knowledge Base governance workflow, storage, or publication mechanics are specified; those are routed to implementation guidance by name only.
 - No edit in the harness or any other repository.
 
-## Current state
+## Cancelled
 
-At `49403d3` (2026-10-05), KI Specifications has no KBIP proposal, KIS, schema, note, or conformance claim. No KIS is registered, and no Knowledge Export Package material remains: the premature `KIS-0002` Knowledge Export Package set was removed in `1a140df`. The only related material is the illustrative Knowledge Package schema, templates, and examples, whose schema carries `provenance`, `governance`, `lifecycle`, and `history` fields. The KBIP source has eleven top-level sections: Purpose, Separation of Concerns, Objectives, Import Lifecycle (seven stages: Intake, Classification, Canonicalisation, Relationship Enrichment, Governance Assignment, Publication, Continuous Evolution), Canonical Knowledge, Trust Levels, Knowledge Maturity, Provenance, Continuous Collaboration, Recommended Output Structure, and End Goal. Its own status block says it is a parked handoff whose import lifecycle, governance model, and output structure must not be implemented without a receiving-repository decision.
+Approved by Kris on 2026-10-07 under decision 17 of the state-of-play design, which approved every cancel and merge in the easiest-first delivery plan.
 
-## Steps
-
-- [ ] Confirm KI-SPEC-RGV-001's authority inventory has fixed the informative note location (default `docs/`) and that KI-SPEC-KIN-001 has recorded its KBEP recommendation before writing; if either has not yet run, use `docs/`, treat the KBEP disposition as open, and say so in the note and in Discussion.
-- [ ] Read the source with `git -C ../ki-agentic-harness show 887da053^:+/_HANDOFFS/KBIP-knowledge-base-ingress-protocol.md`, together with `+/_HANDOFFS/knowledge-acquisition-protocols.md` at the same revision.
-- [ ] Compare KBIP's stages and concepts with the KBEP note and with the illustrative Knowledge Package schema's `provenance`, `governance`, `lifecycle`, and `history` fields, without treating either as adopted.
-- [ ] Separate candidate portable-contract concerns from Knowledge Base implementation guidance, operating choices, and aspirational model detail, and give each of the eleven source sections one disposition: candidate portable contract, Knowledge Base implementation guidance, deferred, or out of scope.
-- [ ] Name the relationship between KBEP extraction and KBIP governed ingress, including what KBIP assumes of KBEP output and the upstream lineage it preserves.
-- [ ] Write `docs/kbip-ingress-assessment.md` (or the same filename in the confirmed location): open with "This document is informative throughout.", state the single recommendation (decline, retain as Knowledge Base guidance, or candidate KIP for the v1 boundary review) with its reasoning, include the disposition table and the KBEP/KBIP relationship, link the KBEP note, and cite the source as `knowledgeislands/ki-agentic-harness` `+/_HANDOFFS/KBIP-knowledge-base-ingress-protocol.md` at `0b4f7732640af6ceda02668d3be901751b02bc26`.
-- [ ] Run Verify and record the recommendation in one sentence under Discussion.
-
-## Files touched
-
-- `docs/kbip-ingress-assessment.md` (new; location per KI-SPEC-RGV-001, default `docs/`)
-- `docs/roadmap/KI-SPEC-KIN-002-assess-kbip-ingress-protocol.md`
-
-## Verify
-
-1. `ki repo audit --repo . --progress never` passes (the CI gate, `.github/workflows/ci.yml:59`).
-2. `ki repo audit --repo . --skill ki-work-roadmap` passes.
-3. `rumdl check .`, `rumdl fmt --check .`, and `rumdl check --enable MD057 .` report no issues.
-4. `grep -nwE 'MUST|REQUIRED|SHALL|SHOULD|RECOMMENDED|MAY|OPTIONAL' docs/kbip-ingress-assessment.md` returns nothing.
-5. `grep -nE 'KIP-[0-9]|KIS-[0-9]' docs/kbip-ingress-assessment.md` returns nothing.
-6. `grep -n '0b4f7732640af6ceda02668d3be901751b02bc26' docs/kbip-ingress-assessment.md` finds the provenance citation, and `head -3 docs/kbip-ingress-assessment.md` shows the informative marker.
-7. `git diff --exit-code <baseline_ref> -- proposals specifications schemas templates examples` reports no change.
-8. The note gives a disposition for each of the eleven source sections, distinguishes KBEP extraction from KBIP governed ingress and names their relationship, routes governance workflow and storage choices to implementation guidance, and makes exactly one recommendation.
-
-## Dependencies / blocks
-
-Parked. Return trigger: Kris restarts ki-specifications as a live specification effort. The earlier waiting-for condition and return trigger under Discussion are superseded until then.
-
-This item has no prerequisite and blocks nothing. It prefers to run after KI-SPEC-RGV-001, so the note lands where that review's authority inventory confirms informative notes belong, and after KI-SPEC-KIN-001, so it can take the KBEP recommendation as input. Both are sequencing preferences, not build order, so `blocked_by` stays empty and the first Step carries the checks. The originating harness handoff neither blocks nor is blocked by this recipient-owned assessment.
-
-## Documentation impact
-
-### Decision Records
-
-None. The note is informative and its recommendation is reversible input to the v1 boundary review; any later decision to open a KIP belongs to that review.
-
-### Specifications
-
-None. No KIP, KIS, schema, or registry changes, and the note carries no normative requirement.
-
-### Guides
-
-None. The note follows the existing "What to do today" route in the contributor guides and changes no practical workflow.
-
-### Roadmap
-
-No follow-on item. A "candidate KIP" recommendation is carried by the note itself as v1 boundary review input, and anything routed to Knowledge Base implementation guidance is named for its owning repository without opening a handoff while the repository is dormant.
+Resolution `merged` into [KI-SPEC-RGV-001](KI-SPEC-RGV-001-review-specifications-repository.md): the KBIP disposition depends on the authority classes that review settles. The scope worth keeping is folded into that record's Boundary and Discussion. It leaves no outstanding change of its own.
 
 ## Discussion
 

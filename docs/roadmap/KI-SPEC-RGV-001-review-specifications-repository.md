@@ -15,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T15:28:48Z
-updated_at: 2026-10-07T14:10:13Z
+updated_at: 2026-10-07T20:37:04Z
 ---
 
 ## Goal
@@ -34,7 +34,7 @@ This is a clean-end-state review, not a compatibility migration. It must identif
 - No KIP, KIS, or registry entry; `proposals/` and `specifications/` keep only their registry READMEs.
 - No structural change to `schemas/knowledge-package.schema.json`, its `$id`, or any template or example manifest; only README prose and the schema `description` string may change.
 - No change to `.ki.toml`, CI, or `.rumdl.toml`, and no edit in any other repository. A reusable shared-standard change is routed as a separate recipient item.
-- No KBEP or KBIP content; KI-SPEC-KIN-001 and KI-SPEC-KIN-002 own those assessments.
+- No KBEP or KBIP informative note before the authority inventory confirms the informative-note location. The KBEP and KBIP dispositions merged from KI-SPEC-KIN-001 and KI-SPEC-KIN-002 follow it inside this record; see "Merged KBEP and KBIP assessments" under Discussion.
 - `docs/adoption-guide.md` and `tooling/README.md` stay where they are; they gain cross-links, not a move into `docs/guides/`.
 
 ## Current state
@@ -90,7 +90,7 @@ Known disagreements across the retained process material, verified at `49403d3`:
 
 Parked. Return trigger: Kris restarts ki-specifications as a live specification effort. The earlier waiting-for condition and return trigger under Discussion are superseded until then.
 
-This review has no prerequisite and blocks nothing. KI-SPEC-KIN-001 and KI-SPEC-KIN-002 prefer to run after it so their informative notes land in the location its authority inventory confirms; that is a sequencing preference, not build order, so `blocks` stays empty.
+This review has no prerequisite and blocks nothing. The KBEP and KBIP dispositions merged from KI-SPEC-KIN-001 and KI-SPEC-KIN-002 depend on its authority classes, so they run after the authority inventory inside this record.
 
 The review may cite implementation evidence from other repositories, but it does not edit them. A reusable shared-standard change requires a separately accepted recipient item in the harness.
 
@@ -116,7 +116,7 @@ No KIS exists, so no behaviour-level contract changes. The retained future-proce
 
 ### Roadmap
 
-KI-SPEC-KIN-001 and KI-SPEC-KIN-002 read the confirmed informative-note location before writing. Any deferred normative question becomes a separate `RGV` item, and any reusable shared-skill change becomes a harness recipient item through the `ki-trades` route.
+The merged KBEP and KBIP dispositions read the confirmed informative-note location before writing. Any deferred normative question becomes a separate `RGV` item, and any reusable shared-skill change becomes a harness recipient item through the `ki-trades` route.
 
 ## Discussion
 
@@ -161,3 +161,11 @@ Moved from Now to Waiting for during the cross-repository roadmap clearance reco
 ### Parked (2026-10-07)
 
 In the state-of-play roadmap review on 2026-10-07, Kris described ki-specifications as a future concept and put the whole repository on hold with the least work possible, so this record moves from `waiting-for` to `parked`. Return trigger: Kris restarts ki-specifications as a live specification effort. The questions previously asked of Kris here are deferred with it, unanswered. This includes the earlier offer to split out the broken manifest validation command (the ajv validation fix): it is not split out and stays deferred with this record. On return, re-check the Current state and re-confirm the plan through `ki-plan` before moving it to Now; `status` stays `draft`.
+
+### Merged KBEP and KBIP assessments (2026-10-07)
+
+Kris approved merging KI-SPEC-KIN-001 (Assess the KBEP extraction protocol) and KI-SPEC-KIN-002 (Assess the KBIP ingress protocol) into this record on 2026-10-07, under decision 17 of the state-of-play design, because both dispositions depend on the authority classes this review settles.
+
+The kept scope: after the authority inventory, write one short informative note for each transferred draft protocol. The KBEP note gives every concern in the Knowledge Base Extraction Protocol a disposition, draws its portable-contract boundary, and recommends one of decline, retain as guidance, or carry forward as a candidate KIP for the v1 boundary review. The KBIP note separates extraction (KBEP) from governed ingress (KBIP), separates portable-contract candidates from Knowledge Base implementation guidance, names the relationship between the two protocols, and makes one recommendation as input to the v1 boundary review. Neither note is a proposal: no KIP or KIS number, no RFC 2119 keywords, and no wholesale copy of the source. Both sources survive only in KI Agentic Harness history at `0b4f7732640af6ceda02668d3be901751b02bc26` (`+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md` and `+/_HANDOFFS/KBIP-knowledge-base-ingress-protocol.md`), with the companion `+/_HANDOFFS/knowledge-acquisition-protocols.md` recording the intended lifecycle.
+
+The full shaped assessments are at their last open revisions: [KI-SPEC-KIN-001](https://github.com/knowledgeislands/ki-specifications/blob/fd96a5e/docs/roadmap/KI-SPEC-KIN-001-assess-kbep-extraction-protocol.md) and [KI-SPEC-KIN-002](https://github.com/knowledgeislands/ki-specifications/blob/fd96a5e/docs/roadmap/KI-SPEC-KIN-002-assess-kbip-ingress-protocol.md). This record's Steps, Files touched and Verify predate the merge; on return, `ki-plan` re-plans them to include both notes.
