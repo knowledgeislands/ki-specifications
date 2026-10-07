@@ -3,13 +3,13 @@ id: KI-SPEC-RGV-001
 area: RGV
 title: Review KI Specifications
 theme: repository-governance
-horizon: waiting-for
+horizon: parked
 status: draft
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T15:28:48Z
-updated_at: 2026-10-06T21:34:11Z
+updated_at: 2026-10-07T08:20:00Z
 ---
 
 ## Goal
@@ -82,6 +82,8 @@ Known disagreements across the retained process material, verified at `49403d3`:
 
 ## Dependencies / blocks
 
+Parked. Return trigger: Kris restarts ki-specifications as a live specification effort. The earlier waiting-for condition and return trigger under Discussion are superseded until then.
+
 This review has no prerequisite and blocks nothing. KI-SPEC-KIN-001 and KI-SPEC-KIN-002 prefer to run after it so their informative notes land in the location its authority inventory confirms; that is a sequencing preference, not build order, so `blocks` stays empty.
 
 The review may cite implementation evidence from other repositories, but it does not edit them. A reusable shared-standard change requires a separately accepted recipient item in the harness.
@@ -149,3 +151,7 @@ The 2026-10-04 question asked whether the retained future-process documents and 
 ### Deferred to Waiting for (2026-10-06)
 
 Moved from Now to Waiting for during the cross-repository roadmap clearance recorded in `+/_CHECKPOINTS/state-of-play.md` in `ki-arcadia-principal`. Named condition: Kris's planned review and discussion of every specification across the projects, which follows the thematic review in that checkpoint. This record is not an evidence-gathering assessment: it decides which document wins each disagreement (`Implemented` on KIS `Active`, the five-file KIP set, the KIS file set) and how illustrative material is marked. Those choices were made under delegated autonomy and are exactly what Kris's specification review will confirm or change, so delivering them now could be undone by that review. Return trigger: Kris's specification review settles the retained future process and the repository's posture; then reconfirm Current state and move back to Now. The broken manifest validation command (Current state, "Validation command") is a mechanical fix independent of those decisions and could be split out if Kris wants it earlier. Status returns from `ready` to `draft`, as the roadmap standard requires outside Now and Next; the shaped plan is retained and needs re-confirmation through `ki-plan` on return. No step was started.
+
+### Parked (2026-10-07)
+
+In the state-of-play roadmap review on 2026-10-07, Kris described ki-specifications as a future concept and put the whole repository on hold with the least work possible, so this record moves from `waiting-for` to `parked`. Return trigger: Kris restarts ki-specifications as a live specification effort. The questions previously asked of Kris here are deferred with it, unanswered. This includes the earlier offer to split out the broken manifest validation command (the ajv validation fix): it is not split out and stays deferred with this record. On return, re-check the Current state and re-confirm the plan through `ki-plan` before moving it to Now; `status` stays `draft`.

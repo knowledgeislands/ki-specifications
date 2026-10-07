@@ -3,13 +3,13 @@ id: KI-SPEC-KIN-002
 area: KIN
 title: Assess KBIP ingress protocol
 theme: knowledge-ingress
-horizon: waiting-for
+horizon: parked
 status: draft
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T14:37:34Z
-updated_at: 2026-10-06T21:34:11Z
+updated_at: 2026-10-07T08:20:00Z
 transferred_from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBIP-knowledge-base-ingress-protocol.md
 ---
 
@@ -67,6 +67,8 @@ At `49403d3` (2026-10-05), KI Specifications has no KBIP proposal, KIS, schema, 
 
 ## Dependencies / blocks
 
+Parked. Return trigger: Kris restarts ki-specifications as a live specification effort. The earlier waiting-for condition and return trigger under Discussion are superseded until then.
+
 This item has no prerequisite and blocks nothing. It prefers to run after KI-SPEC-RGV-001, so the note lands where that review's authority inventory confirms informative notes belong, and after KI-SPEC-KIN-001, so it can take the KBEP recommendation as input. Both are sequencing preferences, not build order, so `blocked_by` stays empty and the first Step carries the checks. The originating harness handoff neither blocks nor is blocked by this recipient-owned assessment.
 
 ## Documentation impact
@@ -111,3 +113,7 @@ The 2026-10-04 question asked whether the KBIP assessment should run now as a no
 ### Deferred to Waiting for (2026-10-06)
 
 Moved from Now to Waiting for during the cross-repository roadmap clearance recorded in `+/_CHECKPOINTS/state-of-play.md` in `ki-arcadia-principal`. Named condition: in-flight `KI-ARCADIA-MOD-006` (Knowledge acquisition lifecycle, Ready in `ki-arcadia-principal`) and the thematic review in that checkpoint, plus KI-SPEC-KIN-001, whose recommendation this item consumes and which is now Waiting for on the same condition. MOD-006's stage owners, harvest checkpoint and imperfect-routing handling overlap KBIP's governed ingress directly. Return trigger: KI-SPEC-KIN-001 returns to Now and its recommendation lands; then move back to Now. Status returns from `ready` to `draft`, as the roadmap standard requires outside Now and Next; the shaped plan is retained and needs re-confirmation through `ki-plan` on return. No step was started.
+
+### Parked (2026-10-07)
+
+In the state-of-play roadmap review on 2026-10-07, Kris described ki-specifications as a future concept and put the whole repository on hold with the least work possible, so this record moves from `waiting-for` to `parked`. Return trigger: Kris restarts ki-specifications as a live specification effort. The questions previously asked of Kris here are deferred with it, unanswered. On return, re-check the Current state and re-confirm the plan through `ki-plan` before moving it to Now; `status` stays `draft`.

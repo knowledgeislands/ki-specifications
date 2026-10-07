@@ -3,13 +3,13 @@ id: KI-SPEC-KIN-001
 area: KIN
 title: Assess KBEP extraction protocol
 theme: knowledge-ingress
-horizon: waiting-for
+horizon: parked
 status: draft
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T14:37:34Z
-updated_at: 2026-10-06T21:34:11Z
+updated_at: 2026-10-07T08:20:00Z
 transferred_from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md
 ---
 
@@ -64,6 +64,8 @@ At `49403d3` (2026-10-05), KI Specifications has no KBEP proposal, KIS, schema, 
 
 ## Dependencies / blocks
 
+Parked. Return trigger: Kris restarts ki-specifications as a live specification effort. The earlier waiting-for condition and return trigger under Discussion are superseded until then.
+
 This item has no prerequisite and blocks nothing. It prefers to run after KI-SPEC-RGV-001 so the note lands where that review's authority inventory confirms informative notes belong; that is a sequencing preference, not build order, so `blocked_by` stays empty and the first Step carries the check. KI-SPEC-KIN-002 prefers to run after this item and consumes its recommendation. The originating harness handoff neither blocks nor is blocked by this recipient-owned assessment.
 
 ## Documentation impact
@@ -107,3 +109,7 @@ The 2026-10-04 question asked whether the KBEP assessment should run now as a no
 ### Deferred to Waiting for (2026-10-06)
 
 Moved from Now to Waiting for during the cross-repository roadmap clearance recorded in `+/_CHECKPOINTS/state-of-play.md` in `ki-arcadia-principal`. Named condition: in-flight `KI-ARCADIA-MOD-006` (Knowledge acquisition lifecycle, Ready in `ki-arcadia-principal`) and the thematic review in that checkpoint. MOD-006 is defining the operational acquisition lifecycle, provenance package and harvest checkpoint that KBEP's extraction pipeline, provenance and output structure overlap, so this assessment's portable-contract boundary and section dispositions would be drawn against a model that review may change. Its sequencing preference after KI-SPEC-RGV-001, also now Waiting for, is likewise unresolved. Return trigger: MOD-006 is accepted or redirected by the review, and Kris's specification review confirms this note is still wanted; then move back to Now. Status returns from `ready` to `draft`, as the roadmap standard requires outside Now and Next; the shaped plan is retained and needs re-confirmation through `ki-plan` on return. No step was started.
+
+### Parked (2026-10-07)
+
+In the state-of-play roadmap review on 2026-10-07, Kris described ki-specifications as a future concept and put the whole repository on hold with the least work possible, so this record moves from `waiting-for` to `parked`. Return trigger: Kris restarts ki-specifications as a live specification effort. The questions previously asked of Kris here are deferred with it, unanswered. On return, re-check the Current state and re-confirm the plan through `ki-plan` before moving it to Now; `status` stays `draft`.
