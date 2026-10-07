@@ -2,14 +2,20 @@
 id: KI-SPEC-RGV-001
 area: RGV
 title: Review KI Specifications
-theme: repository-governance
-horizon: parked
+kind: deliver
+purpose: corrective
+project: specifications
+component: repository-governance
+horizon: hold
+hold:
+  reason: parked
+  condition: Kris restarts the ki-specifications live specification effort
 status: draft
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T15:28:48Z
-updated_at: 2026-10-07T08:20:00Z
+updated_at: 2026-10-07T14:10:13Z
 ---
 
 ## Goal

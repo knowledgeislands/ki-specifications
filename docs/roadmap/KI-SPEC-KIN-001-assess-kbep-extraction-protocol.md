@@ -2,14 +2,19 @@
 id: KI-SPEC-KIN-001
 area: KIN
 title: Assess KBEP extraction protocol
-theme: knowledge-ingress
-horizon: parked
+kind: investigate
+project: specifications
+component: knowledge-ingress
+horizon: hold
+hold:
+  reason: parked
+  condition: Kris restarts the ki-specifications live specification effort
 status: draft
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T14:37:34Z
-updated_at: 2026-10-07T08:20:00Z
+updated_at: 2026-10-07T14:10:13Z
 transferred_from: knowledgeislands/ki-agentic-harness:+/_HANDOFFS/KBEP-knowledge-base-extraction-protocol.md
 ---
 
