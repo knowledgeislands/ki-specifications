@@ -6,16 +6,13 @@ kind: deliver
 purpose: corrective
 project: specifications
 component: repository-governance
-horizon: hold
-hold:
-  reason: parked
-  condition: Kris restarts the ki-specifications live specification effort
-status: draft
+status: cancelled
+resolution: rejected
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-07-27T15:28:48Z
-updated_at: 2026-10-07T20:37:04Z
+updated_at: 2026-10-09T21:08:04Z
 ---
 
 ## Goal
@@ -37,86 +34,10 @@ This is a clean-end-state review, not a compatibility migration. It must identif
 - No KBEP or KBIP informative note before the authority inventory confirms the informative-note location. The KBEP and KBIP dispositions merged from KI-SPEC-KIN-001 and KI-SPEC-KIN-002 follow it inside this record; see "Merged KBEP and KBIP assessments" under Discussion.
 - `docs/adoption-guide.md` and `tooling/README.md` stay where they are; they gain cross-links, not a move into `docs/guides/`.
 
-## Current state
 
-Refreshed at `49403d3` (2026-10-05). The repository is in its declared dormant pre-v1 posture: `proposals/` and `specifications/` hold only empty registry READMEs, so there is no existing KIP or KIS document set to review; no tracked `.ki-meta/` file remains; root `.gitignore` is marker-bounded; and `ki repo audit --repo .` passes across 19 skills, including `ki-guides`, which KI-SPEC-RGV-003 added with a contributor and implementer guide collection under `docs/guides/`. `rumdl check .`, `rumdl fmt --check .`, and `rumdl check --enable MD057 .` (relative links) are clean across 54 files.
+## Cancelled
 
-Known disagreements across the retained process material, verified at `49403d3`:
-
-- `Implemented` marker. `GOVERNANCE.md:26` and `docs/specification-process.md:34` mark a KIP `Implemented` when its KIS is promoted to `Active`; `docs/specification-process.md:17`, `CONTRIBUTING.md:39`, and the `README.md` KIP/KIS model paragraph mark it on KIS publication at `Draft`. `docs/specification-process.md` therefore contradicts itself.
-- KIP file set. `CONTRIBUTING.md` requires a fixed five-file KIP set (`README.md`, `proposal.md`, `rationale.md`, `alternatives.md`, `status.md`); `proposals/README.md:7` requires a minimum of three.
-- KIS file set. `docs/specification-process.md:32` says the KIS file set is described in `specifications/README.md`, which describes none; neither did the pre-reset README at `1a140df^`. The two pre-reset KIS sets both carried `README.md`, `specification.md`, `conformance.md`, and `manifest.md`, plus topic files.
-- Guide-shaped documents. `docs/adoption-guide.md` and `tooling/README.md` sit outside `docs/guides/` with no link to it.
-- Illustrative material. No KIS adopts `schemas/`, `templates/`, or `examples/`. The schema `description` already says "informative pending an accepted proposal" and `templates/README.md` says no KIS defines the levels normatively, but `examples/README.md`, `tooling/README.md`, and `docs/adoption-guide.md` carry no such statement, and `docs/adoption-guide.md:29` speaks of itself as a specification ("Nothing in this specification assumes ...").
-- Validation command. All seven tracked manifests (`examples/*/manifest.json`, `schemas/examples/*.json`, `templates/*/manifest.json`) validate, but only with `npx -y -p ajv-cli -p ajv-formats ajv validate ...`. The documented `bun x ajv-cli validate ... -c ajv-formats` and `npx ajv-cli validate ... -c ajv-formats` forms both fail with "Cannot find module 'ajv-formats'". The failing form appears in `CLAUDE.md:25`, `tooling/README.md:10` and `:16`, `docs/guides/implementer/implementing-an-accepted-kis.md:33`, `templates/README.md:26`, and `templates/{minimal,standard,extended}/README.md:13`.
-
-## Steps
-
-- [ ] Build the authority inventory: classify every tracked file outside `docs/roadmap/` as normative, informative, illustrative, generated, historical, or operational, and record it as a table under `### Authority inventory` in this record's Discussion. Confirm `docs/` as the location for informative notes and widen the `docs/` row of the `README.md` repository map to name informative assessment notes. Compare the stated ecosystem responsibility with the harness, `tools-ki`, Website, and Arcadia boundaries without importing their implementation detail.
-- [ ] Reconcile the `Implemented` marker to KIS promotion to `Active`: conform `docs/specification-process.md:17`, `CONTRIBUTING.md:39`, and the `README.md` KIP/KIS model paragraph to `GOVERNANCE.md:26` and `docs/specification-process.md:34`.
-- [ ] Conform `proposals/README.md` to the fixed five-file KIP set in `CONTRIBUTING.md`, citing `CONTRIBUTING.md` as the authority rather than restating a divergent rule.
-- [ ] Add the KIS file set that `docs/specification-process.md:32` already claims `specifications/README.md` describes: `README.md` with the status block the implementer guide relies on, `specification.md`, and `conformance.md`, with further topic files permitted. Describe it as future process, consistent with the dormant posture.
-- [ ] Mark `schemas/`, `templates/`, `examples/`, and `docs/adoption-guide.md` explicitly "illustrative, not adopted by any KIS": add the statement to `examples/README.md`, `tooling/README.md`, and `docs/adoption-guide.md`; align the wording in `templates/README.md` and the schema `description`; and replace the "this specification" self-reference in `docs/adoption-guide.md`.
-- [ ] Replace the failing manifest validation command in all eight occurrences listed under Current state with one form verified to work (currently `npx -y -p ajv-cli -p ajv-formats ajv validate --spec=draft2020 -c ajv-formats -s schemas/knowledge-package.schema.json -d <manifest>`, or a Bun equivalent proven by running it).
-- [ ] Add a cross-link from `docs/adoption-guide.md` and `tooling/README.md` to `docs/guides/README.md`, leaving both files in place.
-- [ ] Decide whether any stable repository-shape rule belongs in the shared `ki-repo-specifications` skill (harness `skills/repo-structure/ki-repo-specifications`). Keep repository-specific detail local, record the outcome in Discussion, and route only a genuinely reusable contract change to the harness through a focused recipient item.
-- [ ] Align entry-point and contributor documentation with the reviewed end state, run the complete Verify set, and record any deliberately deferred normative question as a separate roadmap item rather than an ambiguous TODO.
-
-## Files touched
-
-- `README.md`, `CONTRIBUTING.md`, `CLAUDE.md`, `docs/specification-process.md`, `docs/adoption-guide.md`
-- `proposals/README.md`, `specifications/README.md`
-- `schemas/knowledge-package.schema.json` (`description` string only)
-- `templates/README.md`, `templates/{minimal,standard,extended}/README.md`, `examples/README.md`, `tooling/README.md`
-- `docs/guides/implementer/implementing-an-accepted-kis.md` (validation command only)
-- `docs/roadmap/KI-SPEC-RGV-001-review-specifications-repository.md`, plus any focused follow-up roadmap item the review justifies
-
-`GOVERNANCE.md`, `docs/numbering.md`, and `docs/versioning.md` are read as authorities and are not expected to change.
-
-## Verify
-
-1. `ki repo audit --repo . --progress never` passes (the CI gate, `.github/workflows/ci.yml:59`).
-2. `ki repo audit --repo . --skill ki-work-roadmap` and `ki repo audit --repo . --skill ki-repo-specifications` pass.
-3. `rumdl check .` and `rumdl fmt --check .` report no issues.
-4. `rumdl check --enable MD057 .` reports no issues, so every relative link resolves (MD057 is disabled in `.rumdl.toml` and enabled here for this check only).
-5. `for m in examples/*/manifest.json schemas/examples/*.json templates/*/manifest.json; do npx -y -p ajv-cli -p ajv-formats ajv validate --spec=draft2020 -c ajv-formats -s schemas/knowledge-package.schema.json -d "$m" || exit 1; done` reports all seven valid, and the documented command, run exactly as written, validates `examples/minimal-package/manifest.json`.
-6. `grep -rn "bun x ajv-cli\|npx ajv-cli" --exclude-dir=.git --exclude-dir=roadmap .` returns nothing.
-7. `grep -n "Implemented" README.md CONTRIBUTING.md GOVERNANCE.md docs/specification-process.md` shows every lifecycle claim tying `Implemented` to KIS promotion to `Active`.
-8. `grep -n "at minimum" proposals/README.md` returns nothing, and `specifications/README.md` names the KIS file set.
-9. `grep -n "this specification" docs/adoption-guide.md` returns nothing; `examples/README.md`, `tooling/README.md`, and `docs/adoption-guide.md` each contain the illustrative statement.
-10. `git ls-files proposals specifications` lists only the two registry READMEs, and `git ls-files | grep -c '\.ki-meta/'` prints `0`.
-
-## Dependencies / blocks
-
-Parked. Return trigger: Kris restarts ki-specifications as a live specification effort. The earlier waiting-for condition and return trigger under Discussion are superseded until then.
-
-This review has no prerequisite and blocks nothing. The KBEP and KBIP dispositions merged from KI-SPEC-KIN-001 and KI-SPEC-KIN-002 depend on its authority classes, so they run after the authority inventory inside this record.
-
-The review may cite implementation evidence from other repositories, but it does not edit them. A reusable shared-standard change requires a separately accepted recipient item in the harness.
-
-## Delegation
-
-- Round 1 - research and mechanical: build the authority inventory and re-confirm the Current state disagreements with exact source locations; read-only; gate: inventory table and reproducible command output.
-- Round 2 - implementation: apply the reconciliation, illustrative marking, validation command, and cross-link Steps in exclusive file groups (process documents; registries; illustrative material and tooling; guide command); gate: each group passes Verify 3 and 4.
-- Round 3 - orchestrator: run the complete Verify set, record the shared-skill outcome, and prepare the record for review.
-
-## Documentation impact
-
-### Decision Records
-
-None. The reconciliation conforms documents to their existing named authorities, and the choices made are reversible editorial calls recorded under Discussion rather than structural or adoption decisions.
-
-### Specifications
-
-No KIS exists, so no behaviour-level contract changes. The retained future-process documents (`docs/specification-process.md`, `CONTRIBUTING.md`, `proposals/README.md`, `specifications/README.md`) are edited only to agree with one another.
-
-### Guides
-
-`docs/guides/implementer/implementing-an-accepted-kis.md` receives the working validation command; no other guide text changes, because the guides already defer to the authority documents and agree with the reconciled model. `docs/adoption-guide.md` and `tooling/README.md` gain cross-links to `docs/guides/README.md`.
-
-### Roadmap
-
-The merged KBEP and KBIP dispositions read the confirmed informative-note location before writing. Any deferred normative question becomes a separate `RGV` item, and any reusable shared-skill change becomes a harness recipient item through the `ki-trades` route.
+Cancelled 2026-10-09 as rejected, approved by Kris Brown (state-of-play decisions log, Decision 22): Kris chose not to keep this as a work record. It is kept as an idea in Arcadia's specification-review Project (`ki-arcadia-principal`, `Streams/Projects/specification-review.md`). It leaves no outstanding change. The unstarted delivery plan is removed from this record; Git history holds it.
 
 ## Discussion
 
