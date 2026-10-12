@@ -1,4 +1,4 @@
-# ki-specifications
+# Knowledge Islands Specifications
 
 This is the pre-v1 holding repository for a future Knowledge Islands-wide specification programme. Repository-level specifications remain local to their owning repositories. The repository is on hold until Kris restarts it as a live specification effort.
 
