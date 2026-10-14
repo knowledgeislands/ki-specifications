@@ -3,17 +3,13 @@ id: KI-SPEC-KIN-003
 area: KIN
 title: Portable live-artifact contract
 kind: deliver
-status: draft
-horizon: hold
-hold:
-  reason: waiting-for
-  condition: The v1 boundary review, or Kris restarting the specification effort
-  review: 2027-01-04
+status: cancelled
+resolution: rejected
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-13T04:20:57Z
-updated_at: 2026-10-14T06:52:07Z
+updated_at: 2026-10-14T13:28:30Z
 ---
 
 ## Goal
@@ -41,6 +37,10 @@ This does not block work in `apps-observatory`, which keeps the working contract
 - The repository is dormant while Knowledge Islands is at v0.x, so adoption waits on the v1 boundary review or Kris restarting the specification effort.
 - The contract would state portable behaviour only. Each host's isolation, caching, and native answering stay in that host's own specification.
 - No edit in `apps-observatory`, `hnr-principal`, `legal-principal`, or any other repository.
+
+## Cancelled
+
+Cancelled 2026-10-14 as rejected (parked), approved by Kris Brown in the state-of-play run ('RC-ALL: approve all' to the roadmap census): this repository is paused until the v1 boundary review. The working contract summary and the open questions are kept as an idea in the specification-review Project (`ki-principal`, `Streams/Projects/specification-review.md`); the working contract itself stays in `apps-observatory`, and Git history keeps the full record. It leaves no outstanding change.
 
 ## Discussion
 
