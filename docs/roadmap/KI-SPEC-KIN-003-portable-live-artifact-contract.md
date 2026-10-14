@@ -2,12 +2,18 @@
 id: KI-SPEC-KIN-003
 area: KIN
 title: Portable live-artifact contract
-status: triage
+kind: deliver
+status: draft
+horizon: hold
+hold:
+  reason: waiting-for
+  condition: The v1 boundary review, or Kris restarting the specification effort
+  review: 2027-01-04
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-13T04:20:57Z
-updated_at: 2026-10-13T04:20:57Z
+updated_at: 2026-10-14T06:52:07Z
 ---
 
 ## Goal
@@ -46,3 +52,7 @@ Open questions for shaping:
 - How the bridge version evolves.
 - Whether `artifact_tools` should name tools by server or by capability.
 - Whether ChatGPT publication as a `ui://` resource belongs in the same contract.
+
+### Adoption
+
+On 14 October 2026 Kris approved the state-of-play thread's triage burn-down as written, under Kris's instruction to burn the roadmap down: adopted as `deliver / Hold` until 2027-01-04. Kris has paused moving this repository forward until the v1 boundary review; a dated hold replaces leaving the record in triage indefinitely. The harness's portable live-artifact standard record closed as a duplicate of this one. Adoption grants no planning, implementation or acceptance authority.
