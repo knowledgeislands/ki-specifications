@@ -5,12 +5,15 @@ title: Archify status flow diagrams
 kind: deliver
 project: observatory
 component: repository-governance
-status: triage
+priority: medium
+size: s
+status: draft
+horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-19T07:37:29Z
-updated_at: 2026-10-19T07:37:29Z
+updated_at: 2026-10-19T23:32:23Z
 ---
 
 # KI-SPEC-RGV-004: Archify Status Flow Diagrams
