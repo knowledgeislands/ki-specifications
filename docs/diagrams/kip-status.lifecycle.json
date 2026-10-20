@@ -1,0 +1,37 @@
+{
+  "schema_version": 3,
+  "diagram_type": "lifecycle",
+  "meta": {
+    "title": "KIP status flow",
+    "subtitle": "The statuses a Knowledge Islands Proposal moves through, from Draft to its final outcome",
+    "output": "kip-status.html",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/knowledgeislands/ki-specifications",
+      "provider": "github",
+      "link_mode": "web",
+      "revision": "6b4e2e3c34d2226f7f03f97bfc95479b7892ec88"
+    }
+  },
+  "mainPath": ["draft", "review", "accepted", "implemented"],
+  "states": [
+    { "id": "draft", "type": "start", "label": "Draft", "sublabel": "number assigned", "step": "01", "sources": [{ "path": "docs/specification-process.md", "line": 11, "label": "Proposed" }, { "path": "docs/specification-process.md", "line": 58, "end_line": 60, "label": "Mermaid fence" }] },
+    { "id": "review", "type": "decision", "label": "Review", "sublabel": "assessed, may be revised", "step": "02", "sources": [{ "path": "docs/specification-process.md", "line": 12, "end_line": 13, "label": "Reviewed and Revised" }, { "path": "docs/specification-process.md", "line": 61, "end_line": 64, "label": "Mermaid fence" }] },
+    { "id": "accepted", "type": "active", "label": "Accepted", "sublabel": "mandate to draft a KIS", "step": "03", "sources": [{ "path": "docs/specification-process.md", "line": 14, "label": "Accepted" }, { "path": "docs/specification-process.md", "line": 65, "end_line": 66, "label": "Mermaid fence" }] },
+    { "id": "implemented", "type": "success", "label": "Implemented", "sublabel": "its KIS is published", "tag": "terminal", "step": "04", "sources": [{ "path": "docs/specification-process.md", "line": 17, "label": "Implemented" }, { "path": "docs/specification-process.md", "line": 69, "label": "Mermaid fence" }] },
+    { "id": "rejected", "type": "failure", "label": "Rejected", "sublabel": "maintainer decision", "tag": "terminal", "sources": [{ "path": "docs/specification-process.md", "line": 15, "label": "Rejected" }, { "path": "docs/specification-process.md", "line": 67, "label": "Mermaid fence" }] },
+    { "id": "withdrawn", "type": "neutral", "label": "Withdrawn", "sublabel": "author's choice", "tag": "terminal", "sources": [{ "path": "docs/specification-process.md", "line": 16, "label": "Withdrawn" }, { "path": "docs/specification-process.md", "line": 68, "label": "Mermaid fence" }] },
+    { "id": "superseded", "type": "neutral", "label": "Superseded", "sublabel": "intent replaced", "tag": "terminal", "sources": [{ "path": "docs/specification-process.md", "line": 18, "label": "Superseded" }, { "path": "docs/specification-process.md", "line": 70, "label": "Mermaid fence" }] }
+  ],
+  "transitions": [
+    { "id": "draft-review", "from": "draft", "to": "review", "label": "file set complete" },
+    { "id": "review-review", "from": "review", "to": "review", "label": "revised", "variant": "dashed" },
+    { "id": "review-accepted", "from": "review", "to": "accepted", "label": "accept" },
+    { "id": "accepted-implemented", "from": "accepted", "to": "implemented", "label": "KIS published" },
+    { "id": "review-rejected", "from": "review", "to": "rejected", "label": "reject" },
+    { "id": "draft-withdrawn", "from": "draft", "to": "withdrawn", "label": "withdraw" },
+    { "id": "review-withdrawn", "from": "review", "to": "withdrawn", "label": "withdraw" },
+    { "id": "accepted-superseded", "from": "accepted", "to": "superseded", "label": "replaced by a later KIP" }
+  ]
+}

@@ -7,13 +7,13 @@ project: observatory
 component: repository-governance
 priority: medium
 size: s
-status: ready
+status: awaiting-review
 horizon: now
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 5e401df87c02a592992c83c697188fcda5e120d0
 created_at: 2026-10-19T07:37:29Z
-updated_at: 2026-10-20T06:32:30Z
+updated_at: 2026-10-20T06:36:10Z
 ---
 
 # KI-SPEC-RGV-004: Archify Status Flow Diagrams
@@ -45,12 +45,12 @@ Archify reads `stateDiagram` as its `lifecycle` type, so both carry by meaning w
 
 ## Steps
 
-- [ ] Write `docs/diagrams/kip-status.lifecycle.json` and `docs/diagrams/kis-status.lifecycle.json` as Archify lifecycle sources carrying every state and transition of the two Mermaid fences, each state citing its line in `docs/specification-process.md` at revision `6b4e2e3`.
-- [ ] Finalize both at showcase quality outside the repository and export each as a static `light` SVG to `docs/diagrams/<slug>.svg` with the `ki-diagrams` exporter.
-- [ ] Add `docs/diagrams/diagrams.toml` and `docs/diagrams/README.md` from the `ki-diagrams` templates, with `svg_form = "light"` and `last_checked` at the traced revision.
-- [ ] Embed each SVG above its original fence in `docs/specification-process.md`, moving the fence into a collapsed `<details>` block that says it is kept until sign-off.
-- [ ] Declare `[skills.ki-diagrams]` in `.ki.toml` so the repository audit checks the diagram set.
-- [ ] Run the checks under Verify and complete the review packet.
+- [x] Write `docs/diagrams/kip-status.lifecycle.json` and `docs/diagrams/kis-status.lifecycle.json` as Archify lifecycle sources carrying every state and transition of the two Mermaid fences, each state citing its line in `docs/specification-process.md` at revision `6b4e2e3`.
+- [x] Finalize both at showcase quality outside the repository and export each as a static `light` SVG to `docs/diagrams/<slug>.svg` with the `ki-diagrams` exporter.
+- [x] Add `docs/diagrams/diagrams.toml` and `docs/diagrams/README.md` from the `ki-diagrams` templates, with `svg_form = "light"` and `last_checked` at the traced revision.
+- [x] Embed each SVG above its original fence in `docs/specification-process.md`, moving the fence into a collapsed `<details>` block that says it is kept until sign-off.
+- [x] Declare `[skills.ki-diagrams]` in `.ki.toml` so the repository audit checks the diagram set.
+- [x] Run the checks under Verify and complete the review packet.
 
 ## Files touched
 
@@ -88,6 +88,46 @@ None: no status, transition or normative text changes; the diagrams redraw the e
 ### Roadmap
 
 None here. Removing the Mermaid fences after sign-off and the KI-theme re-export are later steps of this same record's boundary, taken at acceptance or when the theme lands.
+
+## Review
+
+### Delivered
+
+Both status flows in `docs/specification-process.md` are now Archify lifecycle diagrams, with committed JSON sources and static light SVGs under `docs/diagrams/`, listed in a `ki-diagrams` manifest and README, and embedded above the original Mermaid fences, which stay in collapsed `<details>` blocks until the owner signs the diagrams off. No status, transition or specification text changed. Baseline `5e401df87c02a592992c83c697188fcda5e120d0`; the sources trace `docs/specification-process.md`, `GOVERNANCE.md` and `proposals/README.md` at `6b4e2e3`, whose content is identical at the baseline. Not done, by the boundary's own conditions: removing the fences, which waits for sign-off, and the KI-theme re-export, which waits for the `ki-diagrams` KI-theme export.
+
+### Change Summary
+
+- `docs/diagrams/kip-status.lifecycle.json` and `docs/diagrams/kis-status.lifecycle.json`: Archify lifecycle sources, every state citing its prose line and Mermaid line, `meta.repository` pinned to the public revision `6b4e2e3` so source links resolve on GitHub.
+- `docs/diagrams/kip-status.svg` and `docs/diagrams/kis-status.svg`: static `light` exports from the `ki-diagrams` exporter.
+- `docs/diagrams/diagrams.toml` and `docs/diagrams/README.md`: the manifest, with `svg_form = "light"` and `last_checked` at `6b4e2e3`, and the reader index.
+- `docs/specification-process.md`: each SVG above its fence, the fence inside `<details>` with a note that it is kept until sign-off.
+- `.ki.toml`: declares `[skills.ki-diagrams]`, so the audit now checks the set and warns on the two kept fences.
+- Decisions: the forms follow the `ki-diagrams` standard's `docs/diagrams/` layout rather than the pilot's note-side placement, because this is a project repository and not a knowledge-base island. Archify draws the two `withdraw` transitions, from Draft and from Review, as one arrow leaving a dashed group around both states; the meaning is unchanged. KIP `Superseded` follows the Mermaid fence and line 18 (`Accepted -> Superseded`), not the `text` sketch at line 21.
+
+### Verification
+
+- `archify validate lifecycle --quality showcase`: pass for both sources, 0 errors, 0 warnings.
+- `archify finalize lifecycle --quality showcase`: pass for both, every gate passing including the browser check.
+- `export-svg.ts --form light`: both SVGs written without refusal; no local path in any source or SVG.
+- `rumdl check` on the changed Markdown: pass. Every JSON and TOML file parses.
+- `ki repo audit --skill ki-diagrams`: no failure; two DIAG-7 warnings for the retained fences, as planned.
+- `ki repo audit --skill ki-work-roadmap` and `--skill ki-repo-specifications`: pass.
+- `ki repo audit --repo .` in the linked worktree: the record's ITEM-3 failure is cleared and no new failure appears; the remaining RUNTIMES-2 and REPO-REG-1 failures are the same with and without this change and come from the unregistered worktree, whose ignored runtime skill links are absent.
+- Visual check: both SVGs rendered to PNG and inspected; every state and transition of both fences is present and legible.
+
+### Outstanding concerns
+
+- The fences remain until the owner signs the diagrams off; removing them is the last step of this record's own boundary, for the acceptor once sign-off is given.
+- The KI-theme re-export remains open in this record's boundary until the `ki-diagrams` KI-theme export lands.
+- The `text` sketch at line 21 of `docs/specification-process.md` draws `Implemented -> Superseded` for a KIP, against line 18, `GOVERNANCE.md` and the Mermaid fence. Out of this record's boundary; raised to the owner in the run report.
+
+### Post-change review
+
+The goal is met: both flows are Archify diagrams under the one diagram standard, traced and embedded, with the Mermaid kept for comparison. Scope held to the diagrams, their manifest, the embedding and the declaration. Regression risk is low: the change is informative documentation plus one skill declaration whose only new findings are the two expected warnings. Ready for acceptance once the owner has looked at the two images.
+
+### Mini recap
+
+Delivered the KIP and KIS status flows as Archify lifecycle diagrams in light SVG, embedded above the kept Mermaid, and adopted `ki-diagrams` here; every planned check passed, with the two expected fence warnings. Concerns: fence removal on sign-off, the theme re-export, and the line-21 sketch. Learning route, not promoted: the `ki-diagrams` standard could say how a project repository whose diagrams illustrate a document, rather than a system, places them; the `docs/diagrams/` layout worked here.
 
 ## Discussion
 

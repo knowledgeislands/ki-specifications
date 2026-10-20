@@ -1,0 +1,29 @@
+{
+  "schema_version": 3,
+  "diagram_type": "lifecycle",
+  "meta": {
+    "title": "KIS status flow",
+    "subtitle": "The statuses a Knowledge Islands Specification moves through, from Draft to Superseded",
+    "output": "kis-status.html",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/knowledgeislands/ki-specifications",
+      "provider": "github",
+      "link_mode": "web",
+      "revision": "6b4e2e3c34d2226f7f03f97bfc95479b7892ec88"
+    }
+  },
+  "mainPath": ["draft", "active", "deprecated", "superseded"],
+  "states": [
+    { "id": "draft", "type": "start", "label": "Draft", "sublabel": "published from an accepted KIP", "step": "01", "sources": [{ "path": "docs/specification-process.md", "line": 33, "label": "Published at Draft" }, { "path": "docs/specification-process.md", "line": 77, "label": "Mermaid fence" }] },
+    { "id": "active", "type": "success", "label": "Active", "sublabel": "proven by implementation", "step": "02", "sources": [{ "path": "docs/specification-process.md", "line": 34, "label": "Promoted to Active" }, { "path": "docs/specification-process.md", "line": 78, "label": "Mermaid fence" }] },
+    { "id": "deprecated", "type": "waiting", "label": "Deprecated", "sublabel": "not for new work", "step": "03", "sources": [{ "path": "docs/specification-process.md", "line": 35, "label": "Deprecated" }, { "path": "docs/specification-process.md", "line": 79, "label": "Mermaid fence" }] },
+    { "id": "superseded", "type": "neutral", "label": "Superseded", "sublabel": "successor KIS is Active", "tag": "terminal", "step": "04", "sources": [{ "path": "docs/specification-process.md", "line": 36, "label": "Superseded" }, { "path": "docs/specification-process.md", "line": 80, "end_line": 81, "label": "Mermaid fence" }] }
+  ],
+  "transitions": [
+    { "id": "draft-active", "from": "draft", "to": "active", "label": "implementation experience" },
+    { "id": "active-deprecated", "from": "active", "to": "deprecated", "label": "successor intended" },
+    { "id": "deprecated-superseded", "from": "deprecated", "to": "superseded", "label": "successor Active" }
+  ]
+}

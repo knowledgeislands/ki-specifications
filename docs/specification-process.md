@@ -53,6 +53,11 @@ Full detail on how this axis relates to schema `$id` versions and package versio
 
 KIP:
 
+![KIP status flow](diagrams/kip-status.svg)
+
+<details>
+<summary>Earlier Mermaid diagram, kept until the Archify diagram above is signed off. The Archify diagram is a plain light export and will be re-exported in the Knowledge Islands theme once that export is available.</summary>
+
 ```mermaid
 stateDiagram-v2
     [*] --> Draft
@@ -70,7 +75,14 @@ stateDiagram-v2
     Superseded --> [*]
 ```
 
+</details>
+
 KIS:
+
+![KIS status flow](diagrams/kis-status.svg)
+
+<details>
+<summary>Earlier Mermaid diagram, kept until the Archify diagram above is signed off. The Archify diagram is a plain light export and will be re-exported in the Knowledge Islands theme once that export is available.</summary>
 
 ```mermaid
 stateDiagram-v2
@@ -80,3 +92,5 @@ stateDiagram-v2
     Deprecated --> Superseded
     Superseded --> [*]
 ```
+
+</details>

@@ -1,0 +1,22 @@
+# Living diagrams manifest: one table per diagram, keyed by its slug.
+# See the ki-diagrams standard for each field.
+
+[kip-status]
+type = "lifecycle"
+question = "Which statuses does a KIP move through, and which transitions are allowed between them?"
+audience = "Proposal authors, reviewers and maintainers"
+traced = ["docs/specification-process.md", "GOVERNANCE.md", "proposals/README.md"]
+stale_when = "a KIP status is added, removed or renamed, or a transition between KIP statuses changes"
+regenerate = "Build an Archify lifecycle diagram of the KIP status flow from docs/specification-process.md, its KIP lifecycle section and status-flow diagram, checked against GOVERNANCE.md and proposals/README.md. Cite file and line for every state, keep the existing layout where the facts have not changed, and finalize at showcase quality with --repo-root."
+last_checked = "6b4e2e3c34d2226f7f03f97bfc95479b7892ec88"
+svg_form = "light"
+
+[kis-status]
+type = "lifecycle"
+question = "Which statuses does a KIS move through, and which transitions are allowed between them?"
+audience = "Specification editors, implementers and maintainers"
+traced = ["docs/specification-process.md", "GOVERNANCE.md"]
+stale_when = "a KIS status is added, removed or renamed, or a transition between KIS statuses changes"
+regenerate = "Build an Archify lifecycle diagram of the KIS status flow from docs/specification-process.md, its From Accepted KIP to KIS section and status-flow diagram, checked against GOVERNANCE.md. Cite file and line for every state, keep the existing layout where the facts have not changed, and finalize at showcase quality with --repo-root."
+last_checked = "6b4e2e3c34d2226f7f03f97bfc95479b7892ec88"
+svg_form = "light"
