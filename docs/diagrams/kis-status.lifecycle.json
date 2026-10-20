@@ -23,7 +23,7 @@
   ],
   "transitions": [
     { "id": "draft-active", "from": "draft", "to": "active", "label": "implementation experience" },
-    { "id": "active-deprecated", "from": "active", "to": "deprecated", "label": "successor intended" },
+    { "id": "active-deprecated", "from": "active", "to": "deprecated", "label": "deprecate" },
     { "id": "deprecated-superseded", "from": "deprecated", "to": "superseded", "label": "successor Active" }
   ]
 }

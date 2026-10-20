@@ -56,7 +56,7 @@ KIP:
 ![KIP status flow](diagrams/kip-status.svg)
 
 <details>
-<summary>Earlier Mermaid diagram, kept until the Archify diagram above is signed off. The Archify diagram is a plain light export and will be re-exported in the Knowledge Islands theme once that export is available.</summary>
+<summary>Earlier Mermaid diagram, kept until the Archify diagram above is signed off.</summary>
 
 ```mermaid
 stateDiagram-v2
@@ -82,7 +82,7 @@ KIS:
 ![KIS status flow](diagrams/kis-status.svg)
 
 <details>
-<summary>Earlier Mermaid diagram, kept until the Archify diagram above is signed off. The Archify diagram is a plain light export and will be re-exported in the Knowledge Islands theme once that export is available.</summary>
+<summary>Earlier Mermaid diagram, kept until the Archify diagram above is signed off.</summary>
 
 ```mermaid
 stateDiagram-v2

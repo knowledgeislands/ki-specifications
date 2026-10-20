@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 368" data-reader-fit="intrinsic-height" data-lifecycle-layout="main-path-v3" role="img" lang="en" aria-labelledby="archify-diagram-title archify-diagram-description" data-preset="classic" data-quality-profile="showcase" data-motion-choreography="walk" width="1080" height="368" data-theme="light" fill="#000000" stop-color="#000000" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, &quot;Liberation Mono&quot;, monospace"><rect x="0" y="0" width="1080" height="368" fill="#f4f5f7" stop-color="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1133 368" data-reader-fit="intrinsic-height" data-lifecycle-layout="main-path-v3" role="img" lang="en" aria-labelledby="archify-diagram-title archify-diagram-description" data-preset="classic" data-quality-profile="showcase" data-motion-choreography="walk" width="1133" height="368" data-theme="light" fill="#000000" stop-color="#000000" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace"><rect x="0" y="0" width="1133" height="368" fill="#f5efe0" stop-color="#000000"/>
         <title id="archify-diagram-title" stop-color="#000000">KIP status flow</title>
         <desc id="archify-diagram-description" stop-color="#000000">The statuses a Knowledge Islands Proposal moves through, from Draft to its final outcome</desc>
         <!-- Definitions -->
         <defs stop-color="#000000">
           <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" stop-color="#000000">
-            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" stop-color="#000000"/>
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4a5568" stop-color="#000000"/>
           </marker>
           <marker id="arrowhead-emphasis" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" stop-color="#000000">
-            <polygon points="0 0, 10 3.5, 0 7" fill="#059669" stop-color="#000000"/>
+            <polygon points="0 0, 10 3.5, 0 7" fill="#317070" stop-color="#000000"/>
           </marker>
           <marker id="arrowhead-security" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" stop-color="#000000">
-            <polygon points="0 0, 10 3.5, 0 7" fill="#e11d48" stop-color="#000000"/>
+            <polygon points="0 0, 10 3.5, 0 7" fill="#9b2c1c" stop-color="#000000"/>
           </marker>
           <marker id="arrowhead-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" stop-color="#000000">
-            <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed" stop-color="#000000"/>
+            <polygon points="0 0, 10 3.5, 0 7" fill="#1b3a5c" stop-color="#000000"/>
           </marker>
           <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse" stop-color="#000000">
-            <path d="M 40 0 L 0 0 0 40" stroke-width="0.5px" fill="none" stroke="#e9edf2" stop-color="#000000"/>
+            <path d="M 40 0 L 0 0 0 40" stroke-width="0.5px" fill="none" stroke="#d4c9b4" stop-color="#000000"/>
           </pattern>
         </defs>
 
@@ -25,194 +25,194 @@
         <rect width="100%" height="100%" fill="url(#grid)" stop-color="#000000"/>
 
         <!-- Composite phases -->
-        <rect x="46" y="60" width="474" height="84" rx="14" data-lifecycle-frame="" fill="none" stroke="#64748b" stroke-opacity="0.55" stroke-width="1" stroke-dasharray="1.5px, 3.5px" stroke-linecap="round" aria-hidden="true" stop-color="#000000"/>
+        <rect x="46" y="60" width="474" height="84" rx="14" data-lifecycle-frame="" fill="none" stroke="#4a5568" stroke-opacity="0.55" stroke-width="1" stroke-dasharray="1.5px, 3.5px" stroke-linecap="round" aria-hidden="true" stop-color="#000000"/>
 
         <!-- Transition paths -->
         <g data-graph-role="automatic-crossover" stop-color="#000000">
-          <path data-graph-role="automatic-crossover-underlay" d="M 196 102 L 336 102" fill="none" stroke="#ffffff" stroke-width="5.8px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
-          <path data-edge-from="draft" data-edge-to="review" data-edge-label="file set complete" data-edge-key="0" data-edge-id="draft-review" data-composition-points="196,102;336,102" data-composition-crossover="halo" data-composition-independent="true" d="M 196 102 L 336 102" data-animate="edge" stroke-width="1.8px" marker-end="url(#arrowhead-emphasis)" fill="none" stroke="#059669" stop-color="#000000"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 196 102 L 336 102" fill="none" stroke="#f5efe0" stroke-width="5.8px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
+          <path data-edge-from="draft" data-edge-to="review" data-edge-label="file set complete" data-edge-key="0" data-edge-id="draft-review" data-composition-points="196,102;336,102" data-composition-crossover="halo" data-composition-independent="true" d="M 196 102 L 336 102" data-animate="edge" stroke-width="1.8px" marker-end="url(#arrowhead-emphasis)" fill="none" stroke="#317070" stop-color="#000000"/>
         </g>
         <g data-graph-role="automatic-crossover" stop-color="#000000">
-          <path data-graph-role="automatic-crossover-underlay" d="M 410 70 L 410 52 Q 410 40 422 40 L 424 40 Q 436 40 436 52 L 436 70" fill="none" stroke="#ffffff" stroke-width="5.2px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
-          <path data-edge-from="review" data-edge-to="review" data-edge-label="revised" data-edge-key="1" data-edge-id="review-review" data-composition-points="410,70;410,40;436,40;436,70" data-composition-crossover="halo" data-composition-independent="true" d="M 410 70 L 410 52 Q 410 40 422 40 L 424 40 Q 436 40 436 52 L 436 70" data-animate="edge" stroke-width="1.2px" marker-end="url(#arrowhead-dashed)" fill="none" stroke="#7c3aed" stroke-dasharray="4px, 4px" stop-color="#000000"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 410 70 L 410 52 Q 410 40 422 40 L 424 40 Q 436 40 436 52 L 436 70" fill="none" stroke="#f5efe0" stroke-width="5.2px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
+          <path data-edge-from="review" data-edge-to="review" data-edge-label="revised" data-edge-key="1" data-edge-id="review-review" data-composition-points="410,70;410,40;436,40;436,70" data-composition-crossover="halo" data-composition-independent="true" d="M 410 70 L 410 52 Q 410 40 422 40 L 424 40 Q 436 40 436 52 L 436 70" data-animate="edge" stroke-width="1.2px" marker-end="url(#arrowhead-dashed)" fill="none" stroke="#1b3a5c" stroke-dasharray="4px, 4px" stop-color="#000000"/>
         </g>
         <g data-graph-role="automatic-crossover" stop-color="#000000">
-          <path data-graph-role="automatic-crossover-underlay" d="M 510 102 L 584 102" fill="none" stroke="#ffffff" stroke-width="5.8px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
-          <path data-edge-from="review" data-edge-to="accepted" data-edge-label="accept" data-edge-key="2" data-edge-id="review-accepted" data-composition-points="510,102;584,102" data-composition-crossover="halo" data-composition-independent="true" d="M 510 102 L 584 102" data-animate="edge" stroke-width="1.8px" marker-end="url(#arrowhead-emphasis)" fill="none" stroke="#059669" stop-color="#000000"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 510 102 L 584 102" fill="none" stroke="#f5efe0" stroke-width="5.8px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
+          <path data-edge-from="review" data-edge-to="accepted" data-edge-label="accept" data-edge-key="2" data-edge-id="review-accepted" data-composition-points="510,102;584,102" data-composition-crossover="halo" data-composition-independent="true" d="M 510 102 L 584 102" data-animate="edge" stroke-width="1.8px" marker-end="url(#arrowhead-emphasis)" fill="none" stroke="#317070" stop-color="#000000"/>
         </g>
         <g data-graph-role="automatic-crossover" stop-color="#000000">
-          <path data-graph-role="automatic-crossover-underlay" d="M 747 102 L 863 102" fill="none" stroke="#ffffff" stroke-width="5.8px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
-          <path data-edge-from="accepted" data-edge-to="implemented" data-edge-label="KIS published" data-edge-key="3" data-edge-id="accepted-implemented" data-composition-points="747,102;863,102" data-composition-crossover="halo" data-composition-independent="true" d="M 747 102 L 863 102" data-animate="edge" stroke-width="1.8px" marker-end="url(#arrowhead-emphasis)" fill="none" stroke="#059669" stop-color="#000000"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 747 102 L 881 102" fill="none" stroke="#f5efe0" stroke-width="5.8px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
+          <path data-edge-from="accepted" data-edge-to="implemented" data-edge-label="mark implemented" data-edge-key="3" data-edge-id="accepted-implemented" data-composition-points="747,102;881,102" data-composition-crossover="halo" data-composition-independent="true" d="M 747 102 L 881 102" data-animate="edge" stroke-width="1.8px" marker-end="url(#arrowhead-emphasis)" fill="none" stroke="#317070" stop-color="#000000"/>
         </g>
         <g data-graph-role="automatic-crossover" stop-color="#000000">
-          <path data-graph-role="automatic-crossover-underlay" d="M 453.5 134 L 453.5 226" fill="none" stroke="#ffffff" stroke-width="5.2px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
-          <path data-edge-from="review" data-edge-to="rejected" data-edge-label="reject" data-edge-key="4" data-edge-id="review-rejected" data-composition-points="453.5,134;453.5,226" data-composition-crossover="halo" data-composition-independent="true" d="M 453.5 134 L 453.5 226" data-animate="edge" stroke-width="1.2px" marker-end="url(#arrowhead)" fill="none" stroke="#64748b" stop-color="#000000"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 453.5 134 L 453.5 226" fill="none" stroke="#f5efe0" stroke-width="5.2px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
+          <path data-edge-from="review" data-edge-to="rejected" data-edge-label="reject" data-edge-key="4" data-edge-id="review-rejected" data-composition-points="453.5,134;453.5,226" data-composition-crossover="halo" data-composition-independent="true" d="M 453.5 134 L 453.5 226" data-animate="edge" stroke-width="1.2px" marker-end="url(#arrowhead)" fill="none" stroke="#4a5568" stop-color="#000000"/>
         </g>
         <g data-graph-role="automatic-crossover" stop-color="#000000">
-          <path data-graph-role="automatic-crossover-underlay" d="M 283 144 L 283 226" fill="none" stroke="#ffffff" stroke-width="5.2px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
-          <path data-edge-from="draft" data-edge-to="withdrawn" data-edge-label="withdraw" data-edge-key="5" data-edge-id="draft-withdrawn" data-composition-points="283,144;283,226" data-composition-crossover="halo" data-composition-independent="true" data-composition-junction="draft+review" d="M 283 144 L 283 226" data-animate="edge" stroke-width="1.2px" marker-end="url(#arrowhead)" fill="none" stroke="#64748b" stop-color="#000000"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 283 144 L 283 226" fill="none" stroke="#f5efe0" stroke-width="5.2px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
+          <path data-edge-from="draft" data-edge-to="withdrawn" data-edge-label="withdraw" data-edge-key="5" data-edge-id="draft-withdrawn" data-composition-points="283,144;283,226" data-composition-crossover="halo" data-composition-independent="true" data-composition-junction="draft+review" d="M 283 144 L 283 226" data-animate="edge" stroke-width="1.2px" marker-end="url(#arrowhead)" fill="none" stroke="#4a5568" stop-color="#000000"/>
         </g>
         <g data-graph-role="automatic-crossover" stop-color="#000000">
-          <path data-graph-role="automatic-crossover-underlay" d="M 283 144 L 283 226" fill="none" stroke="#ffffff" stroke-width="5.2px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
-          <path data-edge-from="review" data-edge-to="withdrawn" data-edge-label="withdraw" data-edge-key="6" data-edge-id="review-withdrawn" data-composition-points="283,144;283,226" data-composition-crossover="halo" data-composition-independent="true" data-composition-junction="draft+review" d="M 283 144 L 283 226" data-animate="edge" stroke-width="1.2px" marker-end="url(#arrowhead)" fill="none" stroke="#64748b" stop-color="#000000"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 283 144 L 283 226" fill="none" stroke="#f5efe0" stroke-width="5.2px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
+          <path data-edge-from="review" data-edge-to="withdrawn" data-edge-label="withdraw" data-edge-key="6" data-edge-id="review-withdrawn" data-composition-points="283,144;283,226" data-composition-crossover="halo" data-composition-independent="true" data-composition-junction="draft+review" d="M 283 144 L 283 226" data-animate="edge" stroke-width="1.2px" marker-end="url(#arrowhead)" fill="none" stroke="#4a5568" stop-color="#000000"/>
         </g>
         <g data-graph-role="automatic-crossover" stop-color="#000000">
-          <path data-graph-role="automatic-crossover-underlay" d="M 665.5 134 L 665.5 226" fill="none" stroke="#ffffff" stroke-width="5.2px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
-          <path data-edge-from="accepted" data-edge-to="superseded" data-edge-label="replaced by a later KIP" data-edge-key="7" data-edge-id="accepted-superseded" data-composition-points="665.5,134;665.5,226" data-composition-crossover="halo" data-composition-independent="true" d="M 665.5 134 L 665.5 226" data-animate="edge" stroke-width="1.2px" marker-end="url(#arrowhead)" fill="none" stroke="#64748b" stop-color="#000000"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 665.5 134 L 665.5 226" fill="none" stroke="#f5efe0" stroke-width="5.2px" stroke-linecap="round" stroke-linejoin="round" pointer-events="none" stop-color="#000000"/>
+          <path data-edge-from="accepted" data-edge-to="superseded" data-edge-label="replaced by a later KIP" data-edge-key="7" data-edge-id="accepted-superseded" data-composition-points="665.5,134;665.5,226" data-composition-crossover="halo" data-composition-independent="true" d="M 665.5 134 L 665.5 226" data-animate="edge" stroke-width="1.2px" marker-end="url(#arrowhead)" fill="none" stroke="#4a5568" stop-color="#000000"/>
         </g>
 
 
         <!-- States -->
         <g id="node-draft" data-node-id="draft" data-node-label="Draft" tabindex="0" role="button" aria-label="Focus Draft, number assigned, Lifecycle state" aria-pressed="false" data-node-kind="start" data-node-sublabel="number assigned" data-node-context="Lifecycle state" stop-color="#000000">
           <title stop-color="#000000">Draft · number assigned · Lifecycle state</title>
-          <rect x="56" y="70" width="140" height="64" rx="8" fill="#ffffff" stop-color="#000000"/>
-          <rect x="56" y="70" width="140" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#22d0eb" fill-opacity="0.149" stroke="#0891b2" stop-color="#000000"/>
-          <g aria-hidden="true" data-lifecycle-initial-marker="" stop-color="#000000"><circle cx="30" cy="102" r="4.5" fill="#059669" stop-color="#000000"/><path d="M 34.5 102 L 49 102" stroke-width="1.4px" fill="none" stroke="#059669" stop-color="#000000"/><path d="M 48 98.5 L 55 102 L 48 105.5 Z" fill="#059669" stop-color="#000000"/></g>
+          <rect x="56" y="70" width="140" height="64" rx="8" fill="#f5efe0" stop-color="#000000"/>
+          <rect x="56" y="70" width="140" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#ddddcc" stroke="#317070" stop-color="#000000"/>
+          <g aria-hidden="true" data-lifecycle-initial-marker="" stop-color="#000000"><circle cx="30" cy="102" r="4.5" fill="#317070" stop-color="#000000"/><path d="M 34.5 102 L 49 102" stroke-width="1.4px" fill="none" stroke="#317070" stop-color="#000000"/><path d="M 48 98.5 L 55 102 L 48 105.5 Z" fill="#317070" stop-color="#000000"/></g>
           
-          <text x="79" y="84" font-size="8px" font-weight="700" fill="#0891b2" stop-color="#000000">01</text>
-          <text data-node-label="" x="126" y="97" font-size="12px" font-weight="600" text-anchor="middle" fill="#111827" stop-color="#000000">Draft</text>
-          <text x="126" y="115" font-size="9px" text-anchor="middle" fill="#5b6474" stop-color="#000000">number assigned</text>
+          <text x="79" y="84" font-size="8px" font-weight="700" fill="#317070" stop-color="#000000">01</text>
+          <text data-node-label="" x="126" y="97" font-size="12px" font-weight="600" text-anchor="middle" fill="#1a2030" stop-color="#000000">Draft</text>
+          <text x="126" y="115" font-size="9px" text-anchor="middle" fill="#4a5568" stop-color="#000000">number assigned</text>
         </g>
 
         <g id="node-review" data-node-id="review" data-node-label="Review" tabindex="0" role="button" aria-label="Focus Review, assessed, may be revised, Lifecycle state" aria-pressed="false" data-node-kind="decision" data-node-sublabel="assessed, may be revised" data-node-context="Lifecycle state" stop-color="#000000">
           <title stop-color="#000000">Review · assessed, may be revised · Lifecycle state</title>
-          <rect x="336" y="70" width="174" height="64" rx="8" fill="#ffffff" stop-color="#000000"/>
-          <rect x="336" y="70" width="174" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#a58cfa" fill-opacity="0.2" stroke="#7c3aed" stop-color="#000000"/>
-          <g aria-hidden="true" data-semantic-sigil="decision" transform="translate(342 76) scale(0.6875)" fill="none" stroke="#7c3aed" stroke-width="1.35px" stroke-linecap="round" stroke-linejoin="round" opacity="0.76" stop-color="#000000">
+          <rect x="336" y="70" width="174" height="64" rx="8" fill="#f5efe0" stop-color="#000000"/>
+          <rect x="336" y="70" width="174" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#eef1f5" stroke="#1b3a5c" stop-color="#000000"/>
+          <g aria-hidden="true" data-semantic-sigil="decision" transform="translate(342 76) scale(0.6875)" fill="none" stroke="#1b3a5c" stroke-width="1.35px" stroke-linecap="round" stroke-linejoin="round" opacity="0.76" stop-color="#000000">
             <path d="M8 2.2 13.8 8 8 13.8 2.2 8Z" stop-color="#000000"/>
           </g>
-          <text x="359" y="84" font-size="8px" font-weight="700" fill="#7c3aed" stop-color="#000000">02</text>
-          <text data-node-label="" x="423" y="97" font-size="12px" font-weight="600" text-anchor="middle" fill="#111827" stop-color="#000000">Review</text>
-          <text x="423" y="115" font-size="9px" text-anchor="middle" fill="#5b6474" stop-color="#000000">assessed, may be revised</text>
+          <text x="359" y="84" font-size="8px" font-weight="700" fill="#1b3a5c" stop-color="#000000">02</text>
+          <text data-node-label="" x="423" y="97" font-size="12px" font-weight="600" text-anchor="middle" fill="#1a2030" stop-color="#000000">Review</text>
+          <text x="423" y="115" font-size="9px" text-anchor="middle" fill="#4a5568" stop-color="#000000">assessed, may be revised</text>
         </g>
 
         <g id="node-accepted" data-node-id="accepted" data-node-label="Accepted" tabindex="0" role="button" aria-label="Focus Accepted, mandate to draft a KIS, Lifecycle state" aria-pressed="false" data-node-kind="active" data-node-sublabel="mandate to draft a KIS" data-node-context="Lifecycle state" stop-color="#000000">
           <title stop-color="#000000">Accepted · mandate to draft a KIS · Lifecycle state</title>
-          <rect x="584" y="70" width="163" height="64" rx="8" fill="#ffffff" stop-color="#000000"/>
-          <rect x="584" y="70" width="163" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#22d0eb" fill-opacity="0.149" stroke="#0891b2" stop-color="#000000"/>
+          <rect x="584" y="70" width="163" height="64" rx="8" fill="#f5efe0" stop-color="#000000"/>
+          <rect x="584" y="70" width="163" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#ddddcc" stroke="#317070" stop-color="#000000"/>
           
-          <text x="607" y="84" font-size="8px" font-weight="700" fill="#0891b2" stop-color="#000000">03</text>
-          <text data-node-label="" x="665.5" y="97" font-size="12px" font-weight="600" text-anchor="middle" fill="#111827" stop-color="#000000">Accepted</text>
-          <text x="665.5" y="115" font-size="9px" text-anchor="middle" fill="#5b6474" stop-color="#000000">mandate to draft a KIS</text>
+          <text x="607" y="84" font-size="8px" font-weight="700" fill="#317070" stop-color="#000000">03</text>
+          <text data-node-label="" x="665.5" y="97" font-size="12px" font-weight="600" text-anchor="middle" fill="#1a2030" stop-color="#000000">Accepted</text>
+          <text x="665.5" y="115" font-size="9px" text-anchor="middle" fill="#4a5568" stop-color="#000000">mandate to draft a KIS</text>
         </g>
 
-        <g id="node-implemented" data-node-id="implemented" data-node-label="Implemented" tabindex="0" role="button" aria-label="Focus Implemented, its KIS is published, Lifecycle state" aria-pressed="false" data-node-kind="success" data-node-sublabel="its KIS is published" data-node-tag="terminal" data-node-context="Lifecycle state" stop-color="#000000">
-          <title stop-color="#000000">Implemented · its KIS is published · Lifecycle state · terminal</title>
-          <rect x="863" y="70" width="161" height="64" rx="8" fill="#ffffff" stop-color="#000000"/>
-          <rect x="863" y="70" width="161" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#32d39b" fill-opacity="0.18" stroke="#059669" stop-color="#000000"/>
-          <rect x="866" y="73" width="155" height="58" rx="5" stroke-width="1" fill="none" stroke="#059669" stop-color="#000000"/>
-          <g aria-hidden="true" data-semantic-sigil="success" transform="translate(869 76) scale(0.6875)" fill="none" stroke="#059669" stroke-width="1.35px" stroke-linecap="round" stroke-linejoin="round" opacity="0.76" stop-color="#000000">
+        <g id="node-implemented" data-node-id="implemented" data-node-label="Implemented" tabindex="0" role="button" aria-label="Focus Implemented, mandate fulfilled by its KIS, Lifecycle state" aria-pressed="false" data-node-kind="success" data-node-sublabel="mandate fulfilled by its KIS" data-node-tag="terminal" data-node-context="Lifecycle state" stop-color="#000000">
+          <title stop-color="#000000">Implemented · mandate fulfilled by its KIS · Lifecycle state · terminal</title>
+          <rect x="881" y="70" width="196" height="64" rx="8" fill="#f5efe0" stop-color="#000000"/>
+          <rect x="881" y="70" width="196" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#ddddcc" stroke="#2d5a3d" stop-color="#000000"/>
+          <rect x="884" y="73" width="190" height="58" rx="5" stroke-width="1" fill="none" stroke="#2d5a3d" stop-color="#000000"/>
+          <g aria-hidden="true" data-semantic-sigil="success" transform="translate(887 76) scale(0.6875)" fill="none" stroke="#2d5a3d" stroke-width="1.35px" stroke-linecap="round" stroke-linejoin="round" opacity="0.76" stop-color="#000000">
             <circle cx="8" cy="8" r="5.3" stop-color="#000000"/>
             <path d="m5.2 8 1.8 1.8 3.8-4" stop-color="#000000"/>
           </g>
-          <text x="886" y="84" font-size="8px" font-weight="700" fill="#059669" stop-color="#000000">04</text>
-          <text data-node-label="" x="942.4" y="93" font-size="12px" font-weight="600" text-anchor="middle" fill="#111827" stop-color="#000000">Implemented</text>
-          <text x="943.5" y="110" font-size="9px" text-anchor="middle" fill="#5b6474" stop-color="#000000">its KIS is published</text>
-          <text x="943.5" y="125" font-size="8px" text-anchor="middle" fill="#059669" stop-color="#000000">terminal</text>
+          <text x="904" y="84" font-size="8px" font-weight="700" fill="#2d5a3d" stop-color="#000000">04</text>
+          <text data-node-label="" x="979" y="93" font-size="12px" font-weight="600" text-anchor="middle" fill="#1a2030" stop-color="#000000">Implemented</text>
+          <text x="979" y="110" font-size="9px" text-anchor="middle" fill="#4a5568" stop-color="#000000">mandate fulfilled by its KIS</text>
+          <text x="979" y="125" font-size="8px" text-anchor="middle" fill="#2d5a3d" stop-color="#000000">terminal</text>
         </g>
 
         <g id="node-rejected" data-node-id="rejected" data-node-label="Rejected" tabindex="0" role="button" aria-label="Focus Rejected, maintainer decision, Lifecycle state" aria-pressed="false" data-node-kind="failure" data-node-sublabel="maintainer decision" data-node-tag="terminal" data-node-context="Lifecycle state" stop-color="#000000">
           <title stop-color="#000000">Rejected · maintainer decision · Lifecycle state · terminal</title>
-          <rect x="380" y="226" width="147" height="64" rx="8" fill="#ffffff" stop-color="#000000"/>
-          <rect x="380" y="226" width="147" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#f87286" fill-opacity="0.149" stroke="#e11d48" stop-color="#000000"/>
-          <rect x="383" y="229" width="141" height="58" rx="5" stroke-width="1" fill="none" stroke="#e11d48" stop-color="#000000"/>
-          <g aria-hidden="true" data-semantic-sigil="failure" transform="translate(386 232) scale(0.6875)" fill="none" stroke="#e11d48" stroke-width="1.35px" stroke-linecap="round" stroke-linejoin="round" opacity="0.76" stop-color="#000000">
+          <rect x="380" y="226" width="147" height="64" rx="8" fill="#f5efe0" stop-color="#000000"/>
+          <rect x="380" y="226" width="147" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#ead8c8" stroke="#9b2c1c" stop-color="#000000"/>
+          <rect x="383" y="229" width="141" height="58" rx="5" stroke-width="1" fill="none" stroke="#9b2c1c" stop-color="#000000"/>
+          <g aria-hidden="true" data-semantic-sigil="failure" transform="translate(386 232) scale(0.6875)" fill="none" stroke="#9b2c1c" stroke-width="1.35px" stroke-linecap="round" stroke-linejoin="round" opacity="0.76" stop-color="#000000">
             <circle cx="8" cy="8" r="5.3" stop-color="#000000"/>
             <path d="m5.7 5.7 4.6 4.6m0-4.6-4.6 4.6" stop-color="#000000"/>
           </g>
-          <text data-node-label="" x="453.5" y="249" font-size="12px" font-weight="600" text-anchor="middle" fill="#111827" stop-color="#000000">Rejected</text>
-          <text x="453.5" y="266" font-size="9px" text-anchor="middle" fill="#5b6474" stop-color="#000000">maintainer decision</text>
-          <text x="453.5" y="281" font-size="8px" text-anchor="middle" fill="#e11d48" stop-color="#000000">terminal</text>
+          <text data-node-label="" x="453.5" y="249" font-size="12px" font-weight="600" text-anchor="middle" fill="#1a2030" stop-color="#000000">Rejected</text>
+          <text x="453.5" y="266" font-size="9px" text-anchor="middle" fill="#4a5568" stop-color="#000000">maintainer decision</text>
+          <text x="453.5" y="281" font-size="8px" text-anchor="middle" fill="#9b2c1c" stop-color="#000000">terminal</text>
         </g>
 
         <g id="node-withdrawn" data-node-id="withdrawn" data-node-label="Withdrawn" tabindex="0" role="button" aria-label="Focus Withdrawn, author's choice, Lifecycle state" aria-pressed="false" data-node-kind="neutral" data-node-sublabel="author's choice" data-node-tag="terminal" data-node-context="Lifecycle state" stop-color="#000000">
           <title stop-color="#000000">Withdrawn · author's choice · Lifecycle state · terminal</title>
-          <rect x="196" y="226" width="140" height="64" rx="8" fill="#ffffff" stop-color="#000000"/>
-          <rect x="196" y="226" width="140" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#96a1b7" fill-opacity="0.18" stroke="#64748b" stop-color="#000000"/>
-          <rect x="199" y="229" width="134" height="58" rx="5" stroke-width="1" fill="none" stroke="#64748b" stop-color="#000000"/>
-          <g aria-hidden="true" data-semantic-sigil="stop" transform="translate(202 232) scale(0.6875)" fill="none" stroke="#64748b" stroke-width="1.35px" stroke-linecap="round" stroke-linejoin="round" opacity="0.76" stop-color="#000000">
+          <rect x="196" y="226" width="140" height="64" rx="8" fill="#f5efe0" stop-color="#000000"/>
+          <rect x="196" y="226" width="140" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#eef1f5" stroke="#4a5568" stop-color="#000000"/>
+          <rect x="199" y="229" width="134" height="58" rx="5" stroke-width="1" fill="none" stroke="#4a5568" stop-color="#000000"/>
+          <g aria-hidden="true" data-semantic-sigil="stop" transform="translate(202 232) scale(0.6875)" fill="none" stroke="#4a5568" stroke-width="1.35px" stroke-linecap="round" stroke-linejoin="round" opacity="0.76" stop-color="#000000">
             <circle cx="8" cy="8" r="5.3" stop-color="#000000"/>
-            <rect x="6.1" y="6.1" width="3.8" height="3.8" rx=".5" fill="#64748b" stroke="none" stop-color="#000000"/>
+            <rect x="6.1" y="6.1" width="3.8" height="3.8" rx=".5" fill="#4a5568" stroke="none" stop-color="#000000"/>
           </g>
-          <text data-node-label="" x="261.6" y="249" font-size="12px" font-weight="600" text-anchor="middle" fill="#111827" stop-color="#000000">Withdrawn</text>
-          <text x="266" y="266" font-size="9px" text-anchor="middle" fill="#5b6474" stop-color="#000000">author's choice</text>
-          <text x="266" y="281" font-size="8px" text-anchor="middle" fill="#5b6474" stop-color="#000000">terminal</text>
+          <text data-node-label="" x="261.6" y="249" font-size="12px" font-weight="600" text-anchor="middle" fill="#1a2030" stop-color="#000000">Withdrawn</text>
+          <text x="266" y="266" font-size="9px" text-anchor="middle" fill="#4a5568" stop-color="#000000">author's choice</text>
+          <text x="266" y="281" font-size="8px" text-anchor="middle" fill="#4a5568" stop-color="#000000">terminal</text>
         </g>
 
         <g id="node-superseded" data-node-id="superseded" data-node-label="Superseded" tabindex="0" role="button" aria-label="Focus Superseded, intent replaced, Lifecycle state" aria-pressed="false" data-node-kind="neutral" data-node-sublabel="intent replaced" data-node-tag="terminal" data-node-context="Lifecycle state" stop-color="#000000">
           <title stop-color="#000000">Superseded · intent replaced · Lifecycle state · terminal</title>
-          <rect x="595.5" y="226" width="140" height="64" rx="8" fill="#ffffff" stop-color="#000000"/>
-          <rect x="595.5" y="226" width="140" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#96a1b7" fill-opacity="0.18" stroke="#64748b" stop-color="#000000"/>
-          <rect x="598.5" y="229" width="134" height="58" rx="5" stroke-width="1" fill="none" stroke="#64748b" stop-color="#000000"/>
-          <g aria-hidden="true" data-semantic-sigil="stop" transform="translate(601.5 232) scale(0.6875)" fill="none" stroke="#64748b" stroke-width="1.35px" stroke-linecap="round" stroke-linejoin="round" opacity="0.76" stop-color="#000000">
+          <rect x="595.5" y="226" width="140" height="64" rx="8" fill="#f5efe0" stop-color="#000000"/>
+          <rect x="595.5" y="226" width="140" height="64" rx="8" data-animate="node" stroke-width="1.5px" fill="#eef1f5" stroke="#4a5568" stop-color="#000000"/>
+          <rect x="598.5" y="229" width="134" height="58" rx="5" stroke-width="1" fill="none" stroke="#4a5568" stop-color="#000000"/>
+          <g aria-hidden="true" data-semantic-sigil="stop" transform="translate(601.5 232) scale(0.6875)" fill="none" stroke="#4a5568" stroke-width="1.35px" stroke-linecap="round" stroke-linejoin="round" opacity="0.76" stop-color="#000000">
             <circle cx="8" cy="8" r="5.3" stop-color="#000000"/>
-            <rect x="6.1" y="6.1" width="3.8" height="3.8" rx=".5" fill="#64748b" stroke="none" stop-color="#000000"/>
+            <rect x="6.1" y="6.1" width="3.8" height="3.8" rx=".5" fill="#4a5568" stroke="none" stop-color="#000000"/>
           </g>
-          <text data-node-label="" x="657.5" y="249" font-size="12px" font-weight="600" text-anchor="middle" fill="#111827" stop-color="#000000">Superseded</text>
-          <text x="665.5" y="266" font-size="9px" text-anchor="middle" fill="#5b6474" stop-color="#000000">intent replaced</text>
-          <text x="665.5" y="281" font-size="8px" text-anchor="middle" fill="#5b6474" stop-color="#000000">terminal</text>
+          <text data-node-label="" x="657.5" y="249" font-size="12px" font-weight="600" text-anchor="middle" fill="#1a2030" stop-color="#000000">Superseded</text>
+          <text x="665.5" y="266" font-size="9px" text-anchor="middle" fill="#4a5568" stop-color="#000000">intent replaced</text>
+          <text x="665.5" y="281" font-size="8px" text-anchor="middle" fill="#4a5568" stop-color="#000000">terminal</text>
         </g>
 
         <!-- Transition labels -->
         <g data-edge-from="draft" data-edge-to="review" data-edge-label="file set complete" data-edge-key="0" data-edge-id="draft-review" stop-color="#000000">
-          <rect x="209" y="80" width="114" height="16" rx="4" fill="#ffffff" stop-color="#000000"/>
-          <text x="266" y="91.5" font-size="10px" text-anchor="middle" fill="#059669" stop-color="#000000">file set complete</text>
+          <rect x="209" y="80" width="114" height="16" rx="4" fill="#f5efe0" stop-color="#000000"/>
+          <text x="266" y="91.5" font-size="10px" text-anchor="middle" fill="#317070" stop-color="#000000">file set complete</text>
         </g>
         <g data-edge-from="review" data-edge-to="review" data-edge-label="revised" data-edge-key="1" data-edge-id="review-review" stop-color="#000000">
-          <rect x="396" y="32" width="54" height="16" rx="4" fill="#ffffff" stop-color="#000000"/>
-          <text x="423" y="43.5" font-size="10px" text-anchor="middle" fill="#7c3aed" stop-color="#000000">revised</text>
+          <rect x="396" y="32" width="54" height="16" rx="4" fill="#f5efe0" stop-color="#000000"/>
+          <text x="423" y="43.5" font-size="10px" text-anchor="middle" fill="#1b3a5c" stop-color="#000000">revised</text>
         </g>
         <g data-edge-from="review" data-edge-to="accepted" data-edge-label="accept" data-edge-key="2" data-edge-id="review-accepted" stop-color="#000000">
-          <rect x="523" y="80" width="48" height="16" rx="4" fill="#ffffff" stop-color="#000000"/>
-          <text x="547" y="91.5" font-size="10px" text-anchor="middle" fill="#059669" stop-color="#000000">accept</text>
+          <rect x="523" y="80" width="48" height="16" rx="4" fill="#f5efe0" stop-color="#000000"/>
+          <text x="547" y="91.5" font-size="10px" text-anchor="middle" fill="#317070" stop-color="#000000">accept</text>
         </g>
-        <g data-edge-from="accepted" data-edge-to="implemented" data-edge-label="KIS published" data-edge-key="3" data-edge-id="accepted-implemented" stop-color="#000000">
-          <rect x="760" y="80" width="90" height="16" rx="4" fill="#ffffff" stop-color="#000000"/>
-          <text x="805" y="91.5" font-size="10px" text-anchor="middle" fill="#059669" stop-color="#000000">KIS published</text>
+        <g data-edge-from="accepted" data-edge-to="implemented" data-edge-label="mark implemented" data-edge-key="3" data-edge-id="accepted-implemented" stop-color="#000000">
+          <rect x="760" y="80" width="108" height="16" rx="4" fill="#f5efe0" stop-color="#000000"/>
+          <text x="814" y="91.5" font-size="10px" text-anchor="middle" fill="#317070" stop-color="#000000">mark implemented</text>
         </g>
         <g data-edge-from="review" data-edge-to="rejected" data-edge-label="reject" data-edge-key="4" data-edge-id="review-rejected" stop-color="#000000">
-          <rect x="399.5" y="172" width="48" height="16" rx="4" fill="#ffffff" stop-color="#000000"/>
-          <text x="423.5" y="183.5" font-size="10px" text-anchor="middle" fill="#5b6474" stop-color="#000000">reject</text>
+          <rect x="399.5" y="172" width="48" height="16" rx="4" fill="#f5efe0" stop-color="#000000"/>
+          <text x="423.5" y="183.5" font-size="10px" text-anchor="middle" fill="#4a5568" stop-color="#000000">reject</text>
         </g>
         <g data-edge-from="draft" data-edge-to="withdrawn" data-edge-label="withdraw" data-edge-key="5" data-edge-id="draft-withdrawn" stop-color="#000000">
-          <rect x="289" y="177" width="60" height="16" rx="4" fill="#ffffff" stop-color="#000000"/>
-          <text x="319" y="188.5" font-size="10px" text-anchor="middle" fill="#5b6474" stop-color="#000000">withdraw</text>
+          <rect x="289" y="177" width="60" height="16" rx="4" fill="#f5efe0" stop-color="#000000"/>
+          <text x="319" y="188.5" font-size="10px" text-anchor="middle" fill="#4a5568" stop-color="#000000">withdraw</text>
         </g>
         <g data-edge-from="accepted" data-edge-to="superseded" data-edge-label="replaced by a later KIP" data-edge-key="7" data-edge-id="accepted-superseded" stop-color="#000000">
-          <rect x="509.5" y="172" width="150" height="16" rx="4" fill="#ffffff" stop-color="#000000"/>
-          <text x="584.5" y="183.5" font-size="10px" text-anchor="middle" fill="#5b6474" stop-color="#000000">replaced by a later KIP</text>
+          <rect x="509.5" y="172" width="150" height="16" rx="4" fill="#f5efe0" stop-color="#000000"/>
+          <text x="584.5" y="183.5" font-size="10px" text-anchor="middle" fill="#4a5568" stop-color="#000000">replaced by a later KIP</text>
         </g>
 
         <!-- Legend -->
         <g data-legend="" stop-color="#000000">
-          <text x="40" y="316" font-size="12px" font-weight="650" fill="#111827" stop-color="#000000">Legend</text>
+          <text x="40" y="316" font-size="12px" font-weight="650" fill="#1a2030" stop-color="#000000">Legend</text>
           <g data-legend-semantic-kind="start" data-legend-x="40" data-legend-baseline="336" data-legend-width="136" stop-color="#000000">
-            <circle cx="44.5" cy="332.5" r="4.5" fill="#059669" stop-color="#000000"/><path d="M 49 332.5 L 58 332.5" stroke-width="1.4px" fill="none" stroke="#059669" stop-color="#000000"/><path d="M 57 329 L 64 332.5 L 57 336 Z" fill="#059669" stop-color="#000000"/>
-            <text x="74" y="336" font-size="10px" font-weight="500" fill="#5b6474" stop-color="#000000">initial state</text>
+            <circle cx="44.5" cy="332.5" r="4.5" fill="#317070" stop-color="#000000"/><path d="M 49 332.5 L 58 332.5" stroke-width="1.4px" fill="none" stroke="#317070" stop-color="#000000"/><path d="M 57 329 L 64 332.5 L 57 336 Z" fill="#317070" stop-color="#000000"/>
+            <text x="74" y="336" font-size="10px" font-weight="500" fill="#4a5568" stop-color="#000000">initial state</text>
           </g>
           <g data-legend-semantic-kind="active" data-legend-x="198" data-legend-baseline="336" data-legend-width="81" stop-color="#000000">
-            <rect x="198" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#22d0eb" fill-opacity="0.149" stroke="#0891b2" stop-color="#000000"/>
-            <text x="220" y="336" font-size="10px" font-weight="500" fill="#5b6474" stop-color="#000000">active</text>
+            <rect x="198" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#ddddcc" stroke="#317070" stop-color="#000000"/>
+            <text x="220" y="336" font-size="10px" font-weight="500" fill="#4a5568" stop-color="#000000">active</text>
           </g>
           <g data-legend-semantic-kind="decision" data-legend-x="301" data-legend-baseline="336" data-legend-width="93" stop-color="#000000">
-            <rect x="301" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#a58cfa" fill-opacity="0.2" stroke="#7c3aed" stop-color="#000000"/>
-            <text x="323" y="336" font-size="10px" font-weight="500" fill="#5b6474" stop-color="#000000">decision</text>
+            <rect x="301" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#eef1f5" stroke="#1b3a5c" stop-color="#000000"/>
+            <text x="323" y="336" font-size="10px" font-weight="500" fill="#4a5568" stop-color="#000000">decision</text>
           </g>
           <g data-legend-semantic-kind="success" data-legend-x="416" data-legend-baseline="336" data-legend-width="87" stop-color="#000000">
-            <rect x="416" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#32d39b" fill-opacity="0.18" stroke="#059669" stop-color="#000000"/>
-            <text x="438" y="336" font-size="10px" font-weight="500" fill="#5b6474" stop-color="#000000">success</text>
+            <rect x="416" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#ddddcc" stroke="#2d5a3d" stop-color="#000000"/>
+            <text x="438" y="336" font-size="10px" font-weight="500" fill="#4a5568" stop-color="#000000">success</text>
           </g>
           <g data-legend-semantic-kind="failure" data-legend-x="525" data-legend-baseline="336" data-legend-width="130" stop-color="#000000">
-            <rect x="525" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#f87286" fill-opacity="0.149" stroke="#e11d48" stop-color="#000000"/>
-            <text x="547" y="336" font-size="10px" font-weight="500" fill="#5b6474" stop-color="#000000">failure / exit</text>
+            <rect x="525" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#ead8c8" stroke="#9b2c1c" stop-color="#000000"/>
+            <text x="547" y="336" font-size="10px" font-weight="500" fill="#4a5568" stop-color="#000000">failure / exit</text>
           </g>
           <g data-legend-semantic-kind="neutral" data-legend-x="677" data-legend-baseline="336" data-legend-width="87" stop-color="#000000">
-            <rect x="677" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#96a1b7" fill-opacity="0.18" stroke="#64748b" stop-color="#000000"/>
-            <text x="699" y="336" font-size="10px" font-weight="500" fill="#5b6474" stop-color="#000000">neutral</text>
+            <rect x="677" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#eef1f5" stroke="#4a5568" stop-color="#000000"/>
+            <text x="699" y="336" font-size="10px" font-weight="500" fill="#4a5568" stop-color="#000000">neutral</text>
           </g>
           <g data-legend-semantic-kind="final" data-legend-x="786" data-legend-baseline="336" data-legend-width="93" stop-color="#000000">
-            <rect x="786" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#96a1b7" fill-opacity="0.18" stroke="#64748b" stop-color="#000000"/><rect x="788.5" y="330.5" width="9" height="4" rx="1" stroke-width="0.8px" fill="none" stroke="#64748b" stop-color="#000000"/>
-            <text x="810" y="336" font-size="10px" font-weight="500" fill="#5b6474" stop-color="#000000">final state</text>
+            <rect x="786" y="328" width="14" height="9" rx="2" stroke-width="1" fill="#eef1f5" stroke="#4a5568" stop-color="#000000"/><rect x="788.5" y="330.5" width="9" height="4" rx="1" stroke-width="0.8px" fill="none" stroke="#4a5568" stop-color="#000000"/>
+            <text x="810" y="336" font-size="10px" font-weight="500" fill="#4a5568" stop-color="#000000">final state</text>
           </g>
         </g>
       </svg>
