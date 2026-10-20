@@ -8,7 +8,7 @@ audience = "Proposal authors, reviewers and maintainers"
 traced = ["docs/specification-process.md", "GOVERNANCE.md", "proposals/README.md"]
 stale_when = "a KIP status is added, removed or renamed, or a transition between KIP statuses changes"
 regenerate = "Build an Archify lifecycle diagram of the KIP status flow from docs/specification-process.md, its KIP lifecycle section and status-flow diagram, checked against GOVERNANCE.md and proposals/README.md. Cite file and line for every state, keep the existing layout where the facts have not changed, and finalize at showcase quality with --repo-root."
-last_checked = "ffee2a3a401e659fd587c0f58d656e1dab69d88d"
+last_checked = "8c3c2189971323697626b191db6c7e75d995b385"
 svg_form = "ki"
 
 [kis-status]
@@ -18,5 +18,5 @@ audience = "Specification editors, implementers and maintainers"
 traced = ["docs/specification-process.md", "GOVERNANCE.md"]
 stale_when = "a KIS status is added, removed or renamed, or a transition between KIS statuses changes"
 regenerate = "Build an Archify lifecycle diagram of the KIS status flow from docs/specification-process.md, its From Accepted KIP to KIS section and status-flow diagram, checked against GOVERNANCE.md. Cite file and line for every state, keep the existing layout where the facts have not changed, and finalize at showcase quality with --repo-root."
-last_checked = "ffee2a3a401e659fd587c0f58d656e1dab69d88d"
+last_checked = "8c3c2189971323697626b191db6c7e75d995b385"
 svg_form = "ki"
