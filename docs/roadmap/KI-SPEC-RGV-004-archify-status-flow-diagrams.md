@@ -7,13 +7,13 @@ project: observatory
 component: repository-governance
 priority: medium
 size: s
-status: in-progress
+status: awaiting-review
 horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: 5e401df87c02a592992c83c697188fcda5e120d0
 created_at: 2026-10-19T07:37:29Z
-updated_at: 2026-10-20T06:41:01Z
+updated_at: 2026-10-20T06:42:05Z
 ---
 
 # KI-SPEC-RGV-004: Archify Status Flow Diagrams
@@ -51,6 +51,7 @@ Archify reads `stateDiagram` as its `lifecycle` type, so both carry by meaning w
 - [x] Embed each SVG above its original fence in `docs/specification-process.md`, moving the fence into a collapsed `<details>` block that says it is kept until sign-off.
 - [x] Declare `[skills.ki-diagrams]` in `.ki.toml` so the repository audit checks the diagram set.
 - [x] Run the checks under Verify and complete the review packet.
+- [x] Rework after the failed acceptance review of 20 October 2026: relabel the KIP `Accepted -> Implemented` transition and the `Implemented` sublabel without a publication trigger, relabel the KIS `Active -> Deprecated` transition without a required reason, re-export both SVGs in the `ki` form, set `svg_form = "ki"` and drop the plain-light notes, then re-run the checks and refresh the review packet.
 
 ## Files touched
 
@@ -69,7 +70,7 @@ Archify reads `stateDiagram` as its `lifecycle` type, so both carry by meaning w
 
 ## Dependencies / blocks
 
-The KI-theme static export is ki-agentic-harness work under the [`ki-diagrams` standard](https://github.com/knowledgeislands/ki-agentic-harness/blob/main/skills/governance/ki-diagrams/references/standards-diagrams.md). It does not block this record: export plain light now and re-export when the theme lands.
+The KI-theme static export is ki-agentic-harness work under the [`ki-diagrams` standard](https://github.com/knowledgeislands/ki-agentic-harness/blob/main/skills/governance/ki-diagrams/references/standards-diagrams.md). It has landed: the installed exporter supports `--form ki`, and both SVGs now use it.
 
 ## Documentation impact
 
@@ -87,47 +88,45 @@ None: no status, transition or normative text changes; the diagrams redraw the e
 
 ### Roadmap
 
-None here. Removing the Mermaid fences after sign-off and the KI-theme re-export are later steps of this same record's boundary, taken at acceptance or when the theme lands.
+None here. Removing the Mermaid fences after sign-off is the last step of this same record's boundary, taken at acceptance.
 
 ## Review
 
 ### Delivered
 
-Both status flows in `docs/specification-process.md` are now Archify lifecycle diagrams, with committed JSON sources and static light SVGs under `docs/diagrams/`, listed in a `ki-diagrams` manifest and README, and embedded above the original Mermaid fences, which stay in collapsed `<details>` blocks until the owner signs the diagrams off. No status, transition or specification text changed. Baseline `5e401df87c02a592992c83c697188fcda5e120d0`; the sources trace `docs/specification-process.md`, `GOVERNANCE.md` and `proposals/README.md` at `6b4e2e3`, whose content is identical at the baseline. Not done, by the boundary's own conditions: removing the fences, which waits for sign-off, and the KI-theme re-export, which waits for the `ki-diagrams` KI-theme export.
+Both status flows in `docs/specification-process.md` are Archify lifecycle diagrams, with committed JSON sources and static SVGs in the Knowledge Islands theme under `docs/diagrams/`, listed in a `ki-diagrams` manifest and README, and embedded above the original Mermaid fences, which stay in collapsed `<details>` blocks until the owner signs the diagrams off. This rework answers the failed acceptance review of 20 October 2026: the KIP diagram no longer names a publication trigger for `Implemented`, the KIS diagram no longer presents a typical deprecation reason as a required condition, and the promised KI-theme re-export is done. No status, transition or specification text changed, and the `text` sketch at line 21 is untouched. Baseline `5e401df87c02a592992c83c697188fcda5e120d0`; the sources trace `docs/specification-process.md`, `GOVERNANCE.md` and `proposals/README.md` at `6b4e2e3`, whose content is identical at the baseline. Not done, by the boundary's own condition: removing the fences, which waits for sign-off.
 
 ### Change Summary
 
-- `docs/diagrams/kip-status.lifecycle.json` and `docs/diagrams/kis-status.lifecycle.json`: Archify lifecycle sources, every state citing its prose line and Mermaid line, `meta.repository` pinned to the public revision `6b4e2e3` so source links resolve on GitHub.
-- `docs/diagrams/kip-status.svg` and `docs/diagrams/kis-status.svg`: static `light` exports from the `ki-diagrams` exporter.
-- `docs/diagrams/diagrams.toml` and `docs/diagrams/README.md`: the manifest, with `svg_form = "light"`, and the reader index. `last_checked` is `63d7bfc`, the delivery commit, because embedding the images changed a traced file in a way outside `stale_when`.
-- `docs/specification-process.md`: each SVG above its fence, the fence inside `<details>` with a note that it is kept until sign-off.
-- `.ki.toml`: declares `[skills.ki-diagrams]`, so the audit now checks the set and warns on the two kept fences.
-- Decisions: the forms follow the `ki-diagrams` standard's `docs/diagrams/` layout rather than the pilot's note-side placement, because this is a project repository and not a knowledge-base island. Archify draws the two `withdraw` transitions, from Draft and from Review, as one arrow leaving a dashed group around both states; the meaning is unchanged. KIP `Superseded` follows the Mermaid fence and line 18 (`Accepted -> Superseded`), not the `text` sketch at line 21.
+- `docs/diagrams/kip-status.lifecycle.json`: the `Accepted -> Implemented` arrow reads `mark implemented` instead of `KIS published`, and the `Implemented` sublabel reads `mandate fulfilled by its KIS` instead of `its KIS is published`, so the diagram names no trigger where lifecycle step 7 and the governance pipeline disagree. The state now also cites `GOVERNANCE.md` line 26 beside its lifecycle line.
+- `docs/diagrams/kis-status.lifecycle.json`: the `Active -> Deprecated` arrow reads `deprecate` instead of `successor intended`, since the prose gives a successor only as the typical reason.
+- `docs/diagrams/kip-status.svg` and `docs/diagrams/kis-status.svg`: re-exported in the `ki` form from the corrected sources.
+- `docs/diagrams/diagrams.toml`: `svg_form = "ki"` for both diagrams, and `last_checked` advanced past the explanatory edit.
+- `docs/diagrams/README.md` and `docs/specification-process.md`: the notes promising a later KI-theme re-export are removed; the README says the SVGs are static KI-theme exports.
+- Decisions: neutral wording rather than governance wording for the KIP trigger, because the review allowed either and the neutral form settles nothing the owner has not settled. Archify allows at most three sources per state, so `Implemented` cites lifecycle line 17, the Mermaid line and `GOVERNANCE.md` line 26, not also line 34. Unchanged from delivery: the `docs/diagrams/` layout, the grouped withdrawal arrow, and KIP `Superseded` following the Mermaid fence and line 18.
 
 ### Verification
 
-- `archify validate lifecycle --quality showcase`: pass for both sources, 0 errors, 0 warnings.
-- `archify finalize lifecycle --quality showcase`: pass for both, every gate passing including the browser check.
-- `export-svg.ts --form light`: both SVGs written without refusal; no local path in any source or SVG.
+- `archify validate lifecycle --repo-root --quality showcase`: pass for both sources, 0 errors, 0 warnings.
+- `archify finalize lifecycle --repo-root --quality showcase`: pass for both, all four gates (validate, deliver, check, browser check) passing.
+- `export-svg.ts --form ki`: both SVGs written without refusal; neither carries a `<style>`, `var(` or `@font-face`, and no source or SVG carries a local path.
 - `rumdl check` on the changed Markdown: pass. Every JSON and TOML file parses.
-- `ki repo audit --skill ki-diagrams`: no failure; two DIAG-7 warnings for the retained fences, as planned. On local `main` the full audit first warned DIAG-4 for both diagrams, because the embedding edit changed the traced `docs/specification-process.md` after `last_checked`; the change is outside `stale_when`, so `last_checked` was advanced and the warning cleared.
-- `ki repo audit --skill ki-work-roadmap` and `--skill ki-repo-specifications`: pass.
-- `ki repo audit --repo .` in the linked worktree: the record's ITEM-3 failure is cleared and no new failure appears; the remaining RUNTIMES-2 and REPO-REG-1 failures are the same with and without this change and come from the unregistered worktree, whose ignored runtime skill links are absent.
-- Visual check: both SVGs rendered to PNG and inspected; every state and transition of both fences is present and legible.
+- `ki repo audit --skill ki-diagrams`: no failure; the two DIAG-7 warnings for the retained fences, as planned.
+- `ki repo audit --repo .` on local `main`: no failure; in the linked worktree only the RUNTIMES-2 and REPO-REG-1 failures that come from an unregistered worktree, as at delivery. `last_checked` was advanced to the correction commit, whose explanatory edit to `docs/specification-process.md` is outside `stale_when`.
+- Visual check: both SVGs rendered to PNG with `rsvg-convert` and inspected; every state and transition of both fences is present and legible, with the corrected labels.
 
 ### Outstanding concerns
 
 - The fences remain until the owner signs the diagrams off; removing them is the last step of this record's own boundary, for the acceptor once sign-off is given.
-- The KI-theme re-export remains open in this record's boundary until the `ki-diagrams` KI-theme export lands.
-- The `text` sketch at line 21 of `docs/specification-process.md` draws `Implemented -> Superseded` for a KIP, against line 18, `GOVERNANCE.md` and the Mermaid fence. Out of this record's boundary; raised to the owner in the run report.
+- The `text` sketch at line 21 of `docs/specification-process.md` still draws `Implemented -> Superseded` for a KIP, and lifecycle step 7 still ties `Implemented` to Draft publication against governance step 4. Both are specification text, out of this record's boundary and with the owner.
 
 ### Post-change review
 
-The goal is met: both flows are Archify diagrams under the one diagram standard, traced and embedded, with the Mermaid kept for comparison. Scope held to the diagrams, their manifest, the embedding and the declaration. Regression risk is low: the change is informative documentation plus one skill declaration whose only new findings are the two expected warnings. Ready for acceptance once the owner has looked at the two images.
+The goal is met and the three review findings are closed: both flows are Archify diagrams in the Knowledge Islands theme, traced and embedded, with wording that adds no condition the prose does not state. Scope held to the diagram sources, their exports, the manifest and the two explanatory notes. Regression risk is low: informative documentation only. Ready for a fresh independent review and the owner's look at the two images.
 
 ### Mini recap
 
-Delivered the KIP and KIS status flows as Archify lifecycle diagrams in light SVG, embedded above the kept Mermaid, and adopted `ki-diagrams` here; every planned check passed, with the two expected fence warnings. Concerns: fence removal on sign-off, the theme re-export, and the line-21 sketch. Learning route, not promoted: the `ki-diagrams` standard could say how a project repository whose diagrams illustrate a document, rather than a system, places them; the `docs/diagrams/` layout worked here.
+Corrected the KIP `Implemented` trigger wording and the KIS deprecation label, re-exported both diagrams in the KI theme, and refreshed the manifest and notes; every planned check passed, with the two expected fence warnings. Concerns: fence removal on sign-off, and the two specification-text inconsistencies with the owner. Learning route, not promoted: Archify's three-source limit per state is worth a line in the `ki-diagrams` standard's tracing guidance.
 
 ## Discussion
 
@@ -144,3 +143,7 @@ The KI-theme re-export is no longer blocked on exporter availability: the instal
 Independent checks passed: exact six-heading Review packet and all planned checkboxes; all JSON and TOML parsing; diagram privacy and pinned-source checks; exact state and transition comparison; both Archify showcase finalizations, including validation, delivery, provenance and browser gates; both light SVG exports; Markdown lint; roadmap, authoring and diagrams audits; and the full repository audit with zero failures and five warnings. The diagrams audit retains its two expected Mermaid warnings. A first parallel finalization met Archify's shared-directory delivery lock; serial retry passed without changing sources.
 
 The informative KIP sketch remains untouched, as instructed. Its `Implemented -> Superseded` edge conflicts with governance, lifecycle step 8 and both status diagrams; `Accepted -> Superseded` is the supported editorial correction, subject to the owner's separate disposition. No new work record was captured, no conform or hook change was run, and no remote operation was made.
+
+### Rework - 20 October 2026
+
+All three findings addressed in the overnight burndown under OVERNIGHT-BURNDOWN: neutral `Implemented` wording, an unqualified deprecation action, and the KI-theme re-export with `svg_form = "ki"`. The Mermaid stays until sign-off and the specification sketch is untouched. Returned to awaiting review for a fresh independent review.
