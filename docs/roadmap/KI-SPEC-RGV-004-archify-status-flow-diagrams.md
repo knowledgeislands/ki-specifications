@@ -7,13 +7,13 @@ project: observatory
 component: repository-governance
 priority: medium
 size: s
-status: awaiting-review
+status: in-progress
 horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: 5e401df87c02a592992c83c697188fcda5e120d0
 created_at: 2026-10-19T07:37:29Z
-updated_at: 2026-10-20T06:41:00Z
+updated_at: 2026-10-20T06:41:01Z
 ---
 
 # KI-SPEC-RGV-004: Archify Status Flow Diagrams
@@ -132,3 +132,15 @@ Delivered the KIP and KIS status flows as Archify lifecycle diagrams in light SV
 ## Discussion
 
 Handed over from the Observatory work under the cross-repository choreography in Knowledge Islands Principal's `AGENTS.md`. This repository owns its priority, plan and execution.
+
+### Independent acceptance review - 20 October 2026
+
+Verdict: failed review; returned to `in-progress` under the independently reviewed overnight acceptance brief. No acceptance or pruning took place. The review packet and immutable baseline remain intact. The state and transition sets exactly match the retained Mermaid, including the revision loop, withdrawal from Draft and Review, and supersession from Accepted. Both committed SVGs are legible on visual inspection.
+
+Transition wording needs correction before sign-off. The KIP arrow labelled `KIS published` and the Implemented sublabel `its KIS is published` imply implementation follows Draft publication. `GOVERNANCE.md` pipeline step 4 and `docs/specification-process.md` From Accepted KIP to KIS step 4 require implementation experience, promotion of the KIS to Active, and then the KIP's Implemented marker. The earlier lifecycle step 7 contradicts this; the diagram must avoid presenting that disputed publication trigger as settled. Use wording consistent with governance, or neutral wording that adds no disputed trigger, without changing specification text. The KIS arrow `successor intended` also makes a typical reason for deprecation appear to be a necessary condition; the prose says typically, so use an unqualified deprecation action or preserve that qualification.
+
+The KI-theme re-export is no longer blocked on exporter availability: the installed `ki-diagrams` exporter supports `--form ki`, and this review successfully exported the KIP viewer in that form outside the repository. Complete the promised re-export for both diagrams, update `svg_form` and the associated explanatory text, and refresh verification evidence before returning for acceptance. Keep the original Mermaid until the corrected diagrams receive sign-off.
+
+Independent checks passed: exact six-heading Review packet and all planned checkboxes; all JSON and TOML parsing; diagram privacy and pinned-source checks; exact state and transition comparison; both Archify showcase finalizations, including validation, delivery, provenance and browser gates; both light SVG exports; Markdown lint; roadmap, authoring and diagrams audits; and the full repository audit with zero failures and five warnings. The diagrams audit retains its two expected Mermaid warnings. A first parallel finalization met Archify's shared-directory delivery lock; serial retry passed without changing sources.
+
+The informative KIP sketch remains untouched, as instructed. Its `Implemented -> Superseded` edge conflicts with governance, lifecycle step 8 and both status diagrams; `Accepted -> Superseded` is the supported editorial correction, subject to the owner's separate disposition. No new work record was captured, no conform or hook change was run, and no remote operation was made.
