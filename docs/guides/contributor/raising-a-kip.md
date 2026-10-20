@@ -11,7 +11,8 @@ Confirm the change really needs a KIP. Editorial fixes and compatible additions 
 ## The lifecycle at a glance
 
 ```text
-Draft -> Review -> Accepted -> Implemented -> Superseded
+Draft -> Review -> Accepted -> Implemented
+                            -> Superseded
                 -> Rejected
 Draft or Review -> Withdrawn
 ```

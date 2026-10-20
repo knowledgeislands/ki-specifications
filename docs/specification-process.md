@@ -18,8 +18,9 @@ A KIP is proposed by an Author as a directory under [../proposals/](../proposals
 8. **Superseded** — an `Accepted` KIP whose intent is entirely replaced by a later KIP, before or instead of being implemented.
 
 ```text
-Draft -> Review -> Accepted -> Implemented -> Superseded
-                 -> Rejected
+Draft -> Review -> Accepted -> Implemented
+                            -> Superseded
+                -> Rejected
 Draft -> Withdrawn
 Review -> Withdrawn
 ```
