@@ -55,42 +55,6 @@ KIP:
 
 ![KIP status flow](diagrams/kip-status.svg)
 
-<details>
-<summary>Earlier Mermaid diagram, kept until the Archify diagram above is signed off.</summary>
-
-```mermaid
-stateDiagram-v2
-    [*] --> Draft
-    Draft --> Review
-    Draft --> Withdrawn
-    Review --> Review: revised
-    Review --> Accepted
-    Review --> Rejected
-    Review --> Withdrawn
-    Accepted --> Implemented
-    Accepted --> Superseded
-    Rejected --> [*]
-    Withdrawn --> [*]
-    Implemented --> [*]
-    Superseded --> [*]
-```
-
-</details>
-
 KIS:
 
 ![KIS status flow](diagrams/kis-status.svg)
-
-<details>
-<summary>Earlier Mermaid diagram, kept until the Archify diagram above is signed off.</summary>
-
-```mermaid
-stateDiagram-v2
-    [*] --> Draft
-    Draft --> Active
-    Active --> Deprecated
-    Deprecated --> Superseded
-    Superseded --> [*]
-```
-
-</details>

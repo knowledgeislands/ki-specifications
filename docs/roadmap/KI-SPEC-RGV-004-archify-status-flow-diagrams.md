@@ -7,13 +7,12 @@ project: observatory
 component: repository-governance
 priority: medium
 size: s
-status: awaiting-review
-horizon: now
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 5e401df87c02a592992c83c697188fcda5e120d0
 created_at: 2026-10-19T07:37:29Z
-updated_at: 2026-10-20T06:42:05Z
+updated_at: 2026-10-20T06:46:20Z
 ---
 
 # KI-SPEC-RGV-004: Archify Status Flow Diagrams
@@ -128,6 +127,10 @@ The goal is met and the three review findings are closed: both flows are Archify
 
 Corrected the KIP `Implemented` trigger wording and the KIS deprecation label, re-exported both diagrams in the KI theme, and refreshed the manifest and notes; every planned check passed, with the two expected fence warnings. Concerns: fence removal on sign-off, and the two specification-text inconsistencies with the owner. Learning route, not promoted: Archify's three-source limit per state is worth a line in the `ki-diagrams` standard's tracing guidance.
 
+## Done
+
+Accepted 20 October 2026 by the independent Codex reviewer under Kris Brown's quoted overnight acceptance grant on the review packet above.
+
 ## Discussion
 
 Handed over from the Observatory work under the cross-repository choreography in Knowledge Islands Principal's `AGENTS.md`. This repository owns its priority, plan and execution.
@@ -147,3 +150,13 @@ The informative KIP sketch remains untouched, as instructed. Its `Implemented ->
 ### Rework - 20 October 2026
 
 All three findings addressed in the overnight burndown under OVERNIGHT-BURNDOWN: neutral `Implemented` wording, an unqualified deprecation action, and the KI-theme re-export with `svg_form = "ki"`. The Mermaid stays until sign-off and the specification sketch is untouched. Returned to awaiting review for a fresh independent review.
+
+### Independent re-review and acceptance - 20 October 2026
+
+Verdict: pass after rework at `14687c09a8991dc48b7218c34d93aed704910f22`. The three earlier findings are closed: KIP implementation wording adds no disputed publication trigger, KIS deprecation adds no required successor condition, and both static SVGs use the KI theme. Exact state, transition, initial-state and terminal-state comparisons pass against the retained Mermaid and the pinned source revision. Both images are legible on independent visual inspection.
+
+Authority: Kris Brown, 20 October 2026, granted overnight acceptance: "if you can quickly now accept ... accepting new things that are waiting with you and pruning those ... getting the roadmaps down to zero". The ways-of-working decisions log reads this back under OVERNIGHT-BURNDOWN, and this run's explicit acceptance grant names exactly this record after rework. This is independent review, not delivery self-acceptance. The accepted diagram sign-off completes the outstanding in-scope fence-removal step: both folded Mermaid copies are removed, with the JSON sources and pinned provenance retained. No record is pruned.
+
+Independent gates pass: both Archify showcase validations and finalizations, including validate, deliver, strict provenance check and real-browser check; both KI-theme SVG exports; exact review-packet headings and completed Steps; JSON and TOML parsing; private-path and static-SVG checks; Markdown lint; roadmap, authoring, diagrams and full repository audits with zero failures. The pre-existing authoring-template and other repository warnings are outside this acceptance boundary; no conform or hook change is made. Archify update checks are disabled for the brief's no-network boundary.
+
+The specification-text concerns remain outside this diagram delivery and are already with the owner through SPEC-SKETCH in the ways-of-working decisions log and the prior review. My independent view is that `Accepted -> Superseded` is the supported correction to the informative sketch: governance, lifecycle step 8 and both diagram generations agree, and `Implemented` is terminal. The sketch remains byte-for-byte unchanged. The earlier lifecycle step 7's Draft-publication trigger also conflicts with governance step 4 and the later implementation-experience step; the neutral diagram wording faithfully avoids deciding that separate text correction. No new work record is captured under CAPTURE-GATE.
