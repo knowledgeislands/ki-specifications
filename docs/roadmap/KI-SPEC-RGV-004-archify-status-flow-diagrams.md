@@ -13,7 +13,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 5e401df87c02a592992c83c697188fcda5e120d0
 created_at: 2026-10-19T07:37:29Z
-updated_at: 2026-10-20T06:36:10Z
+updated_at: 2026-10-20T06:41:00Z
 ---
 
 # KI-SPEC-RGV-004: Archify Status Flow Diagrams
@@ -99,7 +99,7 @@ Both status flows in `docs/specification-process.md` are now Archify lifecycle d
 
 - `docs/diagrams/kip-status.lifecycle.json` and `docs/diagrams/kis-status.lifecycle.json`: Archify lifecycle sources, every state citing its prose line and Mermaid line, `meta.repository` pinned to the public revision `6b4e2e3` so source links resolve on GitHub.
 - `docs/diagrams/kip-status.svg` and `docs/diagrams/kis-status.svg`: static `light` exports from the `ki-diagrams` exporter.
-- `docs/diagrams/diagrams.toml` and `docs/diagrams/README.md`: the manifest, with `svg_form = "light"` and `last_checked` at `6b4e2e3`, and the reader index.
+- `docs/diagrams/diagrams.toml` and `docs/diagrams/README.md`: the manifest, with `svg_form = "light"`, and the reader index. `last_checked` is `63d7bfc`, the delivery commit, because embedding the images changed a traced file in a way outside `stale_when`.
 - `docs/specification-process.md`: each SVG above its fence, the fence inside `<details>` with a note that it is kept until sign-off.
 - `.ki.toml`: declares `[skills.ki-diagrams]`, so the audit now checks the set and warns on the two kept fences.
 - Decisions: the forms follow the `ki-diagrams` standard's `docs/diagrams/` layout rather than the pilot's note-side placement, because this is a project repository and not a knowledge-base island. Archify draws the two `withdraw` transitions, from Draft and from Review, as one arrow leaving a dashed group around both states; the meaning is unchanged. KIP `Superseded` follows the Mermaid fence and line 18 (`Accepted -> Superseded`), not the `text` sketch at line 21.
@@ -110,7 +110,7 @@ Both status flows in `docs/specification-process.md` are now Archify lifecycle d
 - `archify finalize lifecycle --quality showcase`: pass for both, every gate passing including the browser check.
 - `export-svg.ts --form light`: both SVGs written without refusal; no local path in any source or SVG.
 - `rumdl check` on the changed Markdown: pass. Every JSON and TOML file parses.
-- `ki repo audit --skill ki-diagrams`: no failure; two DIAG-7 warnings for the retained fences, as planned.
+- `ki repo audit --skill ki-diagrams`: no failure; two DIAG-7 warnings for the retained fences, as planned. On local `main` the full audit first warned DIAG-4 for both diagrams, because the embedding edit changed the traced `docs/specification-process.md` after `last_checked`; the change is outside `stale_when`, so `last_checked` was advanced and the warning cleared.
 - `ki repo audit --skill ki-work-roadmap` and `--skill ki-repo-specifications`: pass.
 - `ki repo audit --repo .` in the linked worktree: the record's ITEM-3 failure is cleared and no new failure appears; the remaining RUNTIMES-2 and REPO-REG-1 failures are the same with and without this change and come from the unregistered worktree, whose ignored runtime skill links are absent.
 - Visual check: both SVGs rendered to PNG and inspected; every state and transition of both fences is present and legible.
