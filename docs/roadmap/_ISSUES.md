@@ -1,5 +1,6 @@
 ---
 areas: { KIN: 3, RGV: 4 }
+work: ki.reg.guilds
 ---
 
 # Roadmap issue ledger
