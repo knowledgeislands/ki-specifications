@@ -25,5 +25,5 @@ Thumbs.db
 
 node_modules/
 
-# Generated project-local links (ki-bootstrap) — never committed
+# Generated project-local links (ki-keystone bootstrap) — never committed
 .claude/agents/
