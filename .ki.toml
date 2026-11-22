@@ -84,9 +84,3 @@ components = [
 [skills.ki-work-roadmap.areas]
 KIN = "Knowledge ingress"
 RGV = "Repository governance"
-
-# -----------------------------------------------------------------------------
-# Relationships
-# -----------------------------------------------------------------------------
-
-[skills.ki-trades]
