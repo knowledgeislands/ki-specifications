@@ -12,6 +12,7 @@ This is the runtime-neutral working convention for KI Specifications. The README
 
 ## Working rules
 
+- The repository keeps seven top-level areas: `proposals/`, `specifications/`, `schemas/`, `templates/`, `examples/`, `docs/` and `tooling/`. Their internal contents evolve; the areas themselves stay (REPO-OTHERS a, 22 November 2026, when `ki-repo-specifications` retired into the general Project shape).
 - Normative and informative text are kept explicitly separate; RFC 2119/8174 keywords (capitalised) appear only in normative text, and never in KIPs.
 - Relative links only. British English (artefact, organisation). Markdown otherwise follows `ki-authoring`.
 - Numbers are assigned once and never reused: `KIP-NNNNNN` (6 digits), `KIS-NNNN` (4 digits), independent series — see [docs/numbering.md](docs/numbering.md).

@@ -12,7 +12,7 @@ backpacks = [
 
 [skills.ki-repo]
 repo_type = "project"
-primary_shape = "ki-repo-specifications"
+primary_shape = "ki-repo-project"
 repository = "https://github.com/knowledgeislands/ki-specifications"
 title = "Knowledge Islands Specifications"
 capital = "https://github.com/knowledgeislands/ki-principal"
@@ -27,14 +27,6 @@ visibility = "public"
 license = "MIT"
 
 [skills.ki-authoring]
-
-# -----------------------------------------------------------------------------
-# Repository shape
-# -----------------------------------------------------------------------------
-
-[skills.ki-repo-project]
-
-[skills.ki-repo-specifications]
 
 # -----------------------------------------------------------------------------
 # Governance and runtime
