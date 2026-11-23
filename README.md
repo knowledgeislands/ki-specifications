@@ -44,7 +44,7 @@ No KIPs or KIS documents are currently registered. The series start afresh at `K
 
 ## How to propose a change
 
-Practical instructions live in the [guides](docs/guides/README.md), grouped by audience: contributors deciding whether a change needs a KIP and raising one, and implementers building against a published KIS. [CONTRIBUTING.md](CONTRIBUTING.md) holds the contribution rules and [docs/specification-process.md](docs/specification-process.md) the full lifecycle from proposal through to an accepted, versioned KIS.
+Practical instructions live in the [guides](docs/guides/_index.md), grouped by audience: contributors deciding whether a change needs a KIP and raising one, and implementers building against a published KIS. [CONTRIBUTING.md](CONTRIBUTING.md) holds the contribution rules and [docs/specification-process.md](docs/specification-process.md) the full lifecycle from proposal through to an accepted, versioned KIS.
 
 ## Licence
 
