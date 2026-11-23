@@ -13,6 +13,7 @@ Each higher template includes everything in the level below it, so `standard/` i
 ## How to use a template
 
 1. Copy the template directory to where your new package will live, and rename it to your package's slug.
+
 2. Open `manifest.json` and replace every placeholder value (`REPLACE-...`, the placeholder UUID, the placeholder dates) with real values for your package.
 
    - Set `id` to `ki:pkg:<your-namespace>/<your-slug>@<version>`, matching `version` exactly in the `@<semver>` segment.
@@ -20,6 +21,7 @@ Each higher template includes everything in the level below it, so `standard/` i
    - Set `created` (and, once you make a change, `updated`) to real ISO 8601 UTC timestamps.
 
 3. Fill in the placeholder Markdown artefacts (`digest-executive.md`, and for `standard`/`extended`, `digest-technical.md`, `decisions.md`, `handover.md`) with real content, or delete the ones you don't need and remove the corresponding `digests`/`artefacts` entries from `manifest.json`.
+
 4. Validate the manifest against the schema per [`../tooling/README.md`](../tooling/README.md):
 
    ```sh
